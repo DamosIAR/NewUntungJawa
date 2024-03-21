@@ -47,7 +47,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Depth: 0.15
+    - _Depth: 0.13
     - _Displacement: 0
     - _Normal_Strenght: 1
     - _QueueControl: 0
@@ -55,8 +55,8 @@ Material:
     - _Smoothness: 1
     - _Strength: 2
     m_Colors:
-    - _DeepWaterColor: {r: 0.13725488, g: 0.70243037, b: 0.7529412, a: 0.7607843}
-    - _ShalowWarterColor: {r: 0.3244037, g: 0.4535387, b: 0.8490566, a: 0}
+    - _DeepWaterColor: {r: 0, g: 0.86018825, b: 1, a: 0.7607843}
+    - _ShalowWarterColor: {r: 0, g: 1, b: 0.17164183, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &6519545755152353461

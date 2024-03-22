@@ -47,13 +47,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Depth: -0.92
+    - _Depth: 0.15
     - _Displacement: 0
     - _Normal_Strenght: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Smoothness: 0.5
-    - _Strength: 0.56
+    - _Strength: 2
     m_Colors:
     - _DeepWaterColor: {r: 0, g: 0.6209316, b: 1, a: 0.7607843}
     - _ShalowWarterColor: {r: 0.08955228, g: 1, b: 0, a: 0}

@@ -328,7 +328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 3837371094741471625, guid: 5b68503ce23a0544f8d6c565564c947c,
     type: 3}
-  spawnAreaCenter: {x: -50, y: 2.89671, z: 63.3}
+  spawnAreaCenter: {x: -50, y: -6, z: 63.3}
   spawnAreaSize: {x: -11.4, y: 2.89671, z: 46.8}
   spawnInterval: 2
   crabLifetime: 10
@@ -1816,7 +1816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 3837371094741471625, guid: 5b68503ce23a0544f8d6c565564c947c,
     type: 3}
-  spawnAreaCenter: {x: -50, y: 2.89671, z: 8.37}
+  spawnAreaCenter: {x: -50, y: -6, z: 8.37}
   spawnAreaSize: {x: -11.4, y: 2.89671, z: 46.8}
   spawnInterval: 2
   crabLifetime: 10

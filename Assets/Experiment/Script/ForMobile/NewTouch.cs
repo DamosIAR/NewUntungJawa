@@ -15,11 +15,18 @@ public class TouchExample : MonoBehaviour
     GameObject PickedSquid;
     bool squidSpawned = false;
 
+    VirtualCameraControl cameraControl; 
+
     bool somethingPicked = false;
     GameObject Picked;
+
+    private void Start()
+    {
+        cameraControl = GameObject.FindGameObjectWithTag("VirtualCameraTarget").GetComponent<VirtualCameraControl>();
+    }
+
     void Update()
     {
-
 
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
@@ -28,6 +35,16 @@ public class TouchExample : MonoBehaviour
 
             if(Physics.Raycast(ray, out hit))
             {
+
+                if(hit.collider.tag == "ToBack")
+                {
+                    cameraControl.BackSideStore();
+                }
+                else if(hit.collider.tag == "ToFront")
+                {
+                    cameraControl.FrontSideStore();
+                }
+
                if ((hit.collider.tag == "FishBox" && fishSpawned == false) && somethingPicked == false)
                 {
                     Vector3 fishSpawnedLocation = new Vector3(2.5f, 1f, -10f);

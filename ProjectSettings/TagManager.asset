@@ -12,6 +12,8 @@ TagManager:
   - ToBack
   - ToFront
   - VirtualCameraTarget
+  - CrabBox
+  - Box
   layers:
   - Default
   - TransparentFX

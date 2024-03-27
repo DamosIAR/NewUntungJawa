@@ -15,6 +15,8 @@ public class TouchExample : MonoBehaviour
     GameObject PickedSquid;
     bool squidSpawned = false;
 
+    Box box;
+
     VirtualCameraControl cameraControl; 
 
     bool somethingPicked = false;
@@ -23,6 +25,7 @@ public class TouchExample : MonoBehaviour
     private void Start()
     {
         cameraControl = GameObject.FindGameObjectWithTag("VirtualCameraTarget").GetComponent<VirtualCameraControl>();
+        box = GameObject.FindGameObjectWithTag("Box").GetComponent<Box>();
     }
 
     void Update()
@@ -45,8 +48,16 @@ public class TouchExample : MonoBehaviour
                     cameraControl.FrontSideStore();
                 }
 
+                if(hit.collider.tag == "Box")
+                {
+                    box.interact();
+                    Debug.Log(hit.collider.name);
+                }
+
+
                if ((hit.collider.tag == "FishBox" && fishSpawned == false) && somethingPicked == false)
                 {
+
                     Vector3 fishSpawnedLocation = new Vector3(2.5f, 1f, -10f);
                     PickedFish = Instantiate(Fish, fishSpawnedLocation , Quaternion.identity);
                     Debug.Log("Fish spawn");

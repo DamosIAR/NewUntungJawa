@@ -48,10 +48,10 @@ public class TouchExample : MonoBehaviour
                     cameraControl.FrontSideStore();
                 }
 
-                if(hit.collider.tag == "Box")
+                if(hit.transform.TryGetComponent(out box))
                 {
                     box.interact();
-                    Debug.Log(hit.collider.name);
+                    Debug.Log(hit.transform);
                 }
 
 

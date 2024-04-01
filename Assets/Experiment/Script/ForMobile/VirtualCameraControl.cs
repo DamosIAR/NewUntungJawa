@@ -11,8 +11,8 @@ public class VirtualCameraControl : MonoBehaviour
     public void BackSideStore()
     {
         Vector3 currentPosition = transform.position;
-        float newZPosition = -currentPosition.z;
-        Vector3 newPosition = new Vector3(currentPosition.x, currentPosition.y, newZPosition);
+        float newZPosition = -(currentPosition.z);
+        Vector3 newPosition = new Vector3(currentPosition.x, currentPosition.y, -100f);
         transform.position = newPosition;
     }
 
@@ -20,7 +20,7 @@ public class VirtualCameraControl : MonoBehaviour
     {
         Vector3 currentPosition = transform.position;
         float newZPosition = Mathf.Abs(currentPosition.z);
-        Vector3 newPosition = new Vector3(currentPosition.x, currentPosition.y, newZPosition);
+        Vector3 newPosition = new Vector3(currentPosition.x, currentPosition.y, 100f);
         transform.position = newPosition;
         
     }

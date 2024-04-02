@@ -4,12 +4,23 @@ using UnityEngine;
 
 public class Box : MonoBehaviour
 {
-    [SerializeField] private Transform objectPrefab;
+    [SerializeField] private ObjekDapurSO objekDapurSO;
     [SerializeField] private Transform TopBoxPrefab;
+
+    private ObjekDapur objekDapur;
+    
     public void interact()
     {
-        Debug.Log("interact");
-        Instantiate(objectPrefab, TopBoxPrefab);
-        //objectTransform.localPosition = Vector3.zero;
+        if(objekDapur == null)
+        {
+            Debug.Log("interact");
+            Transform KitchenObjectTransform = Instantiate(objekDapurSO.prefab, TopBoxPrefab);
+            KitchenObjectTransform.localPosition = Vector3.zero;
+
+            objekDapur = KitchenObjectTransform.GetComponent<ObjekDapur>();
+
+            Debug.Log(KitchenObjectTransform.GetComponent<ObjekDapur>().GetObjekDapurSO().objectName);
+        }
+        
     }
 }

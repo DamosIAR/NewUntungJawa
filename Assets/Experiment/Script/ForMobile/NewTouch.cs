@@ -5,13 +5,13 @@ using System.Collections;
 public class TouchExample : MonoBehaviour
 {
     [SerializeField] Camera mainCamera;
-    [SerializeField] GameObject Fish;
+    //[SerializeField] GameObject Fish;
     GameObject PickedFish;
     bool fishSpawned = false;
-    [SerializeField] GameObject Prawn;
+    //[SerializeField] GameObject Prawn;
     GameObject PickedPrawn;
     bool prawnSpawned = false;
-    [SerializeField] GameObject Squid;
+    //[SerializeField] GameObject Squid;
     GameObject PickedSquid;
     bool squidSpawned = false;
 
@@ -55,7 +55,7 @@ public class TouchExample : MonoBehaviour
                 }
 
 
-               if ((hit.collider.tag == "FishBox" && fishSpawned == false) && somethingPicked == false)
+               /*if ((hit.collider.tag == "FishBox" && fishSpawned == false) && somethingPicked == false)
                 {
 
                     Vector3 fishSpawnedLocation = new Vector3(2.5f, 1f, -10f);
@@ -117,7 +117,7 @@ public class TouchExample : MonoBehaviour
                     Debug.Log("Grill");
                     Picked.transform.position = new Vector3(-6.3f, 0.7f, -11f);
                     somethingPicked = false;
-                }
+                }*/
             }
 
 

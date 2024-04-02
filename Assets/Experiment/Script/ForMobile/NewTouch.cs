@@ -7,19 +7,19 @@ public class TouchExample : MonoBehaviour
     [SerializeField] Camera mainCamera;
     //[SerializeField] GameObject Fish;
     GameObject PickedFish;
-    bool fishSpawned = false;
+    //bool fishSpawned = false;
     //[SerializeField] GameObject Prawn;
     GameObject PickedPrawn;
-    bool prawnSpawned = false;
+    //bool prawnSpawned = false;
     //[SerializeField] GameObject Squid;
     GameObject PickedSquid;
-    bool squidSpawned = false;
+    //bool squidSpawned = false;
 
     Box box;
 
     VirtualCameraControl cameraControl; 
 
-    bool somethingPicked = false;
+    //bool somethingPicked = false;
     GameObject Picked;
 
     private void Start()
@@ -51,8 +51,13 @@ public class TouchExample : MonoBehaviour
                 if(hit.transform.TryGetComponent(out box))
                 {
                     box.interact();
-                    Debug.Log(hit.transform);
+                    //Debug.Log(hit.transform);
                 }
+
+                /*if(hit.transform.TryGetComponent(out box))
+                {
+
+                }*/
 
 
                /*if ((hit.collider.tag == "FishBox" && fishSpawned == false) && somethingPicked == false)

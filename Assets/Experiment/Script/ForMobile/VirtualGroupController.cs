@@ -19,4 +19,6 @@ public class VirtualGroupController : MonoBehaviour
         Vector3 newPosition = new Vector3(0, currentPosition.y, currentPosition.z);
         transform.position = newPosition;
     }
+
+
 }

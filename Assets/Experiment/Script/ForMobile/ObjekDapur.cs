@@ -6,35 +6,30 @@ public class ObjekDapur : MonoBehaviour
 {
     [SerializeField] private ObjekDapurSO objekDapurSO;
 
-    private Box box;
+    private IObjekDapurParent objekDapurParent;
     public ObjekDapurSO GetObjekDapurSO() 
     {
         return objekDapurSO; 
     }
 
-    public void setEmptyBox(Box box)
+    public void SetObjekDapurParent(IObjekDapurParent objekDapurParent)
     {
-        if(this.box != null)
+        if(this.objekDapurParent != null)
         {
-            this.box.ClearObjekDapur();
+            this.objekDapurParent.ClearObjekDapur();
         }
 
-        this.box = box;
+        this.objekDapurParent = objekDapurParent;
 
-        /*if (box.HasObjekDapur())
-        {
-            Debug.LogError("Sudah ada isinya");
-        }*/
+        objekDapurParent.SetObjekDapur(this);
 
-        box.SetObjekDapur(this);
-
-        transform.parent = box.GetObjekDapurFollowTransform();
+        transform.parent = objekDapurParent.GetObjekDapurFollowTransform();
         transform.localPosition = Vector3.zero;
     }
 
-    public Box getEmptyBox()
+    public IObjekDapurParent GetObjekDapurParent()
     {
-        return box;
+        return objekDapurParent;
     }
 
 }

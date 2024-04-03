@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class VirtualCameraControl : MonoBehaviour
 {
-    /*public float radius = 5f;
-    public float speed = 2f;
-    private float angle = 0f;*/
-
     public void BackSideStore()
     {
         Vector3 currentPosition = transform.position;
@@ -23,16 +19,6 @@ public class VirtualCameraControl : MonoBehaviour
         Vector3 newPosition = new Vector3(currentPosition.x, currentPosition.y, 100f);
         transform.position = newPosition;
         
-    }
-
-    public void NextStore()
-    {
-
-    }
-
-    public void PrevStore()
-    {
-
     }
     
 }

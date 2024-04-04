@@ -46,6 +46,8 @@ public class TouchExample : MonoBehaviour, IObjekDapurParent
                     dasar.interact(this);
                 }
 
+               
+
 
                /*if ((hit.collider.tag == "FishBox" && fishSpawned == false) && somethingPicked == false)
                 {

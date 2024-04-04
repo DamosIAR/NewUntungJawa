@@ -10,14 +10,12 @@ public class Box : Base
     {
         if(!touchExample.HasObjekDapur())
         {
+            //ObjekDapur.SpawnObjekDapur(objekDapurSO)
             Transform KitchenObjectTransform = Instantiate(objekDapurSO.prefab);
+
             KitchenObjectTransform.GetComponent<ObjekDapur>().SetObjekDapurParent(touchExample);
 
-            
+
         }
-        /*else
-        {
-            objekDapur.SetObjekDapurParent(touchExample);
-        }*/
     }
 }

@@ -51,4 +51,13 @@ public class ObjekDapur : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public static ObjekDapur SpawnObjekDapur(ObjekDapurSO objekDapurSO, IObjekDapurParent objekDapurParent)
+    {
+        Transform objekDapurTrasnform = Instantiate(objekDapurSO.prefab);
+        ObjekDapur objekDapur = objekDapurTrasnform.GetComponent<ObjekDapur>();
+            
+        objekDapur.SetObjekDapurParent(objekDapurParent);
+
+        return objekDapur;
+    }
 }

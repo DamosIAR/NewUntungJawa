@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7384572652439537828}
   - component: {fileID: 8428465986717901552}
+  - component: {fileID: 2417397955942998428}
   m_Layer: 0
   m_Name: GRILL
   m_TagString: Untagged
@@ -56,6 +57,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5, y: 2.77, z: 5}
   m_Center: {x: 0, y: 0.69, z: 0}
+--- !u!114 &2417397955942998428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321674609154949439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e46692ce95d9e4fac67c363793b0fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TopBoxPrefab: {fileID: 2718934363453711412}
+  grillRecipeSOArray:
+  - {fileID: 11400000, guid: 2c9b21b0f60f8064c83e83175e5c0837, type: 2}
+  - {fileID: 11400000, guid: 23b0d252f2a29fc4c86480533f626907, type: 2}
+  - {fileID: 11400000, guid: 641085c1eab273647aeed4db104dc92c, type: 2}
 --- !u!1 &1153674322697451556
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +248,7 @@ Transform:
   m_GameObject: {fileID: 5187560186802514440}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.53, z: 0}
   m_LocalScale: {x: 0.64340824, y: 0.6434083, z: 0.2887681}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -95,9 +95,10 @@ GameObject:
   m_Component:
   - component: {fileID: 330712808408847286}
   - component: {fileID: 1066935467396245117}
+  - component: {fileID: 6891685387967103864}
   m_Layer: 0
   m_Name: tempat sampah
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +120,7 @@ Transform:
   - {fileID: 4303143642551594480}
   - {fileID: 5605035656071279716}
   - {fileID: 7894640492653203389}
+  - {fileID: 5989082688958456795}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1066935467396245117
@@ -142,6 +144,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.6949792, y: 5.649235, z: 2.8166907}
   m_Center: {x: -0.027739141, y: 0.7960661, z: 0.0000008648914}
+--- !u!114 &6891685387967103864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143137090508278028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27aeee43d7fcee428c7dae197da053e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TopBoxPrefab: {fileID: 5989082688958456795}
 --- !u!1 &2291804807619762220
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +242,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &3956497136669085581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5989082688958456795}
+  m_Layer: 0
+  m_Name: Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5989082688958456795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956497136669085581}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 330712808408847286}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8633627250015483320
 GameObject:
   m_ObjectHideFlags: 0

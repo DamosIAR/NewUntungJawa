@@ -6,14 +6,12 @@ TagManager:
   tags:
   - FishBox
   - Storage
-  - ShrimpBox
   - Grill
-  - SquidBox
   - ToBack
   - ToFront
   - VirtualCameraTarget
-  - CrabBox
   - Box
+  - Trash
   layers:
   - Default
   - TransparentFX

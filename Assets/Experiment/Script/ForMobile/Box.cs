@@ -2,59 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Box : MonoBehaviour, IObjekDapurParent
+public class Box : Base
 {
     [SerializeField] private ObjekDapurSO objekDapurSO;
-    [SerializeField] private Transform TopBoxPrefab;
-
-    private VirtualCameraControl cameraControl;
-    private ObjekDapur objekDapur;
-
-    private void Start()
+    //private ObjekDapur objekDapur;
+    public override void interact(TouchExample touchExample)
     {
-        cameraControl = GameObject.FindGameObjectWithTag("VirtualCameraTarget").GetComponent<VirtualCameraControl>();
-    }
-
-    public void interact(TouchExample touchExample)
-    {
-        if(objekDapur == null)
+        if(!touchExample.HasObjekDapur())
         {
-            Transform KitchenObjectTransform = Instantiate(objekDapurSO.prefab, TopBoxPrefab);
-            KitchenObjectTransform.localPosition = Vector3.zero;
+            Transform KitchenObjectTransform = Instantiate(objekDapurSO.prefab);
+            KitchenObjectTransform.GetComponent<ObjekDapur>().SetObjekDapurParent(touchExample);
 
-            objekDapur = KitchenObjectTransform.GetComponent<ObjekDapur>();
-            objekDapur.SetObjekDapurParent(this);
+            
         }
-        else
+        /*else
         {
             objekDapur.SetObjekDapurParent(touchExample);
-            Debug.Log(objekDapur.GetObjekDapurParent());
-        }
-        
-    }
-
-    public Transform GetObjekDapurFollowTransform()
-    {
-        return TopBoxPrefab;
-    }
-
-    public void SetObjekDapur(ObjekDapur objekDapur)
-    {
-        this.objekDapur = objekDapur;
-    }
-
-    public ObjekDapur GetObjekDapur()
-    {
-        return objekDapur;
-    }
-
-    public void ClearObjekDapur()
-    {
-        objekDapur = null;
-    }
-
-    public bool HasObjekDapur()
-    {
-        return objekDapur != null;
+        }*/
     }
 }

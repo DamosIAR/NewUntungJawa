@@ -7,19 +7,14 @@ public class TouchExample : MonoBehaviour, IObjekDapurParent
     [SerializeField] Camera mainCamera;
     [SerializeField] private Transform ObjekDapurHoldPoint;
 
-    GameObject PickedFish;
-    GameObject PickedPrawn;
-    GameObject PickedSquid;
-    GameObject Picked;
-
-    private Box box;
+    private Base dasar;
     private ObjekDapur objekDapur;
     private VirtualCameraControl cameraControl; 
 
     private void Start()
     {
         cameraControl = GameObject.FindGameObjectWithTag("VirtualCameraTarget").GetComponent<VirtualCameraControl>();
-        box = GameObject.FindGameObjectWithTag("Box").GetComponent<Box>();
+        dasar = GameObject.FindGameObjectWithTag("Box").GetComponent<Box>();
     }
 
     void Update()
@@ -41,10 +36,14 @@ public class TouchExample : MonoBehaviour, IObjekDapurParent
                 {
                     cameraControl.FrontSideStore();
                 }
-
-                if(hit.transform.TryGetComponent(out box))
+                /*else if(hit.collider.tag == "Trash")
                 {
-                    box.interact(this);
+                    
+                }*/
+
+                if(hit.transform.TryGetComponent(out dasar))
+                {
+                    dasar.interact(this);
                 }
 
 
@@ -116,13 +115,6 @@ public class TouchExample : MonoBehaviour, IObjekDapurParent
 
 
         }
-    }
-    
-    public void Spawned(GameObject gameobject, Vector3 location, Quaternion quaternion)
-    {
-        location = new Vector3();
-        Picked = Instantiate(gameObject, location, quaternion);
-
     }
 
     public Transform GetObjekDapurFollowTransform()

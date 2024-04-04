@@ -14,15 +14,28 @@ public class ObjekDapur : MonoBehaviour
 
     public void SetObjekDapurParent(IObjekDapurParent objekDapurParent)
     {
-        if(this.objekDapurParent != null)
+
+        if (this.objekDapurParent != null)
         {
             this.objekDapurParent.ClearObjekDapur();
         }
 
+
+
         this.objekDapurParent = objekDapurParent;
+        if (objekDapurParent.HasObjekDapur())
+        {
+            Debug.LogError("Udah ada");
+            
+        }
+
 
         objekDapurParent.SetObjekDapur(this);
 
+        /*if(objekDapurParent != null)
+        {
+            objekDapurParent.ClearObjekDapur();
+        }*/
         transform.parent = objekDapurParent.GetObjekDapurFollowTransform();
         transform.localPosition = Vector3.zero;
     }
@@ -30,6 +43,12 @@ public class ObjekDapur : MonoBehaviour
     public IObjekDapurParent GetObjekDapurParent()
     {
         return objekDapurParent;
+    }
+
+    public void DestroySelf()
+    {
+        objekDapurParent.ClearObjekDapur() ;
+        Destroy(gameObject);
     }
 
 }

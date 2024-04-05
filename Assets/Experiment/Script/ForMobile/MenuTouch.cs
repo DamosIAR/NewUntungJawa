@@ -30,7 +30,13 @@ public class MenuTouch : MonoBehaviour
 
                     sceneManager.LoadScene();
                 }
-                
+                else if(hit.collider.tag == "Exit")
+                {
+                    Debug.Log(tag);
+                    anim.exitButton();
+
+                    sceneManager.exitGame();
+                }
             }
         }
     }

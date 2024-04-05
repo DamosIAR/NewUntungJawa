@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: Assets/Experiment/Scene/CookGame.unity
     guid: 6a562bfeedf34a2459f48deb72f3e6c8
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
     path: Assets/Experiment/Scene/CrabSpearing.unity
     guid: 494ac2f25075af84c9e72fd5f9603371
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

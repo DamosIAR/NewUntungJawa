@@ -7,6 +7,7 @@ using UnityEngine;
 public class SceneChanger : MonoBehaviour
 {
     public static SceneChanger instance;
+    public string SceneName;
     [SerializeField] Animator transitionAnim;
 
     private void Awake()
@@ -25,6 +26,7 @@ public class SceneChanger : MonoBehaviour
     public enum Scene
     {
         MainMenu,
+        Gallery,
         CrabSpearing,
         CookGame
     }
@@ -40,5 +42,15 @@ public class SceneChanger : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex+1);
         transitionAnim.SetBool("SceneChanging", false);
+    }
+
+    public void loadMenu(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void exitGame()
+    {
+        Application.Quit();
     }
 }

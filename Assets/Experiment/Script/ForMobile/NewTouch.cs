@@ -36,10 +36,6 @@ public class TouchExample : MonoBehaviour, IObjekDapurParent
                 {
                     cameraControl.FrontSideStore();
                 }
-                /*else if(hit.collider.tag == "Trash")
-                {
-                    
-                }*/
 
                 if(hit.transform.TryGetComponent(out dasar))
                 {

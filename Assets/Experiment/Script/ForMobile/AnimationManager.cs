@@ -6,7 +6,6 @@ public class AnimationManager : MonoBehaviour
 {
     public Animator animator;
     
-    // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -30,6 +29,13 @@ public class AnimationManager : MonoBehaviour
         yield return new WaitForSeconds(delayinseconds);
         animator.SetBool("IsTrigger", false);
 
+    }
+
+    public void exitButton()
+    {
+        Debug.Log("Exit");
+        animator.SetBool("IsTrigger1", true);
+        StartCoroutine(TriggerAfterWait(0.5f));
     }
 
 

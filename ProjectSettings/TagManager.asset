@@ -4,14 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - FishBox
-  - Storage
   - Grill
   - ToBack
   - ToFront
   - VirtualCameraTarget
   - Box
   - Trash
+  - Start
+  - Spear
+  - Exit
   layers:
   - Default
   - TransparentFX

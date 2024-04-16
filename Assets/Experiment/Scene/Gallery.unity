@@ -401,6 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d370d9c436e60e94896a6f2e8d7fd300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: 
   transitionAnim: {fileID: 2021200074}
 --- !u!4 &372544289
 Transform:
@@ -2302,7 +2303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2021200073
 RectTransform:
   m_ObjectHideFlags: 0

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31e33c2886e2fa42bd75f5ee431560d, type: 3}
   m_Name: Cumi Mateng
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5804410669885980893, guid: f9fb2b98f506bab40a7c3c128223ad79, type: 3}
+  prefab: {fileID: 5670814523011794966, guid: 8d1f7c7b567d4ad4a8ad4c6325ea58d0, type: 3}
   objectName: Cumi Matang

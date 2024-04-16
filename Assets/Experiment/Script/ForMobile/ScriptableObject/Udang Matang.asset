@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31e33c2886e2fa42bd75f5ee431560d, type: 3}
   m_Name: Udang Matang
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2306873091740869293, guid: 97be81fd40f16694695e4108d95b8783, type: 3}
+  prefab: {fileID: 2074151415858822127, guid: cb7cffef2efc081479ac2660c49c3b1c, type: 3}
   objectName: Udang Matang

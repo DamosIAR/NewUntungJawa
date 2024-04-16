@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31e33c2886e2fa42bd75f5ee431560d, type: 3}
   m_Name: Cumi
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7370563692893442566, guid: b3be65b1a62816e49b60d3509ea946a7, type: 3}
+  prefab: {fileID: 2336753977768933099, guid: 09693cfe60957ac4ea313e13a0f8264f, type: 3}
   objectName: Cumi

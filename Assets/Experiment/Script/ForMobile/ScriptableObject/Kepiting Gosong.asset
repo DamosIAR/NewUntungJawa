@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31e33c2886e2fa42bd75f5ee431560d, type: 3}
   m_Name: Kepiting Gosong
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6798008129809708923, guid: d4c075e0b49c28043a6527435918f246, type: 3}
+  prefab: {fileID: 4633796232158730929, guid: 97a0f10ecf614354ab7fee2f739cc828, type: 3}
   objectName: Kepiting Matang

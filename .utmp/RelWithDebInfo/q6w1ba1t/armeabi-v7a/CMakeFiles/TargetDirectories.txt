@@ -1,0 +1,5 @@
+D:/NewUntungJawaGame/NewIntern/NewUntungJawa/.utmp/RelWithDebInfo/q6w1ba1t/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/NewUntungJawaGame/NewIntern/NewUntungJawa/.utmp/RelWithDebInfo/q6w1ba1t/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+D:/NewUntungJawaGame/NewIntern/NewUntungJawa/.utmp/RelWithDebInfo/q6w1ba1t/armeabi-v7a/GameActivity/CMakeFiles/game.dir
+D:/NewUntungJawaGame/NewIntern/NewUntungJawa/.utmp/RelWithDebInfo/q6w1ba1t/armeabi-v7a/GameActivity/CMakeFiles/edit_cache.dir
+D:/NewUntungJawaGame/NewIntern/NewUntungJawa/.utmp/RelWithDebInfo/q6w1ba1t/armeabi-v7a/GameActivity/CMakeFiles/rebuild_cache.dir

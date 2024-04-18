@@ -6,7 +6,6 @@ public class PlayPause : MonoBehaviour
 {
     [SerializeField] private GameObject PauseButton;
     [SerializeField] private GameObject PauseMenu;
-    [SerializeField] private GameObject BGDarkening;
     [SerializeField] private GameObject Barrier;
 
     private bool isPaused;
@@ -14,7 +13,6 @@ public class PlayPause : MonoBehaviour
     private void Start()
     {
         PauseMenu.SetActive(false);
-        BGDarkening.SetActive(false);
         PauseButton.SetActive(true);
         Barrier.SetActive(false);
         isPaused = false;
@@ -23,7 +21,6 @@ public class PlayPause : MonoBehaviour
     public void ContinueGame()
     {
         PauseMenu.SetActive(false );
-        BGDarkening.SetActive(false);
         PauseButton.SetActive(true);
         Barrier.SetActive(false);
         isPaused = false;
@@ -33,7 +30,6 @@ public class PlayPause : MonoBehaviour
     public void PauseGame()
     {
         PauseMenu.SetActive(true );
-        BGDarkening.SetActive(true);
         PauseButton.SetActive(false);
         Barrier.SetActive(true);
         isPaused = true;

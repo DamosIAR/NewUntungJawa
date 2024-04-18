@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71dc870798b124044b09cd0720669d43, type: 3}
-  m_Name: KeTeng - KeSong
+  m_Script: {fileID: 11500000, guid: e6925849bf1cf884e95acb892c4d1cfd, type: 3}
+  m_Name: Udang Matang - Udang Gosong
   m_EditorClassIdentifier: 
-  input: {fileID: 11400000, guid: 2bf3a05727960e24da13d09424de6596, type: 2}
-  output: {fileID: 11400000, guid: 5e4c2594fca608e448e885f116afe710, type: 2}
-  grillTimerMax: 4
+  input: {fileID: 11400000, guid: 58f5ad73625a5ac4a81486f65e8839a7, type: 2}
+  output: {fileID: 11400000, guid: f3c1786b6b0f4a94cbb653c9c0a9a968, type: 2}
+  burningTimerMax: 5

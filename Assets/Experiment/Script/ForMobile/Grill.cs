@@ -51,12 +51,9 @@ public class Grill : Base
                     {
                         GetObjekDapur().DestroySelf();
                         ObjekDapur.SpawnObjekDapur(grillRecipeSO.output, this);
-                        //Debug.Log("Matang");
                         state = State.Grilled;
                         burningTimer = 0f;
                         burningRecipeSO = GetBurningRecipeSOWithInput(GetObjekDapur().GetObjekDapurSO());
-                        Debug.Log(grillTimer);
-                        //grillTimer = 0f;
 
                         OnStateChanged?.Invoke(this, new OnStateChangedEventArgs {
                             state = state
@@ -73,7 +70,6 @@ public class Grill : Base
                     {
                         GetObjekDapur().DestroySelf();
                         ObjekDapur.SpawnObjekDapur(burningRecipeSO.output, this);
-                        Debug.Log("Gosong");
                         state = State.Grilling;
                         grillTimer = 0f;
 
@@ -91,7 +87,6 @@ public class Grill : Base
                 case State.Burned:
                     break;
             }
-            Debug.Log(state);
         }
     }
 
@@ -110,6 +105,10 @@ public class Grill : Base
 
                     state = State.Grilling;
                     grillTimer = 0;
+                    OnStateChanged?.Invoke(this, new OnStateChangedEventArgs
+                    {
+                        state = state
+                    });
 
                 }
             }
@@ -132,6 +131,11 @@ public class Grill : Base
                 OnStateChanged?.Invoke(this, new OnStateChangedEventArgs
                 {
                     state = state,
+                });
+
+                OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
+                {
+                    progressNormalized = 0
                 });
             }
         }

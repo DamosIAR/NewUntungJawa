@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71dc870798b124044b09cd0720669d43, type: 3}
-  m_Name: CuTeng - CuSong
+  m_Script: {fileID: 11500000, guid: e6925849bf1cf884e95acb892c4d1cfd, type: 3}
+  m_Name: Cumi Mateng - Cumi Gosong
   m_EditorClassIdentifier: 
   input: {fileID: 11400000, guid: a11fcad0924eb2c4cbbc0a11683ac368, type: 2}
   output: {fileID: 11400000, guid: 502391945b260a14cba0b4a575836dda, type: 2}
-  grillTimerMax: 4
+  burningTimerMax: 5

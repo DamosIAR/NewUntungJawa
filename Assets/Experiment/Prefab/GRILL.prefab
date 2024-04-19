@@ -74,8 +74,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2c9b21b0f60f8064c83e83175e5c0837, type: 2}
   - {fileID: 11400000, guid: 23b0d252f2a29fc4c86480533f626907, type: 2}
   - {fileID: 11400000, guid: 641085c1eab273647aeed4db104dc92c, type: 2}
+  - {fileID: 11400000, guid: 4d459a595eb78374f9e6fce7545d398d, type: 2}
+  - {fileID: 11400000, guid: b72348a06ea7b0146a1767e6f42386dd, type: 2}
+  - {fileID: 11400000, guid: 7d15396c1ee91f74c8cd0885588256dd, type: 2}
   burningRecipeSOArray:
   - {fileID: 11400000, guid: c51b4c3a5209fb74db758e15f68d78be, type: 2}
+  - {fileID: 11400000, guid: ecb204c53e8a9174b9d832121165541d, type: 2}
+  - {fileID: 11400000, guid: c9d903fd97d708845b99f49e55e915eb, type: 2}
+  - {fileID: 11400000, guid: 2c42b2257331382459115735a4e3a26a, type: 2}
+  - {fileID: 11400000, guid: 71bc9d3d4babf42448057e237fdadfa0, type: 2}
+  - {fileID: 11400000, guid: b849aa6f77b6e1f46abec1c66fb48c42, type: 2}
 --- !u!1 &1153674322697451556
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &472471004355474256
 Transform:
   m_ObjectHideFlags: 0

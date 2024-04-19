@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class VirtualGroupController : MonoBehaviour
 {
+    [SerializeField] private float positionx;
+
     public void ChangeStoreToFishStore()
     {
         Vector3 currentPosition = transform.position;
         float newXPosition = currentPosition.x;
-        Vector3 newPosition = new Vector3(30, currentPosition.y, currentPosition.z);
+        Vector3 newPosition = new Vector3(positionx, currentPosition.y, currentPosition.z);
         transform.position = newPosition;
     }
 

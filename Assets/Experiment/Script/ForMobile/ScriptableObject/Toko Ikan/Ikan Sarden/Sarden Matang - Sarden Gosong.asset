@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6925849bf1cf884e95acb892c4d1cfd, type: 3}
+  m_Name: Sarden Matang - Sarden Gosong
+  m_EditorClassIdentifier: 
+  input: {fileID: 11400000, guid: 98a42afa052207f408e09e648b7cd2aa, type: 2}
+  output: {fileID: 11400000, guid: d549fc4553bc08b4e914dcd8486f6719, type: 2}
+  burningTimerMax: 5

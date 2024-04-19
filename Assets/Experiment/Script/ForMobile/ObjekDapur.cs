@@ -51,6 +51,20 @@ public class ObjekDapur : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public bool TryGetPlate(out PlateObjekDapur plateObjekDapur)
+    {
+        if(this is PlateObjekDapur)
+        {
+            plateObjekDapur = this as PlateObjekDapur;
+            return true;
+        }
+        else
+        {
+            plateObjekDapur = null;
+            return false;
+        }
+    }
+
     public static ObjekDapur SpawnObjekDapur(ObjekDapurSO objekDapurSO, IObjekDapurParent objekDapurParent)
     {
         Transform objekDapurTrasnform = Instantiate(objekDapurSO.prefab);
@@ -60,4 +74,5 @@ public class ObjekDapur : MonoBehaviour
 
         return objekDapur;
     }
+
 }

@@ -121,7 +121,14 @@ public class Grill : Base
         {
             if(touchExample.HasObjekDapur())
             {
-
+                if (touchExample.GetObjekDapur().TryGetPlate(out PlateObjekDapur plateObjekDapur))
+                {
+                    //PlateObjekDapur plateObjekDapur = touchExample.GetObjekDapur() as PlateObjekDapur;
+                    if (plateObjekDapur.TryaddIngredient(GetObjekDapur().GetObjekDapurSO()))
+                    {
+                        GetObjekDapur().DestroySelf();
+                    }
+                }
             }
             else
             {

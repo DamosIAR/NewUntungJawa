@@ -1,9 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlateObjekDapur : ObjekDapur
 {
+    public event EventHandler<OnIngredientAddedEventargs> OnIngredientAdded;
+    public class OnIngredientAddedEventargs : EventArgs
+    {
+        public ObjekDapurSO objekDapurSO;
+    }
+
     [SerializeField] private List<ObjekDapurSO> ValidObjekDapurSOList;
 
     private List<ObjekDapurSO> objekDapurSOList;
@@ -26,6 +33,9 @@ public class PlateObjekDapur : ObjekDapur
         else
         {
             objekDapurSOList.Add(objekDapurSO);
+            OnIngredientAdded?.Invoke(this, new OnIngredientAddedEventargs{
+                objekDapurSO = objekDapurSO
+            });
             return true;
         }
     }

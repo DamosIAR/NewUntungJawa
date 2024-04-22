@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f31e33c2886e2fa42bd75f5ee431560d, type: 3}
-  m_Name: Piring
+  m_Name: Saus Merah
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4308497304113222039, guid: 54b21f989c98633409a1e5b346a14953, type: 3}
-  objectName: Piring
+  prefab: {fileID: 1070039766309388393, guid: ab9f12718682ad648aa98195b88af59c, type: 3}
+  objectName: Saus Merah

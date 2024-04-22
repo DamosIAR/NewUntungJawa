@@ -13,6 +13,10 @@ TagManager:
   - Start
   - Spear
   - Exit
+  - Object
+  - DestroyBarrier
+  - Storage
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -20,7 +24,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Papan
   - 
   - 
   - 

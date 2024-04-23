@@ -10,33 +10,36 @@ public class SauceTable : Base
     {
         if (!HasObjekDapur())
         {
-            if (!touchExample.HasObjekDapur())
+            if (touchExample.HasObjekDapur())
             {
                 Transform ObjectTransform = Instantiate(objekDapurSO.prefab);
 
-                ObjectTransform.GetComponent<ObjekDapur>().SetObjekDapurParent(touchExample);
+                ObjectTransform.GetComponent<ObjekDapur>().SetObjekDapurParent(this);
+                Debug.Log("hey2");
             }
-            Debug.Log("hey2");
         }
-        else
+
+
+
+        if (HasObjekDapur())
         {
             if (touchExample.HasObjekDapur())
             {
-                Debug.Log("hey1");
                 if (touchExample.GetObjekDapur().TryGetPlate(out PlateObjekDapur plateObjekDapur))
                 {
                     //PlateObjekDapur plateObjekDapur = touchExample.GetObjekDapur() as PlateObjekDapur;
                     if (plateObjekDapur.TryaddIngredient(GetObjekDapur().GetObjekDapurSO()))
                     {
-                        Debug.Log("Hey");
                         GetObjekDapur().DestroySelf();
                     }
                 }
 
 
             }
-
         }
+            
+
+        
         
 
 

@@ -15,7 +15,6 @@ public class SauceTable : Base
                 Transform ObjectTransform = Instantiate(objekDapurSO.prefab);
 
                 ObjectTransform.GetComponent<ObjekDapur>().SetObjekDapurParent(this);
-                Debug.Log("hey2");
             }
         }
 

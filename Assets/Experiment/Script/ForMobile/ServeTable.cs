@@ -13,6 +13,7 @@ public class ServeTable : Base
             {
                 DeliveryManager.Instance.DeliverRecipe(plateObjekDapur);
                 touchExample.GetObjekDapur().DestroySelf();
+
             }
         }
     }

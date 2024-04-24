@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DeliveryManager : MonoBehaviour
 {
     public static DeliveryManager Instance { get; private set; }
     [SerializeField] private ResepListSO resepListSO;
-
+    [SerializeField] private TextMeshProUGUI Money;
 
     private List<ResepSO> WaitingresepSOList;
     private float spawnRecipeTimer;
     private float spawnRecipeTimerMax = 4f;
     private int waitingResepMax = 4;
+    private int money;
 
     private void Awake()
     {
@@ -64,10 +66,17 @@ public class DeliveryManager : MonoBehaviour
                 {
                     Debug.Log("Masakan Benar");
                     WaitingresepSOList.RemoveAt(i);
+                    AddMoney();
                     return;
                 }
             }
         }
         Debug.Log("Resep yang dimasukkan salah");
+    }
+
+    private void AddMoney()
+    {
+        money += 10;
+        Money.text = "" + money;
     }
 }

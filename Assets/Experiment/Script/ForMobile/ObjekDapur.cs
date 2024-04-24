@@ -12,6 +12,7 @@ public class ObjekDapur : MonoBehaviour
         return objekDapurSO; 
     }
 
+
     public void SetObjekDapurParent(IObjekDapurParent objekDapurParent)
     {
 

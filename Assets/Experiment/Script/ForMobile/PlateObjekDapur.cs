@@ -15,6 +15,11 @@ public class PlateObjekDapur : ObjekDapur
 
     private List<ObjekDapurSO> objekDapurSOList;
 
+    public List<ObjekDapurSO> GetObjekDapurSOList()
+    {
+        return objekDapurSOList;
+    }
+
     private void Awake()
     {
         objekDapurSOList = new List<ObjekDapurSO>();

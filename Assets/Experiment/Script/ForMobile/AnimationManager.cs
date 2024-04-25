@@ -12,11 +12,6 @@ public class AnimationManager : MonoBehaviour
         animator.SetBool("IsTrigger", false);
     }
 
-    private void Update()
-    {
-        //startButton();
-    }
-
     public void startButton()
     {
         Debug.Log("Start");
@@ -28,7 +23,6 @@ public class AnimationManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delayinseconds);
         animator.SetBool("IsTrigger", false);
-
     }
 
     public void exitButton()

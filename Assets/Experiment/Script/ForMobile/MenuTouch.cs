@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class MenuTouch : MonoBehaviour
 {
-    public SceneChanger sceneManager;
+    public NewSceneManager sceneManager;
     private AnimationManager anim;
     public Camera mainCamera;
 
     private void Start()
     {
         anim = GameObject.FindGameObjectWithTag("Start").GetComponent<AnimationManager>();
-        sceneManager = GameObject.FindAnyObjectByType<SceneChanger>();
+        sceneManager = GameObject.FindAnyObjectByType<NewSceneManager>();
     }
 
     void Update()
@@ -28,7 +28,7 @@ public class MenuTouch : MonoBehaviour
                     Debug.Log(tag);
                     anim.startButton();
 
-                    sceneManager.LoadScene();
+                    sceneManager.LoadScene("ExperimentalGallery");
                 }
                 else if(hit.collider.tag == "Exit")
                 {

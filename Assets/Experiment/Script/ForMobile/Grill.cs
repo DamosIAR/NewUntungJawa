@@ -127,6 +127,17 @@ public class Grill : Base
                     if (plateObjekDapur.TryaddIngredient(GetObjekDapur().GetObjekDapurSO()))
                     {
                         GetObjekDapur().DestroySelf();
+                        state = State.Idle;
+
+                        OnStateChanged?.Invoke(this, new OnStateChangedEventArgs
+                        {
+                            state = state,
+                        });
+
+                        OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
+                        {
+                            progressNormalized = 0
+                        });
                     }
                 }
             }

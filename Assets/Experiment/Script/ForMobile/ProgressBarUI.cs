@@ -13,16 +13,22 @@ public class ProgressBarUI : MonoBehaviour
         grill.OnProgressChanged += Grill_OnProgressChanged;
         sliderTimer.fillAmount = 0f;
 
-        //hide();
+        hide();
     }
 
     private void Grill_OnProgressChanged(object sender, Grill.OnProgressChangedEventArgs e)
     {
+        show();
         sliderTimer.fillAmount = e.progressNormalized;
 
-        if (e.progressNormalized == 1f)
+        if (e.progressNormalized == 0f || e.progressNormalized == 1f)
         { 
             sliderTimer.fillAmount = 0f;
+            hide() ;
+        }
+        else
+        {
+            show() ;
         }
     }
 

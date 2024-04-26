@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class DeliveryManager : MonoBehaviour
 {
+    public event EventHandler onRecipeSpawned;
+    public event EventHandler onRecipeCompleted;
+
     public static DeliveryManager Instance { get; private set; }
     [SerializeField] private ResepListSO resepListSO;
     [SerializeField] private TextMeshProUGUI Money;
+    [SerializeField] private TextMeshProUGUI Money2;
 
     private List<ResepSO> WaitingresepSOList;
     private float spawnRecipeTimer;
@@ -30,9 +35,10 @@ public class DeliveryManager : MonoBehaviour
 
             if(WaitingresepSOList.Count < waitingResepMax)
             {
-                ResepSO waitingResepSO = resepListSO.resepSOList[Random.Range(0, resepListSO.resepSOList.Count)];
-                Debug.Log(waitingResepSO.namaResep);
+                ResepSO waitingResepSO = resepListSO.resepSOList[UnityEngine.Random.Range(0, resepListSO.resepSOList.Count)];
                 WaitingresepSOList.Add(waitingResepSO);
+
+                onRecipeSpawned?.Invoke(this, EventArgs.Empty);
             }
         }
     }
@@ -64,19 +70,25 @@ public class DeliveryManager : MonoBehaviour
                 }
                 if (plateContentMatchesRecipe)
                 {
-                    Debug.Log("Masakan Benar");
                     WaitingresepSOList.RemoveAt(i);
+                    onRecipeCompleted?.Invoke(this, EventArgs.Empty);
                     AddMoney();
                     return;
                 }
             }
         }
-        Debug.Log("Resep yang dimasukkan salah");
     }
 
     private void AddMoney()
     {
         money += 10;
         Money.text = "" + money;
+        Money2.text = "" + money;
+
+    }
+
+    public List<ResepSO> GetWaitingRecipeSOList()
+    {
+        return WaitingresepSOList;
     }
 }

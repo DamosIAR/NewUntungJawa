@@ -9,10 +9,6 @@ public class MoneyManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI balance;
     private int money;
 
-    private void Update()
-    {
-    }
-
     public void addMoney()
     {
         money += 10000;

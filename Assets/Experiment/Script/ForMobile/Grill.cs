@@ -102,7 +102,8 @@ public class Grill : Base
                 {
                     touchExample.GetObjekDapur().SetObjekDapurParent(this);
                     grillRecipeSO = GetGrillRecipeSOWithInput(GetObjekDapur().GetObjekDapurSO());
-
+/*                    GetObjekDapur().transform.localEulerAngles = Vector3.zero;
+*/
                     state = State.Grilling;
                     grillTimer = 0;
                     OnStateChanged?.Invoke(this, new OnStateChangedEventArgs

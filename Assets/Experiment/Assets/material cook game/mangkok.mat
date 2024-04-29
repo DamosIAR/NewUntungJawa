@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8966945976538532900
+--- !u!114 &-661444862028758595
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: beach
-  m_Shader: {fileID: -6465566751694194690, guid: 446b51d43143e7b498b3b75a99e7792f,
+  m_Name: mangkok
+  m_Shader: {fileID: -6465566751694194690, guid: 4b06009af84d0ae4d95187a5eb745f21,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -133,11 +133,11 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     - _max: 0
-    - _min: 1.71
-    - _shadder: 0.18
+    - _min: 1
+    - _shadder: 0.49
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 0.90957034, b: 0.4198113, a: 1}
+    - _Color: {r: 0.2264151, g: 0.082269475, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

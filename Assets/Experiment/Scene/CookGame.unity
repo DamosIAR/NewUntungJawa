@@ -1449,13 +1449,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265563153}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.9774238, y: 0.13199446, z: -0.1499893, w: -0.06872744}
+  m_LocalRotation: {x: -0.5124595, y: -0.52032006, z: -0.62502396, w: -0.27567607}
   m_LocalPosition: {x: 0.74862075, y: -0.026341558, z: 2.1256738}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 10.017, y: -196.22, z: 193.951}
+  m_LocalEulerAnglesHint: {x: -21.585, y: -265.887, z: 109.248}
 --- !u!1 &268078245
 GameObject:
   m_ObjectHideFlags: 0
@@ -5671,7 +5671,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 3.79
+  m_Intensity: 374.78
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5729,13 +5729,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044846350}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.4299018, y: -0.57796377, z: 0.67765665, w: 0.1480669}
+  m_LocalRotation: {x: -0.37702933, y: -0.61376613, z: 0.6881049, w: 0.0874745}
   m_LocalPosition: {x: 6.395736, y: 3.88, z: -11.077743}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 40.997, y: -452.864, z: -247.563}
+  m_LocalEulerAnglesHint: {x: 51.143, y: -453.447, z: -248.368}
 --- !u!114 &1044846353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8346,6 +8346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Transition Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327196509582793201, guid: 5243f8c9771691741b60c1bd9ea167c5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Experiment/Scene/MainMenu.unity
     guid: 4d8c3e13572305140bae739ead14281b
   - enabled: 1
-    path: Assets/Experiment/Scene/Gallery.unity
-    guid: deee9806d9ba30a478095bfe676af98c
-  - enabled: 1
     path: Assets/Experiment/Scene/ExperimentalGallery.unity
     guid: a56ab596ea4b39a4f9b55ef04a92e9f8
   - enabled: 1
@@ -20,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Experiment/Scene/CrabSpearing.unity
     guid: 494ac2f25075af84c9e72fd5f9603371
+  - enabled: 1
+    path: Assets/Experiment/Scene/Gallery.unity
+    guid: deee9806d9ba30a478095bfe676af98c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

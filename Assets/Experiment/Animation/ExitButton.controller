@@ -61,7 +61,7 @@ AnimatorController:
   m_Name: ExitButton
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: IsTrigger1
+  - m_Name: IsTrigger
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -89,7 +89,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: IsTrigger1
+    m_ConditionEvent: IsTrigger
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3268697495110642969}
@@ -114,7 +114,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: IsTrigger1
+    m_ConditionEvent: IsTrigger
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7162937277953190967}

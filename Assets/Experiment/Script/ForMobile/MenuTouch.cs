@@ -28,7 +28,7 @@ public class MenuTouch : MonoBehaviour
                     Debug.Log(tag);
                     anim.startButton();
 
-                    sceneManager.LoadScene("ExperimentalGallery");
+                    sceneManager.LoadScene();
                 }
                 else if(hit.collider.tag == "Exit")
                 {

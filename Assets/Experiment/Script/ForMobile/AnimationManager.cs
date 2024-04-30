@@ -28,7 +28,7 @@ public class AnimationManager : MonoBehaviour
     public void exitButton()
     {
         Debug.Log("Exit");
-        animator.SetBool("IsTrigger1", true);
+        animator.SetBool("IsTrigger", true);
         StartCoroutine(TriggerAfterWait(0.5f));
     }
 

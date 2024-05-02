@@ -8,6 +8,8 @@ public class DeliveryManager : MonoBehaviour
 {
     public event EventHandler onRecipeSpawned;
     public event EventHandler onRecipeCompleted;
+    public event EventHandler onRecipeFailed;
+    public event EventHandler onRecipeSuccess;
 
     public static DeliveryManager Instance { get; private set; }
     [SerializeField] private ResepListSO resepListSO;
@@ -72,11 +74,14 @@ public class DeliveryManager : MonoBehaviour
                 {
                     WaitingresepSOList.RemoveAt(i);
                     onRecipeCompleted?.Invoke(this, EventArgs.Empty);
+                    onRecipeSuccess?.Invoke(this, EventArgs.Empty);
                     AddMoney();
                     return;
                 }
             }
         }
+
+        onRecipeFailed?.Invoke(this, EventArgs.Empty);
     }
 
     private void AddMoney()

@@ -134,7 +134,7 @@ Material:
     - _ZWrite: 1
     - _max: 0
     - _min: 1
-    - _shadder: 0.4
+    - _shadder: 0.17
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0.8113208, g: 0.73086613, b: 0.5855287, a: 1}

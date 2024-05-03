@@ -11,8 +11,11 @@ public class TouchExample : MonoBehaviour, IObjekDapurParent
     private ObjekDapur objekDapur;
     private VirtualCameraControl cameraControl; 
 
+    //public static TouchExample Instance {  get; private set; }
+
     private void Start()
     {
+        //Instance = this;
         cameraControl = GameObject.FindGameObjectWithTag("VirtualCameraTarget").GetComponent<VirtualCameraControl>();
         dasar = GameObject.FindGameObjectWithTag("Box").GetComponent<Box>();
     }
@@ -27,8 +30,8 @@ public class TouchExample : MonoBehaviour, IObjekDapurParent
 
             if(Physics.Raycast(ray, out hit))
             {
-
-                if(hit.collider.tag == "ToBack")
+                if (!CookGameManager.Instance.isGamePlaying()) return;
+                if (hit.collider.tag == "ToBack")
                 {
                     cameraControl.BackSideStore();
                 }
@@ -37,7 +40,7 @@ public class TouchExample : MonoBehaviour, IObjekDapurParent
                     cameraControl.FrontSideStore();
                 }
 
-                if(hit.transform.TryGetComponent(out dasar))
+                if (hit.transform.TryGetComponent(out dasar))
                 {
                     dasar.interact(this);
                 }

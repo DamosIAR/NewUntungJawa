@@ -21,6 +21,7 @@ public class CrabSpawner : MonoBehaviour
 
     void Update()
     {
+        if (!SpearGameManager.Instance.isGamePlaying()) return;
         spawnAreaCenter = new Vector3 (spawnAreaCenter.x, spawnAreaCenter.y, spawnAreaCenter.z);
         spawnAreaCenter.z += speed;
         //transform.position = (spawnAreaCenter * speed);
@@ -38,6 +39,7 @@ public class CrabSpawner : MonoBehaviour
 
     void SpawnObject()
     {
+
         // Hitung posisi spawn random di dalam area yang ditentukan
         Vector3 spawnPosition = new Vector3(
             Random.Range(spawnAreaCenter.x - spawnAreaSize.x / 2, spawnAreaCenter.x + spawnAreaSize.x / 2),

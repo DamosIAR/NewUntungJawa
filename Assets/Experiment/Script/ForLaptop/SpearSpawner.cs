@@ -22,7 +22,7 @@ public class SpearSpawner : MonoBehaviour
         /*Vector3 worldPositoin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = worldPositoin;
         Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));*/
-
+        if (!SpearGameManager.Instance.isGamePlaying()) return;
         if (!canThrow)
         {
             timer += Time.deltaTime;

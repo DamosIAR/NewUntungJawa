@@ -119,9 +119,9 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _max: -0.05
+    - _max: 0.61
     - _min: 1.23
-    - _shadder: 0.52
+    - _shadder: 0.72
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 0.9880785, b: 0, a: 1}

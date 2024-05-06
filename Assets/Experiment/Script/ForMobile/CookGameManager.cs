@@ -3,10 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class CookGameManager : MonoBehaviour
 {
     public static CookGameManager Instance { get; private set; }
+
+    public event EventHandler<OnTimerChangedEventArgs> OnTimerChanged;
+    public class OnTimerChangedEventArgs : EventArgs { public float TimeNormalised; }
 
     public event EventHandler OnStateChanged;
 
@@ -21,7 +25,8 @@ public class CookGameManager : MonoBehaviour
     private State state;
     private float waitingToStartTimer = 2f;
     private float countdownToStartTimer = 3f;
-    private float gamePlayingTimer = 10f;
+    private float gamePlayingTimer;
+    private float gamePlayingTimerMax = 30f;
 
     private void Awake()
     {
@@ -46,6 +51,7 @@ public class CookGameManager : MonoBehaviour
                 if (countdownToStartTimer < 0f)
                 {
                     state = State.GamePlaying;
+                    gamePlayingTimer = gamePlayingTimerMax;
                     OnStateChanged?.Invoke(this, new EventArgs());
                 }
                 break;
@@ -56,6 +62,10 @@ public class CookGameManager : MonoBehaviour
                     state = State.GameOver;
                     OnStateChanged?.Invoke(this, new EventArgs());
                 }
+                OnTimerChanged?.Invoke(this, new OnTimerChangedEventArgs
+                {
+                    TimeNormalised = 1 - (gamePlayingTimer/gamePlayingTimerMax)
+                });
                 break;
              case State.GameOver:
                 break;

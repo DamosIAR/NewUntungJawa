@@ -6,7 +6,6 @@ public class ServeTable : Base
 {
     public override void interact(TouchExample touchExample)
     {
-        Debug.Log("Serve");
         if (touchExample.HasObjekDapur())
         {
             if(touchExample.GetObjekDapur().TryGetPlate(out PlateObjekDapur plateObjekDapur))

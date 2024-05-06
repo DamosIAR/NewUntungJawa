@@ -12,9 +12,6 @@ public class GalleryCameraControl : MonoBehaviour
 
     void Start()
     {
-        Vector3 currentPosition  = transform.position;
-        float YPosition = currentPosition.y;
-        float ZPosition = currentPosition.z;
         Gallerycamera.transform.position = new Vector3 (startingPoint, 1210f, 137f);
     }
 
@@ -24,10 +21,9 @@ public class GalleryCameraControl : MonoBehaviour
 
         if(startingPoint > stoppingPoint)
         {
-            startingPoint -= speed * Time.deltaTime;
+            startingPoint -= (speed * Time.deltaTime);
             float currentXPosition = startingPoint;
             Gallerycamera.transform.position = new Vector3(currentXPosition, 1210f, 137f);
-            Debug.Log("hey");
         }
     }
 }

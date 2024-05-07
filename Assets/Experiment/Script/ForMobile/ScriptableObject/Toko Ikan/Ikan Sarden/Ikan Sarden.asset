@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Ikan Sarden
   m_EditorClassIdentifier: 
   prefab: {fileID: 5868292665658618350, guid: d2a539d017a9d9d4eacfc06c5425b484, type: 3}
+  sprite: {fileID: -2145500427, guid: ad57a188a00e4df4d914e39ddf76a196, type: 3}
   objectName: Ikan Sarden

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Saus Hitam
   m_EditorClassIdentifier: 
   prefab: {fileID: 966745301245391119, guid: 0e0dbf7e684deea48addc38b54f5df68, type: 3}
+  sprite: {fileID: -125835606, guid: 2d36e06cc1573324b8974b573f6173e2, type: 3}
   objectName: Saus Hitam

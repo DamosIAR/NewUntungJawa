@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Kakap Matang
   m_EditorClassIdentifier: 
   prefab: {fileID: 1427301382630342948, guid: 6d0b9733f4fcb8c4e9579e9451d192a9, type: 3}
+  sprite: {fileID: -859525110, guid: cc488cacc04c84c42ade67d11e6dea74, type: 3}
   objectName: Ikan Kakap Matang

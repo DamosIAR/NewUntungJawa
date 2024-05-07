@@ -31,5 +31,9 @@ public class NewSceneManager : MonoBehaviour
         SceneManager.LoadScene(levelIndex);
     }
 
+    public void MainMenuLoadButton()
+    {
+        StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex - 1));
+    }
 
 }

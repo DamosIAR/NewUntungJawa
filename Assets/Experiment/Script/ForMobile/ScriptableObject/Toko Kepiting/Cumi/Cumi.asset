@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Cumi
   m_EditorClassIdentifier: 
   prefab: {fileID: 2336753977768933099, guid: 09693cfe60957ac4ea313e13a0f8264f, type: 3}
+  sprite: {fileID: -893945803, guid: 4f09f49e572449d41b8574c7ecdbbeb0, type: 3}
   objectName: Cumi

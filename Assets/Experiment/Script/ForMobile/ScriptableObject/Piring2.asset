@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Piring2
   m_EditorClassIdentifier: 
   prefab: {fileID: 4308497304113222039, guid: e1de32cd460cfcd4ca37e083f8a4d8c3, type: 3}
+  sprite: {fileID: 1758739715, guid: fe32a6fe9624c6a4e96e6706ee4fe1e8, type: 3}
   objectName: Piring 2

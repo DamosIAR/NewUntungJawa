@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Kepiting Matang
   m_EditorClassIdentifier: 
   prefab: {fileID: 7172141761017427535, guid: e98f1d3e8d36bf1429a7612fa6fd481d, type: 3}
+  sprite: {fileID: 878753750, guid: f6afdd0fe2f3afe4a9f97db981c7a77a, type: 3}
   objectName: Kepiting Matang

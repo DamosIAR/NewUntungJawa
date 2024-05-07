@@ -5331,6 +5331,95 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RecipeName: {fileID: 429843801}
+  IconContainer: {fileID: 1305204358}
+  IconTemplate: {fileID: 732012234}
+--- !u!1 &732012233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 732012234}
+  - component: {fileID: 732012236}
+  - component: {fileID: 732012235}
+  m_Layer: 5
+  m_Name: IconTemplate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &732012234
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732012233}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.20632449, y: 0.20632449, z: 0.20632449}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1305204358}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 756, y: 461}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &732012235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732012233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -859525110, guid: cc488cacc04c84c42ade67d11e6dea74, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &732012236
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732012233}
+  m_CullTransparentMesh: 1
+--- !u!114 &736373233 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 662767985701103634, guid: 5243f8c9771691741b60c1bd9ea167c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1490791540}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e30bdc705c4b2544190168ae61a7da87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &738098260
 GameObject:
   m_ObjectHideFlags: 0
@@ -5410,7 +5499,6 @@ GameObject:
   - component: {fileID: 783621919}
   - component: {fileID: 783621918}
   - component: {fileID: 783621922}
-  - component: {fileID: 783621923}
   m_Layer: 5
   m_Name: UI Menu
   m_TagString: Untagged
@@ -5522,21 +5610,6 @@ MonoBehaviour:
   PauseButton: {fileID: 569504260}
   PauseMenu: {fileID: 797636253}
   Barrier: {fileID: 1141856972}
---- !u!114 &783621923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 783621917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e30bdc705c4b2544190168ae61a7da87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transition: {fileID: 0}
-  StartingTransition: {fileID: 0}
-  EndingTransition: {fileID: 0}
 --- !u!1 &793618920
 GameObject:
   m_ObjectHideFlags: 0
@@ -6697,6 +6770,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RecipeName: {fileID: 152388666}
+  IconContainer: {fileID: 1305204358}
+  IconTemplate: {fileID: 732012234}
 --- !u!1 &979254139
 GameObject:
   m_ObjectHideFlags: 0
@@ -8643,10 +8718,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 783621923}
+      - m_Target: {fileID: 736373233}
         m_TargetAssemblyTypeName: NewSceneManager, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+        m_MethodName: MainMenuLoadButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9400,6 +9475,69 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1305204357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1305204358}
+  - component: {fileID: 1305204359}
+  m_Layer: 5
+  m_Name: IconContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1305204358
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305204357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 732012234}
+  m_Father: {fileID: 1524965923}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -467, y: 212}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1305204359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305204357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: -600
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!4 &1306820303 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 573505001240030018, guid: 876895469ec58ad4db2a75274a908d0d,
@@ -10400,6 +10538,7 @@ RectTransform:
   - {fileID: 1595308766}
   - {fileID: 1200726142}
   - {fileID: 1717801780}
+  - {fileID: 1305204358}
   m_Father: {fileID: 738098261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10420,6 +10559,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RecipeName: {fileID: 1717801781}
+  IconContainer: {fileID: 1305204358}
+  IconTemplate: {fileID: 732012234}
 --- !u!225 &1524965925
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11540,6 +11681,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RecipeName: {fileID: 602480188}
+  IconContainer: {fileID: 1305204358}
+  IconTemplate: {fileID: 732012234}
 --- !u!1001 &1662206753
 PrefabInstance:
   m_ObjectHideFlags: 0

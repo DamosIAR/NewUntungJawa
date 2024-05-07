@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Udang
   m_EditorClassIdentifier: 
   prefab: {fileID: 971135879223121953, guid: 8cc7192acfc2f08429212fc26db481af, type: 3}
+  sprite: {fileID: 998242844, guid: 59b38303769cbaa4081cb234be486d6f, type: 3}
   objectName: Udang

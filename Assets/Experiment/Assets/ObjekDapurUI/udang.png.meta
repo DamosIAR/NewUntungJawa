@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f6afdd0fe2f3afe4a9f97db981c7a77a
+guid: 59b38303769cbaa4081cb234be486d6f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kepiting_0
+      name: udang_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 60
-        width: 752
-        height: 808
+        x: 7
+        y: 41
+        width: 437
+        height: 212
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39d495579d1fe674bb9e0132f53519a7
-      internalID: 878753750
+      spriteID: 73018d096cee7bc44be61b8a5ed33183
+      internalID: 998242844
       vertices: []
       indices: 
       edges: []
@@ -159,7 +159,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c9efa6f3b0bb7a442905377c06c5b8fa
+    spriteID: 87dd32625de7fc043ad1260a3fed7879
     internalID: 0
     vertices: []
     indices: 
@@ -167,7 +167,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      kepiting_0: 878753750
+      udang_0: 998242844
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

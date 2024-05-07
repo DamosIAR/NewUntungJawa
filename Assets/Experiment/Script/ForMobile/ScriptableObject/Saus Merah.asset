@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Saus Merah
   m_EditorClassIdentifier: 
   prefab: {fileID: 1070039766309388393, guid: ab9f12718682ad648aa98195b88af59c, type: 3}
+  sprite: {fileID: -2097346830, guid: bf95c5b4b5cba9e4a93a64681e3eff33, type: 3}
   objectName: Saus Merah

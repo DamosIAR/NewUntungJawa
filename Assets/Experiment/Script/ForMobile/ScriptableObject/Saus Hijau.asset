@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Saus Hijau
   m_EditorClassIdentifier: 
   prefab: {fileID: 6514401583727283148, guid: 07bd9656be9132a4f906a143c8e0d1fa, type: 3}
+  sprite: {fileID: 406275883, guid: 93f29122494668b47a6646842e889ba4, type: 3}
   objectName: Saus Hijau

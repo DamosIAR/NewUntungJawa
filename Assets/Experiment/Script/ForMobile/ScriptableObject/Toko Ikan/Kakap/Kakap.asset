@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Kakap
   m_EditorClassIdentifier: 
   prefab: {fileID: 662194655373206718, guid: 75bd08683b90e154c86849b653bf364a, type: 3}
+  sprite: {fileID: -859525110, guid: cc488cacc04c84c42ade67d11e6dea74, type: 3}
   objectName: Ikan Kakap

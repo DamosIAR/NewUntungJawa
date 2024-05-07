@@ -6,7 +6,6 @@ using UnityEngine;
 public class TimerUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI TimerText;
-    [SerializeField] private TextMeshProUGUI TimeTextShadow;
     [SerializeField] private Canvas gameOver;
 
     private float timerTime;
@@ -58,6 +57,5 @@ public class TimerUI : MonoBehaviour
         int minutes = (int)maxTime / 60;
         int seconds = (int)maxTime % 60;
         TimerText.text = string.Format("{00:00} : {01:00}", minutes, seconds);
-        TimeTextShadow.text = string.Format("{00:00} : {01:00}", minutes, seconds);
     }
 }

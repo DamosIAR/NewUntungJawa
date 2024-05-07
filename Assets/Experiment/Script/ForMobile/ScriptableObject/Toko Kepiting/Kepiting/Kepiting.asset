@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Kepiting
   m_EditorClassIdentifier: 
   prefab: {fileID: 4511319170814186837, guid: 1ba3db239bd727a4082a700cdb0706b9, type: 3}
+  sprite: {fileID: 878753750, guid: f6afdd0fe2f3afe4a9f97db981c7a77a, type: 3}
   objectName: Kepiting

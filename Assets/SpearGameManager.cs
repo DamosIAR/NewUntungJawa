@@ -21,7 +21,7 @@ public class SpearGameManager : MonoBehaviour
     private float tutorialTime = 3f;
     private float countdownTime = 3f;
     private float gamePlayingTime;
-    private float gamePlayingTimeMax = 10f;
+    public float gamePlayingTimeMax = 10f;
 
     private void Awake()
     {

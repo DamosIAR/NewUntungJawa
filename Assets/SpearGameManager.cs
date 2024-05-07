@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpearGameManager : MonoBehaviour
 {
     public static SpearGameManager Instance { get; private set; }
-    public event EventHandler onStateChanged;
+    public event EventHandler StateChanged;
 
     private enum State
     {
@@ -22,10 +23,11 @@ public class SpearGameManager : MonoBehaviour
     private float gamePlayingTime;
     private float gamePlayingTimeMax = 10f;
 
-    private void Start()
+    private void Awake()
     {
         Instance = this;
         state = State.Tutorial;
+        //getGamePlayingTimerMax();
     }
 
     private void Update()
@@ -37,7 +39,7 @@ public class SpearGameManager : MonoBehaviour
                 if(tutorialTime < 0f)
                 {
                     state = State.Countdown;
-                    onStateChanged?.Invoke(this, new EventArgs());
+                    StateChanged?.Invoke(this, new EventArgs());
                 }
                 break;
             case State.Countdown:
@@ -46,7 +48,7 @@ public class SpearGameManager : MonoBehaviour
                 {
                     state = State.GamePlaying;
                     gamePlayingTime = gamePlayingTimeMax;
-                    onStateChanged?.Invoke(this, new EventArgs());
+                    StateChanged?.Invoke(this, new EventArgs());
                 }
                 break;
             case State.GamePlaying:
@@ -54,11 +56,10 @@ public class SpearGameManager : MonoBehaviour
                 if(gamePlayingTime < 0f)
                 {
                     state = State.GameOver;
-                    onStateChanged?.Invoke(this, new EventArgs());
+                    StateChanged?.Invoke(this, new EventArgs());
                 }
                 break;
             case State.GameOver:
-                onStateChanged?.Invoke(this, new EventArgs());
                 break;
         }
     }
@@ -81,5 +82,10 @@ public class SpearGameManager : MonoBehaviour
     public bool isGameOver()
     {
         return state == State.GameOver;
+    }
+
+    public float getGamePlayingTimerMax()
+    {
+        return gamePlayingTime;
     }
 }

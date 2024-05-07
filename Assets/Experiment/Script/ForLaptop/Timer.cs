@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
-        SpearGameManager.Instance.onStateChanged += SpearGameManager_onStateChanged;
+        SpearGameManager.Instance.StateChanged += SpearGameManager_onStateChanged;
         HideGameOverPanel();
     }
 

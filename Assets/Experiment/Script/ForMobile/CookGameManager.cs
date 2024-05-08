@@ -87,6 +87,11 @@ public class CookGameManager : MonoBehaviour
         return state == State.WaitingToStart;
     }
 
+    public bool isGameOver()
+    {
+        return state == State.GameOver;
+    }
+
     public float GetCountdownToStartTimer()
     {
         return countdownToStartTimer;

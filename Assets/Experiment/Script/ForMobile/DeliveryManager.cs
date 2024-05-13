@@ -111,4 +111,9 @@ public class DeliveryManager : MonoBehaviour
     {
         return failedDelivery;
     }
+
+    public int GetCoinAmount()
+    {
+        return money;
+    }
 }

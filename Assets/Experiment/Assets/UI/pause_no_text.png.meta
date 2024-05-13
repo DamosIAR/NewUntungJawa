@@ -139,10 +139,10 @@ TextureImporter:
       name: pause_no_text_0
       rect:
         serializedVersion: 2
-        x: 74
-        y: 70
-        width: 711
-        height: 938
+        x: 190
+        y: 725
+        width: 474
+        height: 185
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,6 +152,48 @@ TextureImporter:
       bones: []
       spriteID: 0948c7886d7ea9743adf8a9ee7982129
       internalID: -2000546185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pause_no_text_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 449
+        width: 474
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349ab9ea58340094e8db19a9ca1ea9fd
+      internalID: -948740280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pause_no_text_2
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 170
+        width: 474
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198b01090dbfd1d4b8dffcd4418e9f6e
+      internalID: 132849966
       vertices: []
       indices: 
       edges: []
@@ -168,6 +210,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       pause_no_text_0: -2000546185
+      pause_no_text_1: -1918306000
+      pause_no_text_2: -948740280
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

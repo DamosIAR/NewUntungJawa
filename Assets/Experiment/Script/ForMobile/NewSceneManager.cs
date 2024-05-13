@@ -33,6 +33,7 @@ public class NewSceneManager : MonoBehaviour
 
     public void MainMenuLoadButton()
     {
+        Time.timeScale = 1f;
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex - 1));
     }
 

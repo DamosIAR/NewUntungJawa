@@ -7,6 +7,8 @@ public class GameOverUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI GameOverText;
     [SerializeField] private Canvas GameOverCanvas;
+    [SerializeField] private TextMeshProUGUI RecipeDeliveredText;
+    [SerializeField] private TextMeshProUGUI RecipeFailedText;
 
     private void Start()
     {
@@ -19,6 +21,8 @@ public class GameOverUI : MonoBehaviour
         if (CookGameManager.Instance.isGameOver())
         {
             show();
+            RecipeDeliveredText.text = "Recipe Delivered : " + DeliveryManager.Instance.GetSuccessfulDeliveryAmount().ToString();
+            RecipeFailedText.text = "Wrong Recipe Delivered : " + DeliveryManager.Instance.GetFaildeDeliveryAmount().ToString();
         }
         else
         {
@@ -26,7 +30,8 @@ public class GameOverUI : MonoBehaviour
         }
     }
 
-    private void show()
+
+    public void show()
     {
         gameObject.SetActive(true);
     }

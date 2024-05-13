@@ -23,7 +23,7 @@ Material:
   m_Name: tangga
   m_Shader: {fileID: -6465566751694194690, guid: 446b51d43143e7b498b3b75a99e7792f,
     type: 3}
-  m_Parent: {fileID: 2100000, guid: 8e4db48f3034d064d8c9e21f10fb36dd, type: 2}
+  m_Parent: {fileID: 2100000, guid: 626974f1f2a8d81438786dfc79f37b5c, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []

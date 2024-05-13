@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOverUI : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class GameOverUI : MonoBehaviour
             show();
             RecipeDeliveredText.text = "Recipe Delivered : " + DeliveryManager.Instance.GetSuccessfulDeliveryAmount().ToString();
             RecipeFailedText.text = "Wrong Recipe Delivered : " + DeliveryManager.Instance.GetFaildeDeliveryAmount().ToString();
+
+
         }
         else
         {
@@ -40,4 +43,5 @@ public class GameOverUI : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+
 }

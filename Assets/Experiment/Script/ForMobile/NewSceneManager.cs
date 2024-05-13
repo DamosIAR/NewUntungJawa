@@ -37,4 +37,8 @@ public class NewSceneManager : MonoBehaviour
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex - 1));
     }
 
+    public void PlayAgain()
+    {
+        StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex));
+    }
 }

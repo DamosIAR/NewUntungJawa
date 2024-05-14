@@ -11,13 +11,6 @@ public class CoinManager : MonoBehaviour
     public int currentCoin;
     public int totalcoin;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-        CoinText.text = "Your Total Coin : " + totalcoin.ToString();
-        //totalcoin = currentCoin;
-    }
 
     // Update is called once per frame
     void Update()
@@ -30,12 +23,10 @@ public class CoinManager : MonoBehaviour
 
         currentCoin = DeliveryManager.Instance.GetCoinAmount();
         CoinText.text = "This Session Coin : " + currentCoin.ToString();
-        PlayerPrefs.GetInt("Coin", currentCoin);
-        //totalcoin = currentCoin;
-
-        totalcoin = PlayerPrefs.GetInt("coin", currentCoin);
-        PlayerPrefs.SetInt("Coin", totalcoin);
         TotalCoin.text = "Your Total Coin : " + totalcoin.ToString();
     }
+
+
+
 
 }

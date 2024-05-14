@@ -2001,17 +2001,17 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1959344055}
     m_Modifications:
     - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_Pivot.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
@@ -2036,12 +2036,27 @@ PrefabInstance:
     - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 2560
       objectReference: {fileID: 0}
     - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 1212.6316
+      objectReference: {fileID: 0}
+    - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
@@ -2066,27 +2081,27 @@ PrefabInstance:
     - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1280
       objectReference: {fileID: 0}
     - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 606.3158
       objectReference: {fileID: 0}
     - target: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
@@ -2111,7 +2126,7 @@ PrefabInstance:
     - target: {fileID: 1327196509582793201, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1927181847497782544, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
@@ -4814,6 +4829,12 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!224 &948257698 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 319424759185184719, guid: 5243f8c9771691741b60c1bd9ea167c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 376830331}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &953510543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10467,6 +10488,7 @@ RectTransform:
   - {fileID: 1974064717}
   - {fileID: 1884501589}
   - {fileID: 376732933}
+  - {fileID: 948257698}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -11658,7 +11680,6 @@ SceneRoots:
   - {fileID: 1953293986}
   - {fileID: 1115817581}
   - {fileID: 402924894}
-  - {fileID: 376830331}
   - {fileID: 796125979}
   - {fileID: 1514688928}
   - {fileID: 126995660}

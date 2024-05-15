@@ -15,16 +15,22 @@ public class AudioManager : MonoBehaviour
         Box.onIngredientPickup += Box_onIngredientPickup1;
         SauceTable.onSaucePickedUp += SauceTable_onSaucePickedUp;
         Trash.onObjectThrown += Trash_onObjectThrown;
+        TouchExample.Instance.onDirectionChanged += TouchExample_onDirectionChanged;
+    }
+
+    private void TouchExample_onDirectionChanged(object sender, System.EventArgs e)
+    {
+        playSound(audioClipSO.buttonPressed, Camera.main.transform.position);
     }
 
     private void Trash_onObjectThrown(object sender, System.EventArgs e)
     {
-        playSound(audioClipSO.wood, Camera.main.transform.position);
+        playSound(audioClipSO.objectGrab, Camera.main.transform.position);
     }
 
     private void SauceTable_onSaucePickedUp(object sender, System.EventArgs e)
     {
-        playSound(audioClipSO.wood, Camera.main.transform.position);
+        playSound(audioClipSO.objectGrab, Camera.main.transform.position);
     }
 
     private void PlateCabinet_onPlatePickup1(object sender, System.EventArgs e)
@@ -41,12 +47,12 @@ public class AudioManager : MonoBehaviour
 
     private void DeliveryManager_onRecipeFailed(object sender, System.EventArgs e)
     {
-        //ResepSalah
+        playSound(audioClipSO.RecipeWrong, Camera.main.transform.position);
     }
 
     private void DeliveryManager_onRecipeSuccess(object sender, System.EventArgs e)
     {
-        //ResepBenar
+        playSound(audioClipSO.RecipeCorrect, Camera.main.transform.position);
     }
 
     private void playSound(AudioClip audioClip, Vector3 position, float volume = 1f)

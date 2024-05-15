@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using System;
 
 public class TouchExample : MonoBehaviour, IObjekDapurParent
 {
@@ -11,11 +12,12 @@ public class TouchExample : MonoBehaviour, IObjekDapurParent
     private ObjekDapur objekDapur;
     private VirtualCameraControl cameraControl; 
 
-    //public static TouchExample Instance {  get; private set; }
+    public static TouchExample Instance {  get; private set; }
+    public event EventHandler onDirectionChanged;
 
     private void Start()
     {
-        //Instance = this;
+        Instance = this;
         cameraControl = GameObject.FindGameObjectWithTag("VirtualCameraTarget").GetComponent<VirtualCameraControl>();
         dasar = GameObject.FindGameObjectWithTag("Box").GetComponent<Box>();
     }
@@ -33,10 +35,12 @@ public class TouchExample : MonoBehaviour, IObjekDapurParent
                 if (!CookGameManager.Instance.isGamePlaying()) return;
                 if (hit.collider.tag == "ToBack")
                 {
+                    onDirectionChanged?.Invoke(this, EventArgs.Empty);
                     cameraControl.BackSideStore();
                 }
                 else if(hit.collider.tag == "ToFront")
                 {
+                    onDirectionChanged?.Invoke(this, EventArgs.Empty);
                     cameraControl.FrontSideStore();
                 }
 

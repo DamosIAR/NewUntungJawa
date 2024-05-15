@@ -96,4 +96,9 @@ public class CookGameManager : MonoBehaviour
     {
         return countdownToStartTimer;
     }
+
+    public float getRemainingTimer()
+    {
+        return gamePlayingTimer;
+    }
 }

@@ -15,4 +15,8 @@ MonoBehaviour:
   platePickup: {fileID: 8300000, guid: c9fd96b7b4b15d54bb16d3bec4ed032b, type: 3}
   grill: {fileID: 8300000, guid: 468c5cfc120c28546b2e84baa4af6ce4, type: 3}
   ingredientPickup: {fileID: 8300000, guid: 24bc44efb2685ec449365dfccdedfe73, type: 3}
-  wood: {fileID: 8300000, guid: 53925875ff16fd84697ab72403e77467, type: 3}
+  buttonPressed: {fileID: 8300000, guid: 53925875ff16fd84697ab72403e77467, type: 3}
+  timerWarning: {fileID: 8300000, guid: b0060cc16a2129942ad32e4e9a8b0451, type: 3}
+  objectGrab: {fileID: 8300000, guid: 5bffefdd9fcac8249b808f07b6dee049, type: 3}
+  RecipeWrong: {fileID: 8300000, guid: 5a0e7dcecd86a58488c061d2c46a8f5e, type: 3}
+  RecipeCorrect: {fileID: 8300000, guid: 58ece267ab82a774ba0564fb4cb8e766, type: 3}

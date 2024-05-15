@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,8 @@ using UnityEngine;
 public class SauceTable : Base
 {
     [SerializeField] private ObjekDapurSO objekDapurSO;
+
+    public static event EventHandler onSaucePickedUp;
 
     public override void interact(TouchExample touchExample)
     {
@@ -26,6 +29,7 @@ public class SauceTable : Base
             {
                 if (touchExample.GetObjekDapur().TryGetPlate(out PlateObjekDapur plateObjekDapur))
                 {
+                    onSaucePickedUp?.Invoke(this, EventArgs.Empty);
                     //PlateObjekDapur plateObjekDapur = touchExample.GetObjekDapur() as PlateObjekDapur;
                     if (plateObjekDapur.TryaddIngredient(GetObjekDapur().GetObjekDapurSO()))
                     {

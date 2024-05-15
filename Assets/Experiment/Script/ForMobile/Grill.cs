@@ -70,14 +70,13 @@ public class Grill : Base
                     {
                         GetObjekDapur().DestroySelf();
                         ObjekDapur.SpawnObjekDapur(burningRecipeSO.output, this);
-                        state = State.Grilling;
                         grillTimer = 0f;
+                        state = State.Burned;
 
                         OnStateChanged?.Invoke(this, new OnStateChangedEventArgs
                         {
                             state = state
                         });
-                        state = State.Burned;
                     }
                     OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
                     {

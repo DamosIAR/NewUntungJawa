@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26f57b5aea4ca5f4aa49fef603bea3e5, type: 3}
+  m_Name: AudioClipSO
+  m_EditorClassIdentifier: 
+  platePickup: {fileID: 8300000, guid: c9fd96b7b4b15d54bb16d3bec4ed032b, type: 3}
+  grill: {fileID: 8300000, guid: 468c5cfc120c28546b2e84baa4af6ce4, type: 3}
+  ingredientPickup: {fileID: 8300000, guid: 24bc44efb2685ec449365dfccdedfe73, type: 3}
+  wood: {fileID: 8300000, guid: 53925875ff16fd84697ab72403e77467, type: 3}

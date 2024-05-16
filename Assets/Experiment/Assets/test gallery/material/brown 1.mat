@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: brown
+  m_Name: brown 1
   m_Shader: {fileID: -6465566751694194690, guid: 446b51d43143e7b498b3b75a99e7792f,
     type: 3}
   m_Parent: {fileID: 0}
@@ -121,15 +121,15 @@ Material:
     - _ZWrite: 1
     - _max: 0
     - _min: 1
-    - _shadder: 0.24
+    - _shadder: 0.49
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.6320754, g: 0.28914088, b: 0, a: 1}
+    - _Color: {r: 0.3207547, g: 0.09203561, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &9087338697622400271
+--- !u!114 &3571061695702330761
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

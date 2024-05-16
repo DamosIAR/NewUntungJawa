@@ -20,3 +20,4 @@ MonoBehaviour:
   objectGrab: {fileID: 8300000, guid: 5bffefdd9fcac8249b808f07b6dee049, type: 3}
   RecipeWrong: {fileID: 8300000, guid: 5a0e7dcecd86a58488c061d2c46a8f5e, type: 3}
   RecipeCorrect: {fileID: 8300000, guid: 58ece267ab82a774ba0564fb4cb8e766, type: 3}
+  GateCloseOpen: {fileID: 8300000, guid: bb1bca5343905714ea705b7a901dc3bf, type: 3}

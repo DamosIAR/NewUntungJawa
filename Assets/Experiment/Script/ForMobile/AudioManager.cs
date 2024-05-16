@@ -16,6 +16,19 @@ public class AudioManager : MonoBehaviour
         SauceTable.onSaucePickedUp += SauceTable_onSaucePickedUp;
         Trash.onObjectThrown += Trash_onObjectThrown;
         TouchExample.Instance.onDirectionChanged += TouchExample_onDirectionChanged;
+        CookGameManager.Instance.OnGateMove += CookGameManager_OnGateMove;
+        CookGameManager.Instance.OnTimeAboutToEnd += CookGameManager_OnTimeAboutToEnd;
+    }
+
+    private void CookGameManager_OnTimeAboutToEnd(object sender, System.EventArgs e)
+    {
+        DeliveryManager deliveryManager = DeliveryManager.Instance;
+        playSound(audioClipSO.timerWarning, deliveryManager.transform.position);
+    }
+
+    private void CookGameManager_OnGateMove(object sender, System.EventArgs e)
+    {
+        playSound(audioClipSO.GateCloseOpen, Camera.main.transform.position);
     }
 
     private void TouchExample_onDirectionChanged(object sender, System.EventArgs e)

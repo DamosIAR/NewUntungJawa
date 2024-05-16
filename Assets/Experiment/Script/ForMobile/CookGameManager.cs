@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -13,6 +14,10 @@ public class CookGameManager : MonoBehaviour
     public class OnTimerChangedEventArgs : EventArgs { public float TimeNormalised; }
 
     public event EventHandler OnStateChanged;
+    public event EventHandler OnGateMove;
+    public event EventHandler OnTimeAboutToEnd;
+
+    //bool TimerWarning = false;
 
     private enum State
     {
@@ -44,6 +49,7 @@ public class CookGameManager : MonoBehaviour
                 {
                     state = State.CountdownToStart;
                     OnStateChanged?.Invoke(this, new EventArgs());
+                    OnGateMove?.Invoke(this, new EventArgs());
                 }
                 break;
             case State.CountdownToStart:
@@ -57,10 +63,27 @@ public class CookGameManager : MonoBehaviour
                 break;
             case State.GamePlaying:
                 gamePlayingTimer -= Time.deltaTime;
+                if(gamePlayingTimer <= 10f && gamePlayingTimer >= 9.99f)
+                {
+                    OnTimeAboutToEnd?.Invoke(this, EventArgs.Empty);
+                    /*TimerWarning = true;
+                    if (TimerWarning)
+                    {
+                        if(OnTimeAboutToEnd != null)
+                        {
+                            return;
+                        }
+                    }
+                    else
+                    {
+
+                    }*/
+                }
                 if (gamePlayingTimer < 0f)
                 {
                     state = State.GameOver;
                     OnStateChanged?.Invoke(this, new EventArgs());
+                    OnGateMove?.Invoke(this, new EventArgs());
                 }
                 OnTimerChanged?.Invoke(this, new OnTimerChangedEventArgs
                 {

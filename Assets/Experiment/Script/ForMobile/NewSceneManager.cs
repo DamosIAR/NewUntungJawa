@@ -41,4 +41,9 @@ public class NewSceneManager : MonoBehaviour
     {
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex));
     }
+
+    public void MiniGame()
+    {
+
+    }
 }

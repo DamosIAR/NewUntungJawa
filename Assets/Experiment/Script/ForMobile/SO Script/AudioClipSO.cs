@@ -14,4 +14,5 @@ public class AudioClipSO : ScriptableObject
     public AudioClip objectGrab;
     public AudioClip RecipeWrong;
     public AudioClip RecipeCorrect;
+    public AudioClip GateCloseOpen;
 }

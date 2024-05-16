@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Ikan
   m_EditorClassIdentifier: 
   prefab: {fileID: 8326399251733173649, guid: a0c27ce2bbb7199418e49cbda5c28c74, type: 3}
-  sprite: {fileID: -1055909417, guid: 7911e97ae2a4be14d84b304e4f65f08a, type: 3}
+  sprite: {fileID: 1688923865, guid: 782f6ec2c8b245f40a548e80b7b5abe3, type: 3}
   objectName: Ikan

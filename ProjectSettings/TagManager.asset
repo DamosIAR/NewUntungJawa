@@ -17,6 +17,7 @@ TagManager:
   - DestroyBarrier
   - Storage
   - Ground
+  - MiniGame
   layers:
   - Default
   - TransparentFX

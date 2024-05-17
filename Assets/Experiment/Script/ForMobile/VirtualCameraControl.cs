@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class VirtualCameraControl : MonoBehaviour
 {
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void BackSideStore()
     {
         Vector3 currentPosition = transform.position;
         float newZPosition = -(currentPosition.z);
         Vector3 newPosition = new Vector3(currentPosition.x, currentPosition.y, -100f);
         transform.position = newPosition;
+        audioSource.Play();
     }
 
     public void FrontSideStore()
@@ -18,7 +26,7 @@ public class VirtualCameraControl : MonoBehaviour
         float newZPosition = Mathf.Abs(currentPosition.z);
         Vector3 newPosition = new Vector3(currentPosition.x, currentPosition.y, 100f);
         transform.position = newPosition;
-        
+        audioSource.Play();
     }
     
 }

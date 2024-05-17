@@ -27,14 +27,12 @@ public class MenuTouch : MonoBehaviour
                 Debug.Log(hit);
                 if (hit.collider.tag == "Start")
                 {
-                    Debug.Log(tag);
                     startAnim.startButton();
 
                     sceneManager.LoadScene();
                 }
                 else if(hit.collider.tag == "Exit")
                 {
-                    Debug.Log(tag);
                     exitAnim.exitButton();
 
                     sceneManager.exitGame();

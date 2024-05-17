@@ -15,7 +15,6 @@ public class AnimationManager : MonoBehaviour
 
     public void startButton()
     {
-        Debug.Log("Start");
         animator.SetBool("IsTrigger", true);
         StartCoroutine(TriggerAfterWait(0.5f));
     }
@@ -29,7 +28,6 @@ public class AnimationManager : MonoBehaviour
 
     public void exitButton()
     {
-        Debug.Log("Exit");
         animator.SetBool("ExitTrigger", true);
         StartCoroutine(TriggerAfterWait(0.5f));
     }

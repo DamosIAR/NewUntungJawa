@@ -31,7 +31,6 @@ public class GalleryTouch : MonoBehaviour
             {
                 if(hit.collider.tag == MINIGAME)
                 {
-                    Debug.Log("Minigame");
                     virtualCameraStart.Priority = 7;
                     minigameMenuCanvas.gameObject.SetActive(true);
                 }

@@ -31,8 +31,6 @@ public class DeliveryManagerSingleUI : MonoBehaviour
             Transform iconTransform = Instantiate(IconTemplate, IconContainer);
             iconTransform.gameObject.SetActive(true);
             iconTransform.GetComponent<Image>().sprite = objekDapurSO.sprite;
-            /*Debug.Log("hey");
-            Debug.Log(objekDapurSO);*/
         }
     }
 }

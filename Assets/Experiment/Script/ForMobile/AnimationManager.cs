@@ -10,6 +10,7 @@ public class AnimationManager : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         animator.SetBool("IsTrigger", false);
+        animator.SetBool("ExitTrigger", false);
     }
 
     public void startButton()
@@ -23,12 +24,13 @@ public class AnimationManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delayinseconds);
         animator.SetBool("IsTrigger", false);
+        animator.SetBool("ExitTrigger", false);
     }
 
     public void exitButton()
     {
         Debug.Log("Exit");
-        animator.SetBool("IsTrigger", true);
+        animator.SetBool("ExitTrigger", true);
         StartCoroutine(TriggerAfterWait(0.5f));
     }
 

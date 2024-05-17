@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Experiment/Scene/MainMenu.unity
     guid: 4d8c3e13572305140bae739ead14281b
   - enabled: 1
+    path: Assets/Experiment/Scene/EX galerry 2.unity
+    guid: f8a7aed6b8b08d3499f9376733499375
+  - enabled: 1
     path: Assets/Experiment/Scene/ExperimentalGallery.unity
     guid: a56ab596ea4b39a4f9b55ef04a92e9f8
   - enabled: 1

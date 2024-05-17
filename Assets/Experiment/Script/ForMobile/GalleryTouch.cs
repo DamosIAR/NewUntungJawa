@@ -8,15 +8,20 @@ public class GalleryTouch : MonoBehaviour
     public Camera mainCamera;
     [SerializeField] private CinemachineVirtualCamera virtualCameraStart;
     [SerializeField] private CinemachineVirtualCamera virtualCameraMinigame;
+    [SerializeField] private CinemachineVirtualCamera InfoVirtualCamera;
     [SerializeField] private Canvas minigameMenuCanvas;
 
     private const string MINIGAME = "MiniGame";
+    private const string INFO = "Info";
+    private const string BACKTOMAINCAMERA = "BackToMainCamera";
 
     // Start is called before the first frame update
     void Start()
     {
         minigameMenuCanvas.gameObject.SetActive(false);
-        virtualCameraStart.Priority = 20;
+        virtualCameraStart.Priority = 15;
+        virtualCameraMinigame.Priority = 10;
+        InfoVirtualCamera.Priority = 10;
     }
 
     // Update is called once per frame
@@ -31,8 +36,17 @@ public class GalleryTouch : MonoBehaviour
             {
                 if(hit.collider.tag == MINIGAME)
                 {
-                    virtualCameraStart.Priority = 7;
+                    virtualCameraMinigame.Priority = 20;
                     minigameMenuCanvas.gameObject.SetActive(true);
+                }
+
+                if(hit.collider.tag == INFO)
+                {
+                    InfoVirtualCamera.Priority = 20;
+                }
+                else if(hit.collider.tag == BACKTOMAINCAMERA)
+                {
+                    InfoVirtualCamera.Priority = 10;
                 }
             }
         }
@@ -40,7 +54,7 @@ public class GalleryTouch : MonoBehaviour
 
     public void backtomaincamera()
     {
-        virtualCameraStart.Priority = 20;
+        virtualCameraMinigame.Priority = 10;
         minigameMenuCanvas.gameObject.SetActive(false );
     }
 }

@@ -18,6 +18,8 @@ TagManager:
   - Storage
   - Ground
   - MiniGame
+  - Info
+  - BackToMainCamera
   layers:
   - Default
   - TransparentFX

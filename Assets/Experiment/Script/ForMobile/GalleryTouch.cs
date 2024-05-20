@@ -9,11 +9,14 @@ public class GalleryTouch : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera virtualCameraStart;
     [SerializeField] private CinemachineVirtualCamera virtualCameraMinigame;
     [SerializeField] private CinemachineVirtualCamera InfoVirtualCamera;
+    [SerializeField] private CinemachineVirtualCamera cookgameVirtualCamera;
     [SerializeField] private Canvas minigameMenuCanvas;
+    [SerializeField] private GameObject cookGameCanvas;
 
     private const string MINIGAME = "MiniGame";
     private const string INFO = "Info";
     private const string BACKTOMAINCAMERA = "BackToMainCamera";
+    private const string COOKGAME = "CookGame";
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,8 @@ public class GalleryTouch : MonoBehaviour
         virtualCameraStart.Priority = 15;
         virtualCameraMinigame.Priority = 10;
         InfoVirtualCamera.Priority = 10;
+        cookgameVirtualCamera.Priority = 10;
+        cookGameCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -48,6 +53,12 @@ public class GalleryTouch : MonoBehaviour
                 {
                     InfoVirtualCamera.Priority = 10;
                 }
+
+                if(hit.collider.tag == COOKGAME)
+                {
+                    cookgameVirtualCamera.Priority = 20;
+                    cookGameCanvas.SetActive(true);
+                }
             }
         }
     }
@@ -55,6 +66,8 @@ public class GalleryTouch : MonoBehaviour
     public void backtomaincamera()
     {
         virtualCameraMinigame.Priority = 10;
+        cookgameVirtualCamera.Priority = 10;
         minigameMenuCanvas.gameObject.SetActive(false );
+        cookGameCanvas.SetActive(false);
     }
 }

@@ -7,6 +7,7 @@ public class TimerUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI TimerText;
     [SerializeField] private Canvas gameOver;
+    [SerializeField] private TextMeshProUGUI Score;
 
     private float timerTime;
     private float maxTime;
@@ -36,6 +37,7 @@ public class TimerUI : MonoBehaviour
 
     private void Show()
     {
+        Score.text = ("Final Score : ") + ScoreManager.instance.getScore().ToString();
         gameOver.gameObject.SetActive(true);
     }
 

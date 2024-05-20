@@ -9,9 +9,11 @@ public class ScoreManager : MonoBehaviour
     public GameObject gameOverPanel;
     public float scoreToReach;
     public int score;
+    public static ScoreManager instance;
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         score = 0;
         gameOverPanel.SetActive(false);
         scoreText.text = "" + score;
@@ -30,5 +32,10 @@ public class ScoreManager : MonoBehaviour
 
         }*/
 
+    }
+
+    public float getScore()
+    {
+        return score;
     }
 }

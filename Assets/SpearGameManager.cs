@@ -89,5 +89,8 @@ public class SpearGameManager : MonoBehaviour
         return gamePlayingTime;
     }
 
-
+    public float getCountdownTimer()
+    {
+        return countdownTime;
+    }
 }

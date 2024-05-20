@@ -28,7 +28,7 @@ public class CookGameManager : MonoBehaviour
     }
 
     private State state;
-    private float waitingToStartTimer = 2f;
+    //private float waitingToStartTimer = 2f;
     private float countdownToStartTimer = 3f;
     private float gamePlayingTimer;
     private float gamePlayingTimerMax = 30f;
@@ -44,8 +44,8 @@ public class CookGameManager : MonoBehaviour
         switch (state)
         {
             case State.WaitingToStart:
-                waitingToStartTimer -= Time.deltaTime;
-                if(waitingToStartTimer < 0f)
+                //waitingToStartTimer -= Time.deltaTime;
+                if(Input.touchCount > 0f)
                 {
                     state = State.CountdownToStart;
                     OnStateChanged?.Invoke(this, new EventArgs());

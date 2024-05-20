@@ -10,6 +10,9 @@ public class NewSceneManager : MonoBehaviour
     [SerializeField] private GameObject EndingTransition;
     private float transitiontime = 1f;
 
+    private const string GALLERY = "ExperimentalGallery";
+    private const string CRABSPEAR = "CrabSpearing";
+
     private void Start()
     {
         //StartingTransition.SetActive(false);
@@ -34,7 +37,7 @@ public class NewSceneManager : MonoBehaviour
     public void MainMenuLoadButton()
     {
         Time.timeScale = 1f;
-        StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex - 1));
+        StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex - SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     public void PlayAgain()
@@ -42,8 +45,9 @@ public class NewSceneManager : MonoBehaviour
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex));
     }
 
-    public void MiniGame()
+    public void CrabSpearMiniGame()
     {
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex + 2));
+        //StartCoroutine(loadLevel(SceneManager.GetSceneByName(CRABSPEAR).ToString()));
     }
 }

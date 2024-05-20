@@ -18,7 +18,7 @@ public class SpearGameManager : MonoBehaviour
     }
 
     private State state;
-    private float tutorialTime = 3f;
+    //private float tutorialTime = 3f;
     private float countdownTime = 3f;
     private float gamePlayingTime;
     public float gamePlayingTimeMax = 10f;
@@ -35,8 +35,8 @@ public class SpearGameManager : MonoBehaviour
         switch (state)
         {
             case State.Tutorial:
-                tutorialTime -= Time.deltaTime;
-                if(tutorialTime < 0f)
+                //tutorialTime -= Time.deltaTime;
+                if(Input.touchCount > 0f)
                 {
                     state = State.Countdown;
                     StateChanged?.Invoke(this, new EventArgs());

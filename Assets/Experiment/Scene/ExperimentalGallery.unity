@@ -10607,7 +10607,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 376830332}
         m_TargetAssemblyTypeName: NewSceneManager, Assembly-CSharp
-        m_MethodName: MiniGame
+        m_MethodName: CrabSpearMiniGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

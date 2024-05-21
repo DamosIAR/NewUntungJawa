@@ -1075,6 +1075,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: busy doll
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c497d08e9ffc8eb40abf1f2761a777c7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1539,6 +1544,8 @@ GameObject:
   - component: {fileID: 168131685}
   - component: {fileID: 168131684}
   - component: {fileID: 168131683}
+  - component: {fileID: 168131687}
+  - component: {fileID: 168131686}
   m_Layer: 5
   m_Name: CookGame Canvas
   m_TagString: Untagged
@@ -1630,6 +1637,40 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!225 &168131686
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168131681}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!95 &168131687
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168131681}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 10602c61bcc42ac42898ae9efa2f4b71, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &191841844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2988,7 +3029,7 @@ PrefabInstance:
     - target: {fileID: 1327196509582793201, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1927181847497782544, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
@@ -5273,6 +5314,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: gerobak balon
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 51064021020eee444adbc60bc4852716,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1442450553484104045, guid: 51064021020eee444adbc60bc4852716,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -5660,6 +5706,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fishing doll
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 824b7358cd7e6984488c81b6b153f1da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8479,6 +8530,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: sampan
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6a22e63eb09e36e4c911cb47cfa12802,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9883,6 +9939,8 @@ GameObject:
   - component: {fileID: 1318406475}
   - component: {fileID: 1318406474}
   - component: {fileID: 1318406473}
+  - component: {fileID: 1318406478}
+  - component: {fileID: 1318406477}
   m_Layer: 5
   m_Name: Minigame Canvas
   m_TagString: Untagged
@@ -9974,6 +10032,40 @@ RectTransform:
   m_AnchoredPosition: {x: 1280, y: 606.3158}
   m_SizeDelta: {x: 2560, y: 1212.6316}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1318406477
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318406472}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!95 &1318406478
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318406472}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fac3b688c784efa419f2b5642a4a00d8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1322856441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11430,6 +11522,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fishing doll (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 824b7358cd7e6984488c81b6b153f1da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14859,8 +14956,10 @@ MonoBehaviour:
   virtualCameraMinigame: {fileID: 207437833}
   InfoVirtualCamera: {fileID: 1840823861}
   cookgameVirtualCamera: {fileID: 110133924}
-  minigameMenuCanvas: {fileID: 1318406475}
+  minigameMenuCanvas: {fileID: 1318406472}
   cookGameCanvas: {fileID: 168131681}
+  minigameAnimator: {fileID: 1318406478}
+  cookgameAnimator: {fileID: 168131687}
 --- !u!4 &1967694215
 Transform:
   m_ObjectHideFlags: 0

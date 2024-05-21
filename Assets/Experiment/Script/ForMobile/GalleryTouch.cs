@@ -10,8 +10,11 @@ public class GalleryTouch : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera virtualCameraMinigame;
     [SerializeField] private CinemachineVirtualCamera InfoVirtualCamera;
     [SerializeField] private CinemachineVirtualCamera cookgameVirtualCamera;
-    [SerializeField] private Canvas minigameMenuCanvas;
+    [SerializeField] private GameObject minigameMenuCanvas;
     [SerializeField] private GameObject cookGameCanvas;
+
+    [SerializeField] private Animator minigameAnimator;
+    [SerializeField] private Animator cookgameAnimator;
 
     private const string MINIGAME = "MiniGame";
     private const string INFO = "Info";
@@ -35,19 +38,21 @@ public class GalleryTouch : MonoBehaviour
         /*Vector3 currentPosition = virtualCameraStart.transform.position;
         Vector3 newPosition = new Vector3(startingPoint, currentPosition.y, currentPosition.z);*/
         virtualCameraStart.transform.position = new Vector3(startingPoint, 877f, 142f);
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(startingPoint > stoppingPoint)
+        if (startingPoint > stoppingPoint)
         {
             startingPoint -= (speed * Time.deltaTime);
             float newPositionX = startingPoint;
             virtualCameraStart.transform.position = new Vector3(newPositionX, 877f, 142f);
         }
 
-        if(Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
+        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.touches[0].position);
             RaycastHit hit;
@@ -58,6 +63,7 @@ public class GalleryTouch : MonoBehaviour
                 {
                     virtualCameraMinigame.Priority = 20;
                     minigameMenuCanvas.gameObject.SetActive(true);
+                    minigameAnimator.SetBool("IsOpen", true);
                 }
 
                 if(hit.collider.tag == INFO)
@@ -73,6 +79,7 @@ public class GalleryTouch : MonoBehaviour
                 {
                     cookgameVirtualCamera.Priority = 20;
                     cookGameCanvas.SetActive(true);
+                    cookgameAnimator.SetBool("IsOpen", true);
                 }
             }
         }
@@ -82,7 +89,15 @@ public class GalleryTouch : MonoBehaviour
     {
         virtualCameraMinigame.Priority = 10;
         cookgameVirtualCamera.Priority = 10;
-        minigameMenuCanvas.gameObject.SetActive(false );
+        minigameAnimator.SetBool("IsOpen", false);
+        cookgameAnimator.SetBool("IsOpen", false);
+        StartCoroutine(waitAfterClose());
+    }
+
+    IEnumerator waitAfterClose()
+    {
+        yield return new WaitForSeconds(0.5f);
+        minigameMenuCanvas.gameObject.SetActive(false);
         cookGameCanvas.SetActive(false);
     }
 }

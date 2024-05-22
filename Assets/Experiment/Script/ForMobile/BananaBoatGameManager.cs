@@ -50,6 +50,15 @@ public class BananaBoatGameManager : MonoBehaviour
                 break;
             case State.Playing:
                 timeElapsed += Time.deltaTime;
+                if(BBPlayerStateManager.Instance.getRidingState())
+                {
+
+                }
+                else
+                {
+                    state = State.GameOver;
+                    OnStateChanged?.Invoke(this, new EventArgs());
+                }
                 break;
             case State.GameOver:
                 break;

@@ -15,7 +15,7 @@ public class RotationHandler : MonoBehaviour
     private float target = 20;*/
     private float hold = 0f;
     private float force;
-    private Quaternion rotation;
+    private Vector3 rotation;
 
     bool left;
 
@@ -72,11 +72,12 @@ public class RotationHandler : MonoBehaviour
                 }
             }
         }
+
     }
 
-    public Quaternion GetRotation()
+    public Vector3 GetRotation()
     {
-        return transform.rotation;
+        return transform.eulerAngles;
 
     }
 }

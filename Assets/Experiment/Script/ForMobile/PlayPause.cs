@@ -10,8 +10,6 @@ public class PlayPause : MonoBehaviour
     [SerializeField] private GameObject Barrier;
     [SerializeField] private GameObject MenuConfirmation;
 
-    public event EventHandler onStateChanged;
-
     private bool isPaused;
 
     private void Start()

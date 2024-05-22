@@ -10,7 +10,7 @@ public class RotationHandler : MonoBehaviour
     //[SerializeField] private float speed = 1f;
 
     private float current;
-    private float target = 2;
+    private float target = 20;
 
     private void Update()
     {
@@ -33,7 +33,7 @@ public class RotationHandler : MonoBehaviour
                     transform.Rotate(Vector3.down * rotationCurve.Evaluate(current));
                     //transform.rotation = Quaternion.Lerp(Quaternion.Euler(Vector3.zero), Quaternion.Euler(toRight), rotationCurve.Evaluate(current));
                 }
-                current = Mathf.MoveTowards(target, 0, Time.deltaTime);
+                //current = Mathf.MoveTowards(target, 0, Time.deltaTime);
             }
         }
         else

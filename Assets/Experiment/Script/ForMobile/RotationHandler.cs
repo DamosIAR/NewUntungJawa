@@ -7,8 +7,8 @@ public class RotationHandler : MonoBehaviour
     public static RotationHandler Instance { get; private set; }
 
     [SerializeField] private AnimationCurve rotationCurve;
-    [SerializeField] private Vector3 toLeft;
-    [SerializeField] private Vector3 toRight;
+    /*[SerializeField] private Vector3 toLeft;
+    [SerializeField] private Vector3 toRight;*/
     //[SerializeField] private float speed = 1f;
 
     /*private float current;
@@ -22,11 +22,12 @@ public class RotationHandler : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        transform.eulerAngles = Vector3.zero;
     }
 
     private void Update()
     {
-        
+
 
         if (Input.touchCount > 0)
         {
@@ -38,6 +39,7 @@ public class RotationHandler : MonoBehaviour
 
             if(Physics.Raycast(ray, out hit))
             {
+                if (!BananaBoatGameManager.Instance.isPlaying()) return;
                 if (hit.collider.tag == "LeftScreen")
                 {
                     transform.Rotate(Vector3.up * force * Time.deltaTime);
@@ -58,6 +60,7 @@ public class RotationHandler : MonoBehaviour
         {
             if (hold > 0f)
             {
+                if (!BananaBoatGameManager.Instance.isPlaying()) return;
                 hold -= Time.deltaTime * 2;
                 force = Mathf.RoundToInt(rotationCurve.Evaluate(hold));
                 if(left)
@@ -72,12 +75,11 @@ public class RotationHandler : MonoBehaviour
                 }
             }
         }
-
+        Debug.Log(GetRotation());
     }
 
     public Vector3 GetRotation()
     {
         return transform.eulerAngles;
-
     }
 }

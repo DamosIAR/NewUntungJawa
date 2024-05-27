@@ -66,18 +66,6 @@ public class CookGameManager : MonoBehaviour
                 if(gamePlayingTimer <= 10f && gamePlayingTimer >= 9.99f)
                 {
                     OnTimeAboutToEnd?.Invoke(this, EventArgs.Empty);
-                    /*TimerWarning = true;
-                    if (TimerWarning)
-                    {
-                        if(OnTimeAboutToEnd != null)
-                        {
-                            return;
-                        }
-                    }
-                    else
-                    {
-
-                    }*/
                 }
                 if (gamePlayingTimer < 0f)
                 {

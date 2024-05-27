@@ -9,6 +9,10 @@ public class BananaBoatGameManager : MonoBehaviour
 
     public event EventHandler OnStateChanged;
 
+
+    private float targetRotation = 110f;
+    private float targetRotation2 = 240f;
+
     private enum State
     {
         Tutorial,
@@ -41,7 +45,7 @@ public class BananaBoatGameManager : MonoBehaviour
                 break;
             case State.CountdownToStart:
                 countdownToStartTimer -= Time.deltaTime;
-                if(countdownToStartTimer == 0)
+                if(countdownToStartTimer < 0)
                 {
                     state = State.Playing;
                     OnStateChanged?.Invoke(this, new EventArgs());
@@ -50,12 +54,9 @@ public class BananaBoatGameManager : MonoBehaviour
                 break;
             case State.Playing:
                 timeElapsed += Time.deltaTime;
-                if(BBPlayerStateManager.Instance.getRidingState())
+                if (RotationHandler.Instance.GetRotation().y > targetRotation  && RotationHandler.Instance.GetRotation().y < targetRotation2)
                 {
-
-                }
-                else
-                {
+                    Debug.Log("Habis");
                     state = State.GameOver;
                     OnStateChanged?.Invoke(this, new EventArgs());
                 }
@@ -63,5 +64,25 @@ public class BananaBoatGameManager : MonoBehaviour
             case State.GameOver:
                 break;
         }
+    }
+
+    public bool isTutorial()
+    {
+        return state == State.Tutorial;
+    }
+
+    public bool isPlaying()
+    {
+        return state == State.Playing;
+    }
+
+    public bool isCountown()
+    {
+        return state == State.CountdownToStart;
+    }
+
+    public bool isGameOver()
+    {
+        return state == State.GameOver;
     }
 }

@@ -48,6 +48,15 @@ public class NewSceneManager : MonoBehaviour
     public void CrabSpearMiniGame()
     {
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex + 2));
-        //StartCoroutine(loadLevel(SceneManager.GetSceneByName(CRABSPEAR).ToString()));
+    }
+
+    public void BananaBoatMinigame()
+    {
+        StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex + 3));
+    }
+
+    public void HomeButton()
+    {
+        StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex - 1));
     }
 }

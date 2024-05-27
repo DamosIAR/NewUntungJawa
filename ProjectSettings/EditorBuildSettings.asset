@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Experiment/Scene/CrabSpearing.unity
     guid: 494ac2f25075af84c9e72fd5f9603371
+  - enabled: 1
+    path: Assets/Experiment/Scene/BananaBoat.unity
+    guid: 8c5156a92b1750341bdf9b15bca7130f
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

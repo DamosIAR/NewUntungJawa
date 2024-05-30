@@ -19,6 +19,10 @@ public class DeliveryManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI Money;
     [SerializeField] private TextMeshProUGUI Money2;
 
+    /*private GameData gameData = new GameData();
+    private IDataService DataService = new JsonDataService();
+    private bool EncryptionEnabled;*/
+
     private List<ResepSO> WaitingresepSOList;
     private float spawnRecipeTimer;
     private float spawnRecipeTimerMax = 4f;
@@ -26,7 +30,6 @@ public class DeliveryManager : MonoBehaviour
     private int money;
     private int succesfulDelivery;
     private int failedDelivery;
-
 
     private void Awake()
     {

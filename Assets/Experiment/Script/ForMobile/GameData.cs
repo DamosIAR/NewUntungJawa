@@ -7,8 +7,19 @@ public class GameData
 {
     public int money;
 
-    public GameData()
+    public string ToJSon()
     {
-        this.money = DeliveryManager.Instance.GetCoinAmount();
+        return JsonUtility.ToJson(this);
     }
+
+    public void LoadFromJson(string json)
+    {
+        JsonUtility.FromJsonOverwrite(json, this);
+    }
+}
+
+public interface ISaveable
+{
+    void PopulateSaveData(GameData gameData);
+    void LoadFromSaveData(GameData gameData);
 }

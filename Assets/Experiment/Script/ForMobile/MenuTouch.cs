@@ -24,7 +24,6 @@ public class MenuTouch : MonoBehaviour
 
             if(Physics.Raycast(ray, out hit))
             {
-                Debug.Log(hit);
                 if (hit.collider.tag == "Start")
                 {
                     startAnim.startButton();

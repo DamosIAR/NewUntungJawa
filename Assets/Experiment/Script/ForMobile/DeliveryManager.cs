@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.UI;
+using System.IO;
+using Newtonsoft.Json;
 
 public class DeliveryManager : MonoBehaviour
 {
@@ -23,6 +26,7 @@ public class DeliveryManager : MonoBehaviour
     private int money;
     private int succesfulDelivery;
     private int failedDelivery;
+
 
     private void Awake()
     {
@@ -89,7 +93,7 @@ public class DeliveryManager : MonoBehaviour
         onRecipeFailed?.Invoke(this, EventArgs.Empty);
     }
 
-    private void AddMoney()
+    public void AddMoney()
     {
         money += 10;
         Money.text = "" + money;

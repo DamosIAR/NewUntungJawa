@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class CoinManager : MonoBehaviour
 {
@@ -25,8 +26,4 @@ public class CoinManager : MonoBehaviour
         CoinText.text = "This Session Coin : " + currentCoin.ToString();
         TotalCoin.text = "Your Total Coin : " + totalcoin.ToString();
     }
-
-
-
-
 }

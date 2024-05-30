@@ -5,21 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
-    public int money;
+    public int Totalmoney;
 
-    public string ToJSon()
+    public GameData()
     {
-        return JsonUtility.ToJson(this);
+        Totalmoney = 0;
     }
-
-    public void LoadFromJson(string json)
-    {
-        JsonUtility.FromJsonOverwrite(json, this);
-    }
-}
-
-public interface ISaveable
-{
-    void PopulateSaveData(GameData gameData);
-    void LoadFromSaveData(GameData gameData);
 }

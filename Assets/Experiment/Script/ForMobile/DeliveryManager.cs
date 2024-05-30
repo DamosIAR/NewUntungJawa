@@ -14,6 +14,7 @@ public class DeliveryManager : MonoBehaviour
     public event EventHandler onRecipeFailed;
     public event EventHandler onRecipeSuccess;
 
+
     public static DeliveryManager Instance { get; private set; }
     [SerializeField] private ResepListSO resepListSO;
     [SerializeField] private TextMeshProUGUI Money;
@@ -103,6 +104,8 @@ public class DeliveryManager : MonoBehaviour
         Money2.text = "" + money;
 
     }
+
+
 
     public List<ResepSO> GetWaitingRecipeSOList()
     {

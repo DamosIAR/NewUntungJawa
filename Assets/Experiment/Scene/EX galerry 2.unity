@@ -1477,7 +1477,7 @@ PrefabInstance:
     - target: {fileID: 1327196509582793201, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1927181847497782544, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
@@ -4323,8 +4323,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 217430021}
   - {fileID: 1830903696}
+  - {fileID: 217430021}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5025,6 +5025,11 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[3]'
       value: 
       objectReference: {fileID: 2100000, guid: 906cdc94540216345ab60c58a8600685, type: 2}
+    - target: {fileID: -5082779332595062740, guid: 4d58c595d2724f4418cf0ad51aed4d21,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[6]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f8a58f032c76eac45956f871d2b199c1, type: 2}
     - target: {fileID: -4683669308469848369, guid: 4d58c595d2724f4418cf0ad51aed4d21,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

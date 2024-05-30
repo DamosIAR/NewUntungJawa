@@ -1,0 +1,5 @@
+C:/Users/garyn/OneDrive/Documents/GitHub/NewUntungJawa2/NewUntungJawa/.utmp/RelWithDebInfo/5d4c1o21/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/garyn/OneDrive/Documents/GitHub/NewUntungJawa2/NewUntungJawa/.utmp/RelWithDebInfo/5d4c1o21/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+C:/Users/garyn/OneDrive/Documents/GitHub/NewUntungJawa2/NewUntungJawa/.utmp/RelWithDebInfo/5d4c1o21/armeabi-v7a/GameActivity/CMakeFiles/game.dir
+C:/Users/garyn/OneDrive/Documents/GitHub/NewUntungJawa2/NewUntungJawa/.utmp/RelWithDebInfo/5d4c1o21/armeabi-v7a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/garyn/OneDrive/Documents/GitHub/NewUntungJawa2/NewUntungJawa/.utmp/RelWithDebInfo/5d4c1o21/armeabi-v7a/GameActivity/CMakeFiles/rebuild_cache.dir

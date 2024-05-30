@@ -17,7 +17,7 @@ public class CookGameManager : MonoBehaviour
     public event EventHandler OnGateMove;
     public event EventHandler OnTimeAboutToEnd;
 
-    public GameData gameData;
+    //public GameData gameData;
 
     //bool TimerWarning = false;
 
@@ -39,7 +39,7 @@ public class CookGameManager : MonoBehaviour
     {
         Instance = this;
         state = State.WaitingToStart;
-        gameData = SaveSystem.Load();
+        //gameData = SaveSystem.Load();
     }
 
     private void Update()
@@ -82,9 +82,6 @@ public class CookGameManager : MonoBehaviour
                 });
                 break;
              case State.GameOver:
-                gameData.Totalmoney = DeliveryManager.Instance.GetCoinAmount();
-                SaveSystem.Save(gameData);
-                Debug.Log(gameData.Totalmoney);
                 break;
         }
     }

@@ -12,6 +12,12 @@ public class CoinManager : MonoBehaviour
     public int currentCoin;
     public int totalcoin;
 
+    public GameData gameData;
+
+    private void Awake()
+    {
+        gameData = SaveSystem.Load();
+    }
 
     // Update is called once per frame
     void Update()
@@ -21,9 +27,7 @@ public class CoinManager : MonoBehaviour
 
     public void savedCoin()
     {
-
-        currentCoin = DeliveryManager.Instance.GetCoinAmount();
-        CoinText.text = "This Session Coin : " + currentCoin.ToString();
-        TotalCoin.text = "Your Total Coin : " + totalcoin.ToString();
+        CoinText.text = "This Session Coin : " + DeliveryManager.Instance.GetCoinAmount().ToString();
+        TotalCoin.text = "Your Total Coin : " + gameData.Totalmoney.ToString();
     }
 }

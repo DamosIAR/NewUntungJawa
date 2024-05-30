@@ -5119,6 +5119,8 @@ MonoBehaviour:
   GameOverCanvas: {fileID: 602444039}
   RecipeDeliveredText: {fileID: 2070685429}
   RecipeFailedText: {fileID: 1402147048}
+  gameData:
+    Totalmoney: 0
 --- !u!114 &602444037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8899,7 +8901,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094999488}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07899029, y: 0.000000017858268, z: -0.0000000014150512, w: 0.9968754}
+  m_LocalRotation: {x: 0.07899029, y: -0.000000017858264, z: 0.0000000014150509, w: 0.9968754}
   m_LocalPosition: {x: 0, y: -2, z: -6.598424}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12867,7 +12869,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534551214}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07899029, y: 0.000000017858268, z: -0.0000000014150512, w: 0.9968754}
+  m_LocalRotation: {x: 0.07899029, y: -0.000000017858264, z: 0.0000000014150509, w: 0.9968754}
   m_LocalPosition: {x: 0, y: 5.3, z: -18.098423}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -14057,6 +14059,8 @@ MonoBehaviour:
   TotalCoin: {fileID: 523836683}
   currentCoin: 0
   totalcoin: 0
+  gameData:
+    Totalmoney: 0
 --- !u!1 &1614694613
 GameObject:
   m_ObjectHideFlags: 0
@@ -16188,8 +16192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 934170a60872d7a4abbc0c497f17dc0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameData:
-    Totalmoney: 0
 --- !u!4 &1926608899
 Transform:
   m_ObjectHideFlags: 0

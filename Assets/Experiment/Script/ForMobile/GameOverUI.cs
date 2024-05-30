@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
 public class GameOverUI : MonoBehaviour
@@ -11,10 +12,17 @@ public class GameOverUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI RecipeDeliveredText;
     [SerializeField] private TextMeshProUGUI RecipeFailedText;
 
+    public GameData gameData;
+
     private void Start()
     {
         CookGameManager.Instance.OnStateChanged += CookGameManager_OnStateChanged;
         hide();
+    }
+
+    private void Awake()
+    {
+        gameData = SaveSystem.Load();
     }
 
     private void CookGameManager_OnStateChanged(object sender, System.EventArgs e)
@@ -24,6 +32,9 @@ public class GameOverUI : MonoBehaviour
             show();
             RecipeDeliveredText.text = "Recipe Delivered : " + DeliveryManager.Instance.GetSuccessfulDeliveryAmount().ToString();
             RecipeFailedText.text = "Wrong Recipe Delivered : " + DeliveryManager.Instance.GetFaildeDeliveryAmount().ToString();
+            gameData.Totalmoney += DeliveryManager.Instance.GetCoinAmount();
+            SaveSystem.Save(gameData);
+            Debug.Log(gameData.Totalmoney);
 
 
         }

@@ -9,6 +9,6 @@ public class GameData
 
     public GameData()
     {
-        this.money = 0;
+        this.money = DeliveryManager.Instance.GetCoinAmount();
     }
 }

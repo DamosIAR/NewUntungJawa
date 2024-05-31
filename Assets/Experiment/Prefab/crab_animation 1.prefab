@@ -4908,7 +4908,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9d6a6de31d1a51f41bbbd8d5931e90fa,
         type: 3}
       propertyPath: m_Name
-      value: crab_animation
+      value: crab_animation 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9d6a6de31d1a51f41bbbd8d5931e90fa,
         type: 3}
@@ -5006,7 +5006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 054218d8cb546344a84ce824bf936bd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
+  moveSpeed: 40
 --- !u!95 &2557598505293373020
 Animator:
   serializedVersion: 7

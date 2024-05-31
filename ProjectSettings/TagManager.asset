@@ -23,6 +23,7 @@ TagManager:
   - CookGame
   - LeftScreen
   - RightScreen
+  - SpecialObject
   layers:
   - Default
   - TransparentFX

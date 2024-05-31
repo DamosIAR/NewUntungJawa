@@ -19,12 +19,6 @@ public class Spear : MonoBehaviour
         scoreManager = GameObject.FindGameObjectWithTag("Storage").GetComponent<ScoreManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     /*private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Object")
@@ -39,15 +33,21 @@ public class Spear : MonoBehaviour
     {
         if (collision.gameObject.tag == "Object")
         {
-            Debug.Log("UANG");
+            scoreManager.updateScore();
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
+        else if(collision.gameObject.tag == "SpecialObject")
+        {
+            scoreManager.updateScore();
             scoreManager.updateScore();
             Destroy(gameObject);
             Destroy(collision.gameObject);
         }
 
+
         if (collision.gameObject.tag == "Ground")
         {
-            Debug.Log("Nancep");
             rb.velocity = new Vector3(0,0,0);
             transform.rotation = Quaternion.Euler(90, 0, 0);
         }

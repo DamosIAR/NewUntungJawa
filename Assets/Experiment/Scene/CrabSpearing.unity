@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 211382318}
   - component: {fileID: 211382317}
   m_Layer: 0
-  m_Name: CrabSpawner
+  m_Name: CrabSpawner (Gold)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
     type: 3}
   spawnAreaCenter: {x: -50, y: -6, z: 63.3}
   spawnAreaSize: {x: -11.4, y: 2.89671, z: 46.8}
-  spawnInterval: 2
+  spawnInterval: 10
   crabLifetime: 10
   speed: 0.05
 --- !u!4 &211382318
@@ -543,7 +543,7 @@ Transform:
   m_GameObject: {fileID: 211382316}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -48.3, y: 2.8967104, z: 63.3}
+  m_LocalPosition: {x: -48.3, y: 2.8967104, z: 45.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2253,7 +2253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 1380690077}
   spear: {fileID: 4843768013853926421, guid: a415c2e87f49fc442912440ccf6b9a45, type: 3}
-  spearLifetime: 2
+  spearLifetime: 1
 --- !u!4 &555050626
 Transform:
   m_ObjectHideFlags: 0
@@ -2282,7 +2282,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1857028052}
-  gameOverPanel: {fileID: 0}
   scoreToReach: 50
   score: 0
 --- !u!1 &650768532 stripped
@@ -2739,6 +2738,57 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &800224435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 800224437}
+  - component: {fileID: 800224436}
+  m_Layer: 0
+  m_Name: CrabSpawner (Standart)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &800224436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800224435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a210e8804e996d643b5617ba107b72e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 3837371094741471625, guid: b7691d55ffccbde4287bd5c9a832a3ea,
+    type: 3}
+  spawnAreaCenter: {x: -50, y: -6, z: 63.3}
+  spawnAreaSize: {x: -11.4, y: 2.89671, z: 46.8}
+  spawnInterval: 2
+  crabLifetime: 15
+  speed: 0.05
+--- !u!4 &800224437
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800224435}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -48.3, y: 2.8967104, z: 45.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3320,7 +3370,7 @@ GameObject:
   - component: {fileID: 1080459824}
   - component: {fileID: 1080459823}
   m_Layer: 0
-  m_Name: CrabSpawner (1)
+  m_Name: CrabSpawner (Gold)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3342,7 +3392,7 @@ MonoBehaviour:
     type: 3}
   spawnAreaCenter: {x: -50, y: -6, z: 8.37}
   spawnAreaSize: {x: -11.4, y: 2.89671, z: 46.8}
-  spawnInterval: 2
+  spawnInterval: 10
   crabLifetime: 10
   speed: 0.05
 --- !u!4 &1080459824
@@ -5177,7 +5227,7 @@ PrefabInstance:
     - target: {fileID: 1327196509582793201, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8845003380324581313, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
@@ -5546,6 +5596,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857028050}
   m_CullTransparentMesh: 1
+--- !u!1 &1874897261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1874897263}
+  - component: {fileID: 1874897262}
+  m_Layer: 0
+  m_Name: CrabSpawner (Standart)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1874897262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874897261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a210e8804e996d643b5617ba107b72e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 3837371094741471625, guid: b7691d55ffccbde4287bd5c9a832a3ea,
+    type: 3}
+  spawnAreaCenter: {x: -50, y: -6, z: 8.37}
+  spawnAreaSize: {x: -11.4, y: 2.89671, z: 46.8}
+  spawnInterval: 2
+  crabLifetime: 15
+  speed: 0.05
+--- !u!4 &1874897263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874897261}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -48.3, y: 2.8967104, z: 8.37}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1926905923
 GameObject:
   m_ObjectHideFlags: 0
@@ -6280,7 +6381,9 @@ SceneRoots:
   - {fileID: 1518509559}
   - {fileID: 365535523}
   - {fileID: 211382318}
+  - {fileID: 800224437}
   - {fileID: 1080459824}
+  - {fileID: 1874897263}
   - {fileID: 1181850954}
   - {fileID: 555050626}
   - {fileID: 2146117519}

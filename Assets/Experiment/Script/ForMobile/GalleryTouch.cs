@@ -12,6 +12,7 @@ public class GalleryTouch : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera cookgameVirtualCamera;
     [SerializeField] private GameObject minigameMenuCanvas;
     [SerializeField] private GameObject cookGameCanvas;
+    [SerializeField] private GameObject BUTTON;
 
     [SerializeField] private Animator minigameAnimator;
     [SerializeField] private Animator cookgameAnimator;
@@ -39,7 +40,7 @@ public class GalleryTouch : MonoBehaviour
         Vector3 newPosition = new Vector3(startingPoint, currentPosition.y, currentPosition.z);*/
         virtualCameraStart.transform.position = new Vector3(startingPoint, 877f, 142f);
 
-        
+        BUTTON.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -73,6 +74,7 @@ public class GalleryTouch : MonoBehaviour
                 else if(hit.collider.tag == BACKTOMAINCAMERA)
                 {
                     InfoVirtualCamera.Priority = 10;
+                    BUTTON.gameObject.SetActive(true);
                 }
 
                 if(hit.collider.tag == COOKGAME)
@@ -91,7 +93,30 @@ public class GalleryTouch : MonoBehaviour
         cookgameVirtualCamera.Priority = 10;
         minigameAnimator.SetBool("IsOpen", false);
         cookgameAnimator.SetBool("IsOpen", false);
+        BUTTON.gameObject.SetActive(true);
         StartCoroutine(waitAfterClose());
+    }
+
+    public void CookGameButton()
+    {
+        cookgameVirtualCamera.Priority = 20;
+        cookGameCanvas.SetActive(true);
+        cookgameAnimator.SetBool("IsOpen", true);
+        BUTTON.gameObject.SetActive(false);
+    }
+
+    public void MinigameButton()
+    {
+        virtualCameraMinigame.Priority = 20;
+        minigameMenuCanvas.gameObject.SetActive(true);
+        minigameAnimator.SetBool("IsOpen", true);
+        BUTTON.gameObject.SetActive(false);
+    }
+
+    public void InfoBoardButton()
+    {
+        InfoVirtualCamera.Priority = 20;
+        BUTTON.gameObject.SetActive(false);
     }
 
     IEnumerator waitAfterClose()

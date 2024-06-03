@@ -9,6 +9,7 @@ public class GalleryGameManager : MonoBehaviour
     private GameData gameData;
 
     public TextMeshProUGUI Money;
+    public TextMeshProUGUI Cycle;
 
     private void Awake()
     {
@@ -19,6 +20,7 @@ public class GalleryGameManager : MonoBehaviour
     void RefreshUI()
     {
         Money.text = gameData.Totalmoney.ToString();
+        Cycle.text = "Hari Ke " + gameData.CyclePassed.ToString();
 
     }
 }

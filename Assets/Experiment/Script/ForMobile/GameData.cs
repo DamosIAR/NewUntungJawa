@@ -11,6 +11,6 @@ public class GameData
     public GameData()
     {
         Totalmoney = 0;
-        CyclePassed = 1;
+        CyclePassed = 0;
     }
 }

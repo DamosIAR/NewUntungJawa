@@ -3,11 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpearGameManager : MonoBehaviour
 {
     public static SpearGameManager Instance { get; private set; }
     public event EventHandler StateChanged;
+
+    public GameObject[] gameObjects; // Array of GameObjects to switch between
+    private int currentIndex = 0; // Current index of the GameObject array
 
     private enum State
     {
@@ -35,11 +39,31 @@ public class SpearGameManager : MonoBehaviour
         switch (state)
         {
             case State.Tutorial:
-                //tutorialTime -= Time.deltaTime;
-                if(Input.touchCount > 0f)
+                if (gameObjects.Length > 0)
                 {
-                    state = State.Countdown;
-                    StateChanged?.Invoke(this, new EventArgs());
+                    for (int i = 0; i < gameObjects.Length; i++)
+                    {
+                        gameObjects[i].SetActive(i == currentIndex);
+                    }
+                }
+                //tutorialTime -= Time.deltaTime;
+                if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+                {
+                    gameObjects[currentIndex].SetActive(false);
+
+                    currentIndex++;
+                    if (currentIndex < gameObjects.Length)
+                    {
+                        // Activate the new GameObject
+                        gameObjects[currentIndex].SetActive(true);
+                    }
+                    else
+                    {
+                        // Last image reached, change state
+
+                        state = State.Countdown;
+                        StateChanged?.Invoke(this, new EventArgs());
+                    }
                 }
                 break;
             case State.Countdown:

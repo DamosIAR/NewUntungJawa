@@ -6,7 +6,7 @@ using UnityEngine;
 public class SpearGameCountdownUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI countdownUI;
-    [SerializeField] private Canvas helpCanvas;
+    [SerializeField] private GameObject helpCanvas;
 
 
     // Start is called before the first frame update

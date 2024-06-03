@@ -10,12 +10,9 @@ public class Cycle : MonoBehaviour
 
     private void Start()
     {
-        CookGameManager.Instance.OnStateChanged += CookGameManager_OnStateChanged;
-    }
-
-    private void Awake()
-    {
         gameData = SaveSystem.Load();
+        CookGameManager.Instance.OnStateChanged += CookGameManager_OnStateChanged;
+        Debug.Log("Yang di load: " + gameData.CyclePassed);
         ShowCycle();
     }
 
@@ -25,12 +22,14 @@ public class Cycle : MonoBehaviour
         {
             gameData.CyclePassed++;
             SaveSystem.Save(gameData);
-            Debug.Log(gameData.CyclePassed);
+            Debug.Log("Yand Di save: " + gameData.CyclePassed);
+            ShowCycle();
         }
     }
 
     public void ShowCycle()
     {
+        gameData = SaveSystem.Load();
         CycleText.text = "Hari ke " + gameData.CyclePassed.ToString();
     }
 

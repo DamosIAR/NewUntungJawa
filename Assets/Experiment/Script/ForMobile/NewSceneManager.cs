@@ -10,14 +10,22 @@ public class NewSceneManager : MonoBehaviour
     [SerializeField] private GameObject StartingTransition;
     [SerializeField] private GameObject EndingTransition;
     private float transitiontime = 1f;
+    private int cycle = 1;
 
     private const string GALLERY = "ExperimentalGallery";
     private const string CRABSPEAR = "CrabSpearing";
+
+    public static NewSceneManager Instance { get; private set; }
 
     private void Start()
     {
         //StartingTransition.SetActive(false);
         EndingTransition.SetActive(false);
+    }
+
+    private void Awake()
+    {
+        Instance = this;
     }
 
     public void CookGameButton()
@@ -46,6 +54,12 @@ public class NewSceneManager : MonoBehaviour
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex));
     }
 
+    public void CookGamePlayAgain()
+    {
+        StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex));
+        cycle++;
+    }
+
     public void CrabSpearMiniGame()
     {
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex + 2));
@@ -59,5 +73,10 @@ public class NewSceneManager : MonoBehaviour
     public void HomeButton()
     {
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex - 1));
+    }
+
+    public int getCycle()
+    {
+        return cycle;
     }
 }

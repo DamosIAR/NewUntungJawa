@@ -11,6 +11,10 @@ public class GameOverUI : MonoBehaviour
     [SerializeField] private Canvas GameOverCanvas;
     [SerializeField] private TextMeshProUGUI RecipeDeliveredText;
     [SerializeField] private TextMeshProUGUI RecipeFailedText;
+    [SerializeField] private TextMeshProUGUI CoinText;
+    [SerializeField] private TextMeshProUGUI TotalCoin;
+    public int currentCoin;
+    public int totalcoin;
 
     public GameData gameData;
 
@@ -32,6 +36,8 @@ public class GameOverUI : MonoBehaviour
             show();
             RecipeDeliveredText.text = "Recipe Delivered : " + DeliveryManager.Instance.GetSuccessfulDeliveryAmount().ToString();
             RecipeFailedText.text = "Wrong Recipe Delivered : " + DeliveryManager.Instance.GetFaildeDeliveryAmount().ToString();
+            CoinText.text = "This Session Coin : " + DeliveryManager.Instance.GetCoinAmount().ToString();
+            TotalCoin.text = "Your Total Coin : " + gameData.Totalmoney.ToString();
             gameData.Totalmoney += DeliveryManager.Instance.GetCoinAmount();
             SaveSystem.Save(gameData);
             Debug.Log(gameData.Totalmoney);

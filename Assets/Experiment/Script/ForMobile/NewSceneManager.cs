@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,7 +20,7 @@ public class NewSceneManager : MonoBehaviour
         EndingTransition.SetActive(false);
     }
 
-    public void LoadScene()
+    public void CookGameButton()
     {
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }

@@ -28,7 +28,7 @@ public class MenuTouch : MonoBehaviour
                 {
                     startAnim.startButton();
 
-                    sceneManager.LoadScene();
+                    sceneManager.CookGameButton();
                 }
                 else if(hit.collider.tag == "Exit")
                 {

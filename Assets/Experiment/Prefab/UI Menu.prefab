@@ -786,7 +786,6 @@ GameObject:
   - component: {fileID: 8685278736089492503}
   - component: {fileID: 6105591052418495831}
   - component: {fileID: 2733799259602180556}
-  - component: {fileID: 3796933447568092822}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -881,24 +880,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &3796933447568092822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793371553743211732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16ee2d704c8a65742a67b3fb595ce9ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CoinText: {fileID: 5470273085570142166}
-  TotalCoin: {fileID: 4466587752512156984}
-  currentCoin: 0
-  totalcoin: 0
-  gameData:
-    Totalmoney: 0
 --- !u!1 &2180641209712093930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2795,8 +2776,13 @@ MonoBehaviour:
   GameOverCanvas: {fileID: 277956698785954478}
   RecipeDeliveredText: {fileID: 3484024542822547129}
   RecipeFailedText: {fileID: 3277201044062676856}
+  CoinText: {fileID: 0}
+  TotalCoin: {fileID: 0}
+  currentCoin: 0
+  totalcoin: 0
   gameData:
     Totalmoney: 0
+    CyclePassed: 1
 --- !u!1 &6231630991635835968
 GameObject:
   m_ObjectHideFlags: 0

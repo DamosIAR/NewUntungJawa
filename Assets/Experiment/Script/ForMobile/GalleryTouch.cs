@@ -60,12 +60,12 @@ public class GalleryTouch : MonoBehaviour
 
             if(Physics.Raycast(ray, out hit) )
             {
-                if(hit.collider.tag == MINIGAME)
+                /*if(hit.collider.tag == MINIGAME)
                 {
                     virtualCameraMinigame.Priority = 20;
                     minigameMenuCanvas.gameObject.SetActive(true);
                     minigameAnimator.SetBool("IsOpen", true);
-                }
+                }*/
 
                 if(hit.collider.tag == INFO)
                 {
@@ -77,12 +77,12 @@ public class GalleryTouch : MonoBehaviour
                     BUTTON.gameObject.SetActive(true);
                 }
 
-                if(hit.collider.tag == COOKGAME)
+                /*if(hit.collider.tag == COOKGAME)
                 {
                     cookgameVirtualCamera.Priority = 20;
                     cookGameCanvas.SetActive(true);
                     cookgameAnimator.SetBool("IsOpen", true);
-                }
+                }*/
             }
         }
     }

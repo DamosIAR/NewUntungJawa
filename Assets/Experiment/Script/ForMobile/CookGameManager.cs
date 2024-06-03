@@ -18,7 +18,6 @@ public class CookGameManager : MonoBehaviour
     public event EventHandler OnTimeAboutToEnd;
 
     //public GameData gameData;
-
     //bool TimerWarning = false;
 
     private enum State

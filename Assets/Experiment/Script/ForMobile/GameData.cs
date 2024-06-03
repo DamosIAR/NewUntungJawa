@@ -6,9 +6,11 @@ using UnityEngine;
 public class GameData
 {
     public int Totalmoney;
+    public int CyclePassed;
 
     public GameData()
     {
         Totalmoney = 0;
+        CyclePassed = 1;
     }
 }

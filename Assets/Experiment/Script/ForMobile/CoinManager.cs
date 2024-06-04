@@ -9,20 +9,26 @@ public class CoinManager : MonoBehaviour
 {
     public TextMeshProUGUI CoinText;
     public TextMeshProUGUI TotalCoin;
-    public int currentCoin;
-    public int totalcoin;
+    private int currentCoin;
+    private int totalcoin;
 
     public GameData gameData;
 
-    private void Awake()
+    private void Start()
     {
         gameData = SaveSystem.Load();
+        CookGameManager.Instance.OnStateChanged += CookGameManager_OnStateChanged;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void CookGameManager_OnStateChanged(object sender, EventArgs e)
     {
-        savedCoin();
+        if (CookGameManager.Instance.isGameOver())
+        {
+            gameData.Totalmoney += DeliveryManager.Instance.GetCoinAmount();
+            SaveSystem.Save(gameData);
+            savedCoin();
+            Debug.Log(gameData.Totalmoney);
+        }
     }
 
     public void savedCoin()

@@ -3699,7 +3699,7 @@ PrefabInstance:
     - target: {fileID: 1327196509582793201, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1927181847497782544, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
@@ -20559,7 +20559,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 376830332}
         m_TargetAssemblyTypeName: NewSceneManager, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: CookGameButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20733,7 +20733,7 @@ GameObject:
   - component: {fileID: 1908462322}
   - component: {fileID: 1908462321}
   m_Layer: 5
-  m_Name: Image
+  m_Name: CoookGame Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

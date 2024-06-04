@@ -7,6 +7,7 @@ public class GameData
 {
     public int Totalmoney;
     public int CyclePassed;
+    public int HighScore;
 
     public GameData()
     {

@@ -16,12 +16,11 @@ public class SpearSpawner : MonoBehaviour
 
     private void Update()
     {
-        //Vector3 mousePos = Input.mousePosition;
+        /*Vector3 mousePos = Input.mousePosition;
 
 
-        /*Vector3 worldPositoin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = worldPositoin;
-        Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));*/
+        Vector3 worldPositoin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = worldPositoin;*/
         if (!SpearGameManager.Instance.isGamePlaying()) return;
         if (!canThrow)
         {

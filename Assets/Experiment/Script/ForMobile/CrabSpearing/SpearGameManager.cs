@@ -9,8 +9,11 @@ public class SpearGameManager : MonoBehaviour
 {
     public static SpearGameManager Instance { get; private set; }
     public event EventHandler StateChanged;
+    public event EventHandler<TimerChangedEventArgs> TimerChanged;
 
-    public GameObject[] gameObjects; // Array of GameObjects to switch between
+    public class TimerChangedEventArgs : EventArgs { public float timeNormalised; }
+
+    public GameObject[] TutorialImage; // Array of GameObjects to switch between
     private int currentIndex = 0; // Current index of the GameObject array
 
     private enum State
@@ -39,23 +42,23 @@ public class SpearGameManager : MonoBehaviour
         switch (state)
         {
             case State.Tutorial:
-                if (gameObjects.Length > 0)
+                if (TutorialImage.Length > 0)
                 {
-                    for (int i = 0; i < gameObjects.Length; i++)
+                    for (int i = 0; i < TutorialImage.Length; i++)
                     {
-                        gameObjects[i].SetActive(i == currentIndex);
+                        TutorialImage[i].SetActive(i == currentIndex);
                     }
                 }
                 //tutorialTime -= Time.deltaTime;
                 if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
                 {
-                    gameObjects[currentIndex].SetActive(false);
+                    TutorialImage[currentIndex].SetActive(false);
 
                     currentIndex++;
-                    if (currentIndex < gameObjects.Length)
+                    if (currentIndex < TutorialImage.Length)
                     {
                         // Activate the new GameObject
-                        gameObjects[currentIndex].SetActive(true);
+                        TutorialImage[currentIndex].SetActive(true);
                     }
                     else
                     {
@@ -82,6 +85,10 @@ public class SpearGameManager : MonoBehaviour
                     state = State.GameOver;
                     StateChanged?.Invoke(this, new EventArgs());
                 }
+                TimerChanged?.Invoke(this, new TimerChangedEventArgs
+                {
+                    timeNormalised = 1 - (gamePlayingTime / gamePlayingTimeMax)
+                });
                 break;
             case State.GameOver:
                 break;

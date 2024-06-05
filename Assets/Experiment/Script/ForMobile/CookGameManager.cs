@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using static UnityEngine.CullingGroup;
 
 public class CookGameManager : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class CookGameManager : MonoBehaviour
     public event EventHandler OnStateChanged;
     public event EventHandler OnGateMove;
     public event EventHandler OnTimeAboutToEnd;
+
+    public GameObject[] TutorialsImage;
+    private int currentIndex;
 
     //public GameData gameData;
     //bool TimerWarning = false;
@@ -46,12 +50,31 @@ public class CookGameManager : MonoBehaviour
         switch (state)
         {
             case State.WaitingToStart:
-                //waitingToStartTimer -= Time.deltaTime;
-                if(Input.touchCount > 0f)
+                if (TutorialsImage.Length > 0)
                 {
-                    state = State.CountdownToStart;
-                    OnStateChanged?.Invoke(this, new EventArgs());
-                    OnGateMove?.Invoke(this, new EventArgs());
+                    for (int i = 0; i < TutorialsImage.Length; i++)
+                    {
+                        TutorialsImage[i].SetActive(i == currentIndex);
+                    }
+                }
+                //tutorialTime -= Time.deltaTime;
+                if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+                {
+                    TutorialsImage[currentIndex].SetActive(false);
+
+                    currentIndex++;
+                    if (currentIndex < TutorialsImage.Length)
+                    {
+                        // Activate the new GameObject
+                        TutorialsImage[currentIndex].SetActive(true);
+                    }
+                    else
+                    {
+                        // Last image reached, change state
+
+                        state = State.CountdownToStart;
+                        OnStateChanged?.Invoke(this, new EventArgs());
+                    }
                 }
                 break;
             case State.CountdownToStart:

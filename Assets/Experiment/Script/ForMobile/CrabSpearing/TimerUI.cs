@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TimerUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI TimerText;
+    [SerializeField] private Image TimerImage;
     [SerializeField] private Canvas gameOver;
     [SerializeField] private TextMeshProUGUI Score;
 
@@ -15,7 +17,13 @@ public class TimerUI : MonoBehaviour
     private void Start()
     {
         SpearGameManager.Instance.StateChanged += SpearGameManager_onStateChanged;
+        SpearGameManager.Instance.TimerChanged += SpearGameManager_TimerChanged;
         Hide();
+    }
+
+    private void SpearGameManager_TimerChanged(object sender, SpearGameManager.TimerChangedEventArgs e)
+    {
+        TimerImage.fillAmount = e.timeNormalised;
     }
 
     private void SpearGameManager_onStateChanged(object sender, System.EventArgs e)
@@ -28,6 +36,8 @@ public class TimerUI : MonoBehaviour
         {
             Hide();
         }
+
+
     }
 
     private void Hide()

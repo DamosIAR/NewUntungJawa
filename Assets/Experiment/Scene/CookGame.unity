@@ -3276,6 +3276,7 @@ MonoBehaviour:
   gameData:
     Totalmoney: 0
     CyclePassed: 1
+    HighScore: 0
 --- !u!114 &558541744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10811,12 +10812,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rak Piring (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3874719422591266804, guid: 3986463d08d543b46ad392555b4e87e0,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 50466e0d3db1cd641b2953d5ddb16123, type: 2}
     - target: {fileID: 6995981478036585840, guid: 3986463d08d543b46ad392555b4e87e0,
         type: 3}
       propertyPath: objekDapurSO
       value: 
       objectReference: {fileID: 11400000, guid: d2a2b77f71b3eff43a6a5e4e3b328d13,
         type: 2}
+    - target: {fileID: 9000565580650522057, guid: 3986463d08d543b46ad392555b4e87e0,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 50466e0d3db1cd641b2953d5ddb16123, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13224,6 +13235,7 @@ MonoBehaviour:
   gameData:
     Totalmoney: 0
     CyclePassed: 0
+    HighScore: 0
 --- !u!1001 &1962639618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14599,6 +14611,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rak Piring
       objectReference: {fileID: 0}
+    - target: {fileID: 3874719422591266804, guid: 3986463d08d543b46ad392555b4e87e0,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 50466e0d3db1cd641b2953d5ddb16123, type: 2}
+    - target: {fileID: 9000565580650522057, guid: 3986463d08d543b46ad392555b4e87e0,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 50466e0d3db1cd641b2953d5ddb16123, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

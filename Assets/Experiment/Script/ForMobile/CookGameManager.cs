@@ -36,7 +36,7 @@ public class CookGameManager : MonoBehaviour
     //private float waitingToStartTimer = 2f;
     private float countdownToStartTimer = 3f;
     private float gamePlayingTimer;
-    private float gamePlayingTimerMax = 60f;
+    private float gamePlayingTimerMax = 120f;
 
     private void Awake()
     {

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e2412a1deed55784a89a3e9a7c6d4ff7
+guid: 5ca38ef80fdf14546947163db2450b04
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -134,18 +134,40 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: triangle_button_bold_border_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 18
+        width: 283
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a92f8eb9494c446bf593942ea2e6da
+      internalID: -887827672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fba89fedacf079340ac6ca37bcf48850
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      triangle_button_bold_border_0: -887827672
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

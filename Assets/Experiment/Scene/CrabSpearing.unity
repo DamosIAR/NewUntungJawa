@@ -1372,6 +1372,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2915097159788997673, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1680400100, guid: 5c23fe9682fd48f4090c1b348383aa23,
+        type: 3}
     - target: {fileID: 3221206532455592194, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1592,6 +1598,37 @@ PrefabInstance:
       propertyPath: HelpCanvas
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6360479482237523137, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.27620506
+      objectReference: {fileID: 0}
+    - target: {fileID: 6360479482237523137, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.27620506
+      objectReference: {fileID: 0}
+    - target: {fileID: 6360479482237523137, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.27620506
+      objectReference: {fileID: 0}
+    - target: {fileID: 6360479482237523137, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 6360479482237523137, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1020.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7157532943056676858, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1680400100, guid: 5c23fe9682fd48f4090c1b348383aa23,
+        type: 3}
     - target: {fileID: 7440711034698364608, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1622,6 +1659,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9070285478899356955, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1753300170, guid: a47e8f9871fedb149a332dd80f1b9e48,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6210402970966103315, guid: 2681ff3eb5d52be4f944d4240f4ebe46, type: 3}

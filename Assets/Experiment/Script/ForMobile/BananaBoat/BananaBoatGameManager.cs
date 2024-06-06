@@ -54,7 +54,7 @@ public class BananaBoatGameManager : MonoBehaviour
                 break;
             case State.Playing:
                 timeElapsed += Time.deltaTime;
-                if (RotationHandler.Instance.GetRotation().y > targetRotation  && RotationHandler.Instance.GetRotation().y < targetRotation2)
+                if (RotationHandler.Instance.GetRotation().z > targetRotation  && RotationHandler.Instance.GetRotation().z < targetRotation2)
                 {
                     Debug.Log("Habis");
                     state = State.GameOver;

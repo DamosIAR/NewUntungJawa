@@ -69,11 +69,11 @@ public class GalleryTouch : MonoBehaviour
                     minigameAnimator.SetBool("IsOpen", true);
                 }*/
 
-                if(hit.collider.tag == INFO)
+                /*if(hit.collider.tag == INFO)
                 {
                     InfoVirtualCamera.Priority = 20;
-                }
-                else if(hit.collider.tag == BACKTOMAINCAMERA)
+                }*/
+                if(hit.collider.tag == BACKTOMAINCAMERA)
                 {
                     InfoVirtualCamera.Priority = 10;
                     BUTTON.gameObject.SetActive(true);
@@ -96,9 +96,9 @@ public class GalleryTouch : MonoBehaviour
         cookgameVirtualCamera.Priority = 10;
         minigameAnimator.SetBool("IsOpen", false);
         cookgameAnimator.SetBool("IsOpen", false);
-        BUTTON.gameObject.SetActive(true);
         BUBBLE.gameObject.SetActive(true);
         StartCoroutine(waitAfterClose());
+        BUTTON.gameObject.SetActive(true);
     }
 
     public void CookGameButton()

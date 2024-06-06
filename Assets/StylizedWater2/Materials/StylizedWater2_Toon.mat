@@ -283,7 +283,7 @@ Material:
     - _ZClip: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.0141509175, g: 1, b: 0.84764355, a: 1}
+    - _BaseColor: {r: 0.082013145, g: 0.41921097, b: 0.9150943, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _DepthMapBounds: {r: -402.3, g: -459.43, b: 0.0012693577, a: 0}
     - _Direction: {r: 1, g: 1, b: 0, a: 0}

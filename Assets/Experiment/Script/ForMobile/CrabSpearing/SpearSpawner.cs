@@ -9,7 +9,7 @@ public class SpearSpawner : MonoBehaviour
     [SerializeField] Camera mainCamera;
     public GameObject spear;
     public float spearLifetime;
-    private float shootingInterval = 1;
+    public float shootingInterval = 1;
     private float timer;
     private bool canThrow;
 

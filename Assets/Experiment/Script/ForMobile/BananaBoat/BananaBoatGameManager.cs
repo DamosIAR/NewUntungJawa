@@ -85,4 +85,9 @@ public class BananaBoatGameManager : MonoBehaviour
     {
         return state == State.GameOver;
     }
+
+    public float GetCountdown()
+    {
+        return countdownToStartTimer;
+    }
 }

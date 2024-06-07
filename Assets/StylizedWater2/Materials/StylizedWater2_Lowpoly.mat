@@ -10,6 +10,8 @@ Material:
   m_Name: StylizedWater2_Lowpoly
   m_Shader: {fileID: -6465566751694194690, guid: d7b0192b9bf19c949900035fa781fdc4,
     type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _ADVANCED_SHADING
   - _FLAT_SHADING
@@ -28,6 +30,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: _EdgeFade
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -246,7 +249,7 @@ Material:
     - _ZClip: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0, g: 0.17100494, b: 0.4811321, a: 1}
+    - _BaseColor: {r: 0, g: 0.5471698, b: 0.52436763, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DepthMapBounds: {r: 0, g: 0, b: 0, a: 0}
     - _Direction: {r: 1, g: 1, b: 0, a: 0}
@@ -262,6 +265,7 @@ Material:
     - _WaveDirection: {r: 1, g: 1, b: 1, a: 1}
     - _WaveFadeDistance: {r: 150, g: 300, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!114 &1092640962685890020
 MonoBehaviour:
   m_ObjectHideFlags: 11

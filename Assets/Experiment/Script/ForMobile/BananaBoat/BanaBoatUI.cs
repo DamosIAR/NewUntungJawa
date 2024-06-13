@@ -6,6 +6,7 @@ public class BanaBoatUI : MonoBehaviour
 {
     [SerializeField] private GameObject Help;
     [SerializeField] private GameObject GameOver;
+    [SerializeField] private GameObject TXT;
 
     private void Start()
     {
@@ -27,10 +28,12 @@ public class BanaBoatUI : MonoBehaviour
         if (BananaBoatGameManager.Instance.isGameOver())
         {
             ShowGameOverUI();
+            hideTXT();
         }
         else
         {
             HideGameOverUI();
+            showTXT();
         }
     }
 
@@ -52,5 +55,15 @@ public class BanaBoatUI : MonoBehaviour
     private void HideGameOverUI()
     {
         GameOver.gameObject.SetActive(false);
+    }
+
+    private void showTXT()
+    {
+        TXT.gameObject.SetActive(true);
+    }
+
+    private void hideTXT()
+    {
+        TXT.gameObject.SetActive(false);
     }
 }

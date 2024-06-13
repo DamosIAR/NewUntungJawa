@@ -21,8 +21,6 @@ public class ForwardHandler : MonoBehaviour
         if (!BananaBoatGameManager.Instance.isPlaying()) return;
         TimePassed += Time.deltaTime;
         MoveForward = Mathf.RoundToInt(SpeedCurve.Evaluate(TimePassed));
-        Debug.Log("TimePassed : " + TimePassed);
-        Debug.Log("SpeedCurve : " + SpeedCurve.Evaluate(TimePassed));
         //transform.position += (Vector3.forward * MoveForward * Time.deltaTime);
         transform.position += new Vector3(0, 0, (MoveForward * Time.deltaTime));
     }

@@ -74,7 +74,7 @@ public class RotationHandler : MonoBehaviour
                 }
             }
         }
-        Debug.Log(GetRotation());
+        //Debug.Log(GetRotation());
     }
 
     public Vector3 GetRotation()

@@ -14,6 +14,7 @@ public class GalleryTouch : MonoBehaviour
     [SerializeField] private GameObject cookGameCanvas;
     [SerializeField] private GameObject BUTTON;
     [SerializeField] private GameObject BUBBLE;
+    [SerializeField] private GameObject InfoCanvasButton;
 
     [SerializeField] private Animator minigameAnimator;
     [SerializeField] private Animator cookgameAnimator;
@@ -26,6 +27,7 @@ public class GalleryTouch : MonoBehaviour
     private float startingPoint = 2000;
     private float stoppingPoint = 1484;
     private float speed = 400;
+
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +45,7 @@ public class GalleryTouch : MonoBehaviour
 
         BUTTON.gameObject.SetActive(true);
         BUBBLE.gameObject.SetActive(true);
+        InfoCanvasButton.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -78,6 +81,8 @@ public class GalleryTouch : MonoBehaviour
                     InfoVirtualCamera.Priority = 10;
                     BUTTON.gameObject.SetActive(true);
                     BUBBLE.gameObject.SetActive(true);
+                    InfoCanvasButton.gameObject.SetActive(false);
+                    InfoManager.instance.DisableInfoGameObject();
                 }
 
                 /*if(hit.collider.tag == COOKGAME)
@@ -97,6 +102,8 @@ public class GalleryTouch : MonoBehaviour
         minigameAnimator.SetBool("IsOpen", false);
         cookgameAnimator.SetBool("IsOpen", false);
         BUBBLE.gameObject.SetActive(true);
+        InfoCanvasButton.gameObject.SetActive(false);
+        InfoManager.instance.DisableInfoGameObject();
         StartCoroutine(waitAfterClose());
         BUTTON.gameObject.SetActive(true);
     }
@@ -122,8 +129,10 @@ public class GalleryTouch : MonoBehaviour
     public void InfoBoardButton()
     {
         InfoVirtualCamera.Priority = 20;
+        InfoCanvasButton.gameObject.SetActive(true);
         BUTTON.gameObject.SetActive(false);
         BUBBLE.gameObject.SetActive(false);
+        InfoManager.instance.EnableInfoGameObject();
     }
 
     IEnumerator waitAfterClose()

@@ -24,6 +24,8 @@ TagManager:
   - LeftScreen
   - RightScreen
   - SpecialObject
+  - LeftSideInfo
+  - RightSIdeInfo
   layers:
   - Default
   - TransparentFX

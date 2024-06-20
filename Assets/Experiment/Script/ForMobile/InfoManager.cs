@@ -14,6 +14,7 @@ public class InfoManager : MonoBehaviour
     [SerializeField] private Image KampungJepang;
     [SerializeField] private Image PantaiArsa;
     [SerializeField] private Image BananaBoat;
+    [SerializeField] private GameObject Panel;
 
     [SerializeField] private GameObject VirtualCameraLookAt;
 
@@ -32,6 +33,7 @@ public class InfoManager : MonoBehaviour
         KampungJepang.gameObject.SetActive(false);
         PantaiArsa.gameObject.SetActive(false);
         BananaBoat.gameObject.SetActive(false);
+        Panel.SetActive(false);
         Active = false;
         ButtonActive = false;
 }
@@ -84,6 +86,7 @@ public class InfoManager : MonoBehaviour
         if (activeImage == null)
         {
             // No object is active, activate the clicked object
+            Panel.SetActive(true);
             img.gameObject.SetActive(true);
             activeImage = img;
             Debug.Log(VirtualCameraLookAt.transform.position);
@@ -91,11 +94,21 @@ public class InfoManager : MonoBehaviour
         else if (activeImage == img)
         {
             // The clicked object is already active, deactivate it
+            Panel.SetActive(false);
             img.gameObject.SetActive(false);
             activeImage = null;
         }
         // If a different object is active, do nothing (no else clause needed)
     }
 
+    public void BackButton(Image img2)
+    {
+        if(activeImage == img2)
+        {
+            Panel.SetActive(false);
+            img2.gameObject.SetActive(false);
+            activeImage = null;
+        }
+    }
 
 }

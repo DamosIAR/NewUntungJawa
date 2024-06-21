@@ -15,12 +15,15 @@ public class InfoManager : MonoBehaviour
     [SerializeField] private Image PantaiArsa;
     [SerializeField] private Image BananaBoat;
     [SerializeField] private GameObject Panel;
+    [SerializeField] private GameObject InfoCanvas;
 
     [SerializeField] private GameObject VirtualCameraLookAt;
 
     private bool Active;
     private bool ButtonActive;
     private Image activeImage = null;
+
+    public static InfoManager instance;
 
 
     private void Start()
@@ -36,6 +39,8 @@ public class InfoManager : MonoBehaviour
         Panel.SetActive(false);
         Active = false;
         ButtonActive = false;
+
+        instance = this;
 }
 
     public void HutanMangroveBtn()
@@ -89,11 +94,12 @@ public class InfoManager : MonoBehaviour
             Panel.SetActive(true);
             img.gameObject.SetActive(true);
             activeImage = img;
-            Debug.Log(VirtualCameraLookAt.transform.position);
+            DisableInfoCanvas();
         }
         else if (activeImage == img)
         {
             // The clicked object is already active, deactivate it
+            EnableInfoCanvas();
             Panel.SetActive(false);
             img.gameObject.SetActive(false);
             activeImage = null;
@@ -108,7 +114,18 @@ public class InfoManager : MonoBehaviour
             Panel.SetActive(false);
             img2.gameObject.SetActive(false);
             activeImage = null;
+            EnableInfoCanvas();
         }
+    }
+
+    public void DisableInfoCanvas()
+    {
+        InfoCanvas.SetActive(false);
+    }
+
+    public void EnableInfoCanvas()
+    {
+        InfoCanvas.SetActive(true);
     }
 
 }

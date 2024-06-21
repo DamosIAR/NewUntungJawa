@@ -46,6 +46,7 @@ public class GalleryTouch : MonoBehaviour
         BUBBLE.gameObject.SetActive(true);
         ImageInfo.gameObject.SetActive(false);
         InfoCanvas.gameObject.SetActive(false);
+        InfoManager.instance.DisableInfoCanvas();
     }
 
     // Update is called once per frame
@@ -76,13 +77,13 @@ public class GalleryTouch : MonoBehaviour
                 {
                     InfoVirtualCamera.Priority = 20;
                 }*/
-                if(hit.collider.tag == BACKTOMAINCAMERA)
+                /*if(hit.collider.tag == BACKTOMAINCAMERA)
                 {
                     InfoVirtualCamera.Priority = 10;
                     BUTTON.gameObject.SetActive(true);
                     BUBBLE.gameObject.SetActive(true);
                     ImageInfo.gameObject.SetActive(false);
-                }
+                }*/
 
                 /*if(hit.collider.tag == COOKGAME)
                 {
@@ -104,6 +105,7 @@ public class GalleryTouch : MonoBehaviour
         BUBBLE.gameObject.SetActive(true);
         ImageInfo.gameObject.SetActive(false);
         InfoCanvas.gameObject.SetActive(false);
+        InfoManager.instance.DisableInfoCanvas();
         StartCoroutine(waitAfterClose());
         BUTTON.gameObject.SetActive(true);
     }
@@ -146,5 +148,6 @@ public class GalleryTouch : MonoBehaviour
         yield return new WaitForSeconds(1f);
         ImageInfo.gameObject.SetActive(true);
         InfoCanvas.gameObject.SetActive(true);
+        InfoManager.instance.EnableInfoCanvas();
     }
 }

@@ -7,15 +7,9 @@ public class RotationHandler : MonoBehaviour
     public static RotationHandler Instance { get; private set; }
 
     [SerializeField] private AnimationCurve rotationCurve;
-    /*[SerializeField] private Vector3 toLeft;
-    [SerializeField] private Vector3 toRight;*/
-    //[SerializeField] private float speed = 1f;
 
-    /*private float current;
-    private float target = 20;*/
     private float hold = 0f;
     private float force;
-    private Vector3 rotation;
 
     bool left;
 
@@ -38,7 +32,6 @@ public class RotationHandler : MonoBehaviour
 
             if(Physics.Raycast(ray, out hit))
             {
-                //if (!BananaBoatGameManager.Instance.isPlaying()) return;
                 if (hit.collider.tag == "LeftScreen")
                 {
                     transform.Rotate(Vector3.forward * force * Time.deltaTime);
@@ -75,6 +68,11 @@ public class RotationHandler : MonoBehaviour
             }
         }
         //Debug.Log(GetRotation());
+    }
+
+    public float getForce()
+    {
+        return force;
     }
 
     public Vector3 GetRotation()

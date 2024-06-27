@@ -7,6 +7,7 @@ public class ForwardHandler : MonoBehaviour
     [SerializeField] private AnimationCurve SpeedCurve;
 
     public static ForwardHandler Instance { get; private set; }
+    public Vector3 EarlyPosition;
 
     private float TimePassed = 0f;
     private float MoveForward;
@@ -14,7 +15,7 @@ public class ForwardHandler : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        transform.position = Vector3.zero;
+        //transform.position = Vector3(EarlyPosition.x, EarlyPosition.y, EarlyPosition.z);
     }
 
     void Update()

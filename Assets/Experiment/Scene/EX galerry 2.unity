@@ -435,6 +435,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4c5b51dbe808a784a9e3a1ff578e1aa5,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4c5b51dbe808a784a9e3a1ff578e1aa5,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -476,9 +481,9 @@ RectTransform:
   - {fileID: 343786658}
   m_Father: {fileID: 1452863273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -1094.4501}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &21050316
@@ -721,9 +726,9 @@ RectTransform:
   - {fileID: 1826046559}
   m_Father: {fileID: 1452863273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -1296.3401}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &56391627
@@ -1447,9 +1452,9 @@ RectTransform:
   - {fileID: 1850372319}
   m_Father: {fileID: 1452863273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -286.89}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &111396915
@@ -1967,9 +1972,9 @@ RectTransform:
   - {fileID: 790043643}
   m_Father: {fileID: 1452863273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -2103.9001}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &192823296
@@ -2616,6 +2621,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tempat tidur pantai
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14dea3fb81b06454ab03dc69b4105fd7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 14dea3fb81b06454ab03dc69b4105fd7,
         type: 3}
@@ -4110,6 +4120,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: sampan (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6a22e63eb09e36e4c911cb47cfa12802,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4224,6 +4239,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: papan menu untung jawa
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 117c3e47fe7f1e04abde3c1c5d67eb26,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4447,6 +4467,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: crab board add (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60f3d95af5ac8eb48ab1e04b666bff77,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 60f3d95af5ac8eb48ab1e04b666bff77,
         type: 3}
@@ -5448,7 +5473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &642126893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5718,6 +5743,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 14dea3fb81b06454ab03dc69b4105fd7,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14dea3fb81b06454ab03dc69b4105fd7,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5878,6 +5908,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: crab board add (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60f3d95af5ac8eb48ab1e04b666bff77,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 60f3d95af5ac8eb48ab1e04b666bff77,
         type: 3}
@@ -6123,6 +6158,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: the bench (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77b1f1f81e1d78e46a804c6208996f64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6317,9 +6357,9 @@ RectTransform:
   - {fileID: 687825707}
   m_Father: {fileID: 1452863273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -1902.0101}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &712494828
@@ -7982,6 +8022,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: the bench (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77b1f1f81e1d78e46a804c6208996f64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8052,9 +8097,9 @@ RectTransform:
   - {fileID: 9632285}
   m_Father: {fileID: 1452863273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -488.78003}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &862527889
@@ -8346,6 +8391,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: foll animation wave (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: de03c33dab4126f41b9a63bbc4c4353c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8434,6 +8484,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: the bench (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77b1f1f81e1d78e46a804c6208996f64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8504,9 +8559,9 @@ RectTransform:
   - {fileID: 56668327}
   m_Father: {fileID: 1452863273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -2305.79}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &917338758
@@ -8642,9 +8697,9 @@ RectTransform:
   - {fileID: 1473401871}
   m_Father: {fileID: 1452863273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -892.56006}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &936416004
@@ -9443,6 +9498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: gerobak balon
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 51064021020eee444adbc60bc4852716,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 51064021020eee444adbc60bc4852716,
         type: 3}
@@ -10251,6 +10311,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: the bench (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77b1f1f81e1d78e46a804c6208996f64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11420,9 +11485,9 @@ RectTransform:
   - {fileID: 1307705750}
   m_Father: {fileID: 1452863273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -690.67004}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1168487556
@@ -11681,8 +11746,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1006406281}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.6911333}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.00011268, y: -0.0000076293945}
   m_SizeDelta: {x: 579, y: 188}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11856,9 +11921,9 @@ RectTransform:
   - {fileID: 952384752}
   m_Father: {fileID: 1452863273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -2507.68}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1303194652
@@ -12645,9 +12710,9 @@ RectTransform:
   - {fileID: 1713255687}
   m_Father: {fileID: 1452863273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -1498.2301}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1363708970
@@ -13577,7 +13642,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.000011444092}
-  m_SizeDelta: {x: 100, y: 0}
+  m_SizeDelta: {x: 100, y: 2592.68}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1452863274
 MonoBehaviour:
@@ -14765,9 +14830,9 @@ RectTransform:
   - {fileID: 72822458}
   m_Father: {fileID: 1452863273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -1700.1201}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1564886083
@@ -14992,6 +15057,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ban_lampung
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 729fdb582b8791a489eb8e7dd1b822f3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 729fdb582b8791a489eb8e7dd1b822f3,
         type: 3}
@@ -15804,6 +15874,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: chef doll
       objectReference: {fileID: 0}
+    - target: {fileID: 9066605959554699775, guid: ca66dea34d522fc4fbb67ebb6289e8f4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16456,6 +16531,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: sampan (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6a22e63eb09e36e4c911cb47cfa12802,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16856,9 +16936,9 @@ RectTransform:
   - {fileID: 301371620}
   m_Father: {fileID: 1452863273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -85}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1810476557
@@ -18202,6 +18282,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: busy doll
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c497d08e9ffc8eb40abf1f2761a777c7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18582,6 +18667,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fishing doll
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 824b7358cd7e6984488c81b6b153f1da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

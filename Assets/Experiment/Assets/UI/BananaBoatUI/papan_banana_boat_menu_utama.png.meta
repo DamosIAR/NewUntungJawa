@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3837fd4174d035443bbbabe618c72a07
+guid: df84e2f1fb3364f488ab90211c009875
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,17 +106,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: papan_banana_boat_0
+      name: papan_banana_boat_menu_utama_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 8
-        width: 1325
-        height: 563
+        x: 19
+        y: 14
+        width: 673
+        height: 247
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e47ceeebb145abd4294d1760d8dfcfd1
-      internalID: 1077285458
+      spriteID: b066f6b91c884c045921b0c1a11383ea
+      internalID: 927967517
       vertices: []
       indices: 
       edges: []
@@ -133,7 +159,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d860b819d48dc514c949f2787c39c805
+    spriteID: b79435034353c1a4c9cb4f29764a75ab
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +167,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      papan_banana_boat_0: 1077285458
+      papan_banana_boat_menu_utama_0: 927967517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

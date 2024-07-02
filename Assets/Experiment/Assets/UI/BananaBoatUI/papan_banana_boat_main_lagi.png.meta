@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fbe0f067454b7a649b99c72fcfb0df9b
+guid: 783f3236baa19fc44bfa69f01f69920c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,17 +106,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: crab_spearing_sign_0
+      name: papan_banana_boat_main_lagi_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 21
-        width: 1488
-        height: 566
+        x: 11
+        y: 20
+        width: 673
+        height: 247
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c73f42f71b2b0de4bb1380341f48fc60
-      internalID: -8334709
+      spriteID: 84dd3cdcae8f88245896b016bc3e504a
+      internalID: 1141051160
       vertices: []
       indices: 
       edges: []
@@ -133,7 +159,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5db395b6713f9b242b99ae84252d8bfb
+    spriteID: b30cb4324b33f904fa3416236dac7d41
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +167,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      crab_spearing_sign_0: -8334709
+      papan_banana_boat_main_lagi_0: 1141051160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

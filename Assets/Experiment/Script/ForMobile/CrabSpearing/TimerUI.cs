@@ -49,6 +49,7 @@ public class TimerUI : MonoBehaviour
     {
         Score.text = ("Final Score : ") + ScoreManager.instance.getScore().ToString();
         gameOver.gameObject.SetActive(true);
+        ScoreManager.instance.updateHighScore();
     }
 
     void Update()

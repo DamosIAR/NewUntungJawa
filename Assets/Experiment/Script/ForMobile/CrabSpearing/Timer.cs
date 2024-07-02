@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -63,4 +63,4 @@ public class Timer : MonoBehaviour
         int seconds = (int)maxTime % 60;
         timerText.text = string.Format("{00:00} : {01:00}", minutes, seconds);
     }
-}
+}*/

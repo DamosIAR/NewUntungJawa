@@ -22,7 +22,7 @@ public class CrabSpawner : MonoBehaviour
     void Update()
     {
         if (!SpearGameManager.Instance.isGamePlaying()) return;
-        spawnAreaCenter = new Vector3 (spawnAreaCenter.x, spawnAreaCenter.y, spawnAreaCenter.z);
+        spawnAreaCenter = transform.position;//new Vector3 (spawnAreaCenter.x, spawnAreaCenter.y, spawnAreaCenter.z);
         spawnAreaCenter.z += speed;
         //transform.position = (spawnAreaCenter * speed);
 

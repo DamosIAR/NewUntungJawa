@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraGlide : MonoBehaviour
+public class SpawnerCameraGlide : MonoBehaviour
 {
     public float moveSpeed;
     // Start is called before the first frame update

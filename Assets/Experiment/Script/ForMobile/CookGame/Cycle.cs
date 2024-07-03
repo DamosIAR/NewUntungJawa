@@ -32,5 +32,4 @@ public class Cycle : MonoBehaviour
         gameData = SaveSystem.Load();
         CycleText.text = "Hari ke " + gameData.CyclePassed.ToString();
     }
-
 }

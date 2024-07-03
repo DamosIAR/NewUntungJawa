@@ -51,6 +51,7 @@ public class NewSceneManager : MonoBehaviour
 
     public void PlayAgain()
     {
+        Time.timeScale = 1f;
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex));
     }
 

@@ -5206,16 +5206,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376732932}
-  m_LocalRotation: {x: -0.029093271, y: -0.009134559, z: -0.99952954, w: -0.003298824}
-  m_LocalPosition: {x: 0, y: 0, z: -2.2764685}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalRotation: {x: -0, y: -0, z: 8.731149e-11, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1959344055}
+  m_Father: {fileID: 1943711912}
   m_LocalEulerAnglesHint: {x: -1.035, y: 3.338, z: -180.408}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 265, y: -191}
+  m_AnchoredPosition: {x: -186.00003, y: 200.00058}
   m_SizeDelta: {x: 472, y: 500}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &376732934
@@ -11794,6 +11794,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 533216631}
+  - component: {fileID: 533216632}
   m_Layer: 0
   m_Name: BUTTONS
   m_TagString: Untagged
@@ -11819,6 +11820,28 @@ Transform:
   - {fileID: 97105910}
   m_Father: {fileID: 1959344055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &533216632
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533216630}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ccf6e82284095db49a8a49005657c217, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &551146398
 GameObject:
   m_ObjectHideFlags: 0
@@ -18373,16 +18396,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068899018}
-  m_LocalRotation: {x: -0, y: -0, z: -0.003082601, w: 0.9999953}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalRotation: {x: 0.029064972, y: 0.009224198, z: 0.9995349, w: -0.00021765774}
+  m_LocalPosition: {x: 0, y: 0, z: -9.100477}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1959344055}
+  m_Father: {fileID: 1943711912}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.353}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 147.8584, y: -65.225586}
+  m_AnchoredPosition: {x: 285.8774, y: -299.9936}
   m_SizeDelta: {x: 472, y: 500}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1068899020
@@ -27644,6 +27667,66 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1937474403}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1943711911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1943711912}
+  - component: {fileID: 1943711913}
+  m_Layer: 5
+  m_Name: 'button '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1943711912
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943711911}
+  m_LocalRotation: {x: -0.029093271, y: -0.009134559, z: -0.99952954, w: -0.003298824}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0019128321}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 376732933}
+  - {fileID: 1068899019}
+  m_Father: {fileID: 1959344055}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1073.5199, y: 478.2245}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1943711913
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943711911}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d49e2a0fbcb26aa49b25c278157b48d0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1950927495
 GameObject:
   m_ObjectHideFlags: 0
@@ -28011,8 +28094,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1974064717}
-  - {fileID: 376732933}
-  - {fileID: 1068899019}
+  - {fileID: 1943711912}
   - {fileID: 311530084}
   - {fileID: 1318406476}
   - {fileID: 168131682}
@@ -28260,6 +28342,7 @@ GameObject:
   - component: {fileID: 1974064717}
   - component: {fileID: 1974064719}
   - component: {fileID: 1974064718}
+  - component: {fileID: 1974064720}
   m_Layer: 5
   m_Name: Coin Background
   m_TagString: Untagged
@@ -28322,6 +28405,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974064716}
   m_CullTransparentMesh: 1
+--- !u!95 &1974064720
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974064716}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: acfbd5feb7d73a14ab9ab764815c4956, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1997568398
 PrefabInstance:
   m_ObjectHideFlags: 0

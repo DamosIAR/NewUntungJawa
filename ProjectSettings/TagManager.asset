@@ -26,6 +26,8 @@ TagManager:
   - SpecialObject
   - LeftSideInfo
   - RightSIdeInfo
+  - WaterTrigger
+  - Boat
   layers:
   - Default
   - TransparentFX

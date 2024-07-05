@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3ac7333323561ae4a8dd76b493af31ac
+guid: 169b700017ab15c429f02109297b9f0c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,6 +97,32 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -110,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_cooking 1_0
+      name: saus_merah_white_outline_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 27
-        width: 342
-        height: 342
+        x: 0
+        y: 0
+        width: 267
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9e7b10f1995bc44aacd149cb64502cb
-      internalID: -169849017
+      spriteID: de268de6923436443a53cb22be2a2ed3
+      internalID: -1520759604
       vertices: []
       indices: 
       edges: []
@@ -133,7 +159,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: abafd72f2fd45c549881c172aa9eac8f
+    spriteID: 6f1fa5d0897da7c4f9a37503701895f4
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +167,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      button_cooking 1_0: -169849017
+      saus_merah_white_outline_0: -1520759604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

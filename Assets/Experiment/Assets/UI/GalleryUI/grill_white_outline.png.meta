@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 831f9e77c1baf17439a425b0669a26b9
+guid: b13733c54d7f0254a808286aaa6be4bf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,12 +97,12 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 50
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main_menu_button_bold_border_0
+      name: grill_white_outline_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 25
-        width: 283
-        height: 285
+        x: 0
+        y: 0
+        width: 226
+        height: 281
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +150,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29da8c20f64877c4f9639a118973e62e
-      internalID: -2061432226
+      spriteID: dba54cbc26d96894b8a06f771b77f835
+      internalID: 2124367125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grill_white_outline_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c733cb8b6f0550499354f7480706b4e
+      internalID: 1209020343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grill_white_outline_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 0
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d486f20f5b9dd249bd3a1a52630bfa2
+      internalID: -832698554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grill_white_outline_3
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 7
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3418a543c92265a408f92aa82e02b974
+      internalID: -1915705263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grill_white_outline_4
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999a8a8387634a546b3f7cb1ddcd3d76
+      internalID: -238888642
       vertices: []
       indices: 
       edges: []
@@ -159,7 +243,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b2634a8e284f09e4b964a2a3c925c65c
+    spriteID: 741309dbec5d87143a0af7d707589326
     internalID: 0
     vertices: []
     indices: 
@@ -167,7 +251,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      main_menu_button_bold_border_0: -2061432226
+      grill_white_outline_0: 2124367125
+      grill_white_outline_1: 1209020343
+      grill_white_outline_2: -832698554
+      grill_white_outline_3: -1915705263
+      grill_white_outline_4: -238888642
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

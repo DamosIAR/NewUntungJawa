@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 241a38b4bf5748347b1d0a85ed38ac65
+guid: b14830ebf03396442a8269ed104a0f82
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,17 +106,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: papan_back_1 2_0
+      name: button_minigame 1_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 20
-        width: 465
-        height: 466
+        x: 21
+        y: 26
+        width: 342
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e60b35c807d003a438576e942a9976a8
-      internalID: -180130197
+      spriteID: 1dfa02f40b829d94ea3f1701a59dcb21
+      internalID: 847555425
       vertices: []
       indices: 
       edges: []
@@ -133,7 +159,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 78c22c80a944a0b4790c57be8c8f21fa
+    spriteID: bf0165fc6e74b5f4db8a51498397d21e
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +167,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      papan_back_1 2_0: -180130197
+      button_minigame 1_0: 847555425
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

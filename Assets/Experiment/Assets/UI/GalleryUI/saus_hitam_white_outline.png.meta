@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b14830ebf03396442a8269ed104a0f82
+guid: 30ecdaf729a211d46bf6fee4e0d570de
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,6 +97,32 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
+    textureFormat: 50
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -110,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_minigame 1_0
+      name: saus_hitam_white_outline_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 26
-        width: 342
-        height: 342
+        x: 0
+        y: 0
+        width: 257
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dfa02f40b829d94ea3f1701a59dcb21
-      internalID: 847555425
+      spriteID: 87558ef18a6b50640a6cdb0cbe81b395
+      internalID: -612726789
       vertices: []
       indices: 
       edges: []
@@ -133,7 +159,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: bf0165fc6e74b5f4db8a51498397d21e
+    spriteID: d5bbc01f8f015234ea0828ca76c00091
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +167,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      button_minigame 1_0: 847555425
+      saus_hitam_white_outline_0: -612726789
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

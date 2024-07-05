@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5ca38ef80fdf14546947163db2450b04
+guid: 1c28f06bb11f3f147849b9efeffa0119
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,12 +97,12 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 50
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: triangle_button_bold_border_0
+      name: store_background_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 18
-        width: 283
-        height: 284
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4a92f8eb9494c446bf593942ea2e6da
-      internalID: -887827672
+      spriteID: 117e70c86312e8340922cec3109d6c6b
+      internalID: -1662113038
       vertices: []
       indices: 
       edges: []
@@ -159,7 +159,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fba89fedacf079340ac6ca37bcf48850
+    spriteID: 7e7ad70521e6b514887d55be8ec1c413
     internalID: 0
     vertices: []
     indices: 
@@ -167,7 +167,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      triangle_button_bold_border_0: -887827672
+      store_background_0: -1662113038
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -46,7 +46,7 @@ public class GalleryTouch : MonoBehaviour
         BUBBLE.gameObject.SetActive(true);
         ImageInfo.gameObject.SetActive(false);
         InfoCanvas.gameObject.SetActive(false);
-        InfoManager.instance.DisableInfoCanvas();
+        //InfoManager.instance.DisableInfoCanvas();
     }
 
     // Update is called once per frame
@@ -59,14 +59,14 @@ public class GalleryTouch : MonoBehaviour
             virtualCameraStart.transform.position = new Vector3(newPositionX, 877f, 142f);
         }
 
-        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
+        /*if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.touches[0].position);
             RaycastHit hit;
 
             if(Physics.Raycast(ray, out hit) )
             {
-                /*if(hit.collider.tag == MINIGAME)
+                *//*if(hit.collider.tag == MINIGAME)
                 {
                     virtualCameraMinigame.Priority = 20;
                     minigameMenuCanvas.gameObject.SetActive(true);
@@ -90,9 +90,9 @@ public class GalleryTouch : MonoBehaviour
                     cookgameVirtualCamera.Priority = 20;
                     cookGameCanvas.SetActive(true);
                     cookgameAnimator.SetBool("IsOpen", true);
-                }*/
+                }*//*
             }
-        }
+        }*/
     }
 
     public void backtomaincamera()

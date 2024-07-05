@@ -205,7 +205,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 38.710163, y: 12.660623, z: 1}
-  m_Center: {x: 2.2487736, y: 3.1569285, z: 353.14}
+  m_Center: {x: 2.2487736, y: 3.1569285, z: 864.2}
 --- !u!114 &1975119950921638340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,7 +331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6691505418198080942}
-  - component: {fileID: 8573538466332070474}
+  - component: {fileID: 5111676971484551874}
   m_Layer: 4
   m_Name: GameObject
   m_TagString: WaterTrigger
@@ -348,13 +348,13 @@ Transform:
   m_GameObject: {fileID: 4285357831281599751}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 21.4}
-  m_LocalScale: {x: 54.974987, y: 31.993, z: 3.944417}
+  m_LocalPosition: {x: 0, y: 0, z: 17.8}
+  m_LocalScale: {x: 283.9458, y: 165.24385, z: 20.372913}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3731500282074380096}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8573538466332070474
+--- !u!65 &5111676971484551874
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -369,12 +369,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.99999624, z: 0.07851044}
-  m_Center: {x: 0, y: 0, z: -0.4607435}
+  m_Size: {x: 0.4, y: 0.2, z: 0.05}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5709036166726985439
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,12 +461,12 @@ PrefabInstance:
     - target: {fileID: 1024560205301068166, guid: 6d38f28c8f53eb64383bc1dc0b9c8fe4,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.70502967
+      value: 1.1781045
       objectReference: {fileID: 0}
     - target: {fileID: 1024560205301068166, guid: 6d38f28c8f53eb64383bc1dc0b9c8fe4,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.5914462
+      value: 8.870181
       objectReference: {fileID: 0}
     - target: {fileID: 1024560205301068166, guid: 6d38f28c8f53eb64383bc1dc0b9c8fe4,
         type: 3}
@@ -481,7 +481,7 @@ PrefabInstance:
     - target: {fileID: 1024560205301068166, guid: 6d38f28c8f53eb64383bc1dc0b9c8fe4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 155
+      value: 417
       objectReference: {fileID: 0}
     - target: {fileID: 1024560205301068166, guid: 6d38f28c8f53eb64383bc1dc0b9c8fe4,
         type: 3}
@@ -518,6 +518,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1024560205301068167, guid: 6d38f28c8f53eb64383bc1dc0b9c8fe4,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -8670151273213183110, guid: c7c578b97a755b242b2801cb4b39c88a,
+        type: 3}
+    - target: {fileID: 1024560205301068168, guid: 6d38f28c8f53eb64383bc1dc0b9c8fe4,
+        type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024560205301068168, guid: 6d38f28c8f53eb64383bc1dc0b9c8fe4,
+        type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 1024560205301068168, guid: 6d38f28c8f53eb64383bc1dc0b9c8fe4,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 21d5d3b63a3f53f4bb29e5de315cd701, type: 2}
     - target: {fileID: 1024560205301068169, guid: 6d38f28c8f53eb64383bc1dc0b9c8fe4,
         type: 3}
       propertyPath: m_Name
@@ -528,6 +549,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 3004220356034355173, guid: 6d38f28c8f53eb64383bc1dc0b9c8fe4,
+        type: 3}
+      propertyPath: material
+      value: 
+      objectReference: {fileID: 2100000, guid: 21d5d3b63a3f53f4bb29e5de315cd701, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

@@ -24,7 +24,7 @@ public class ScoreManager : MonoBehaviour
     {
         score += 1;
         scoreText.text = "" + score;
-        highScore();
+        //highScore();
     }
 
     public float getScore()
@@ -38,6 +38,7 @@ public class ScoreManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("CrabHighScore", score);
         }
+        updateHighScore();
     }
 
     public void updateHighScore()

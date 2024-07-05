@@ -7490,7 +7490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094999488}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07899027, y: 0.000000017327665, z: -0.0000000013730069, w: 0.9968754}
+  m_LocalRotation: {x: 0.07899027, y: -0.000000017327661, z: 0.0000000013730066, w: 0.9968754}
   m_LocalPosition: {x: 0, y: -2, z: -6.598424}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10972,7 +10972,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534551214}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07899027, y: 0.000000017327665, z: -0.0000000013730069, w: 0.9968754}
+  m_LocalRotation: {x: 0.07899027, y: -0.000000017327661, z: 0.0000000013730066, w: 0.9968754}
   m_LocalPosition: {x: 0, y: 5.3, z: -18.098423}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -16151,6 +16151,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1744139145967968358, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.6132905
+      objectReference: {fileID: 0}
     - target: {fileID: 1756811465062335049, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -16597,6 +16602,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6105591052418495831, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1202133602, guid: 5870c530a4f7212439f22b31f0ab9b08,
+        type: 3}
     - target: {fileID: 6193228644616327047, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
         type: 3}
       propertyPath: m_IsActive
@@ -16605,7 +16616,7 @@ PrefabInstance:
     - target: {fileID: 6210402970966103315, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6360479482237523137, guid: 2681ff3eb5d52be4f944d4240f4ebe46,
         type: 3}

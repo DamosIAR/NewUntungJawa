@@ -17,6 +17,7 @@ public class BoatPositionHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!BananaBoatGameManager.Instance.isPlaying()) return;
         ZPosition = transform.position.z;
         /*tickInterval += Time.deltaTime;
         if (tickInterval >= maxInterval)

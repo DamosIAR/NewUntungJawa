@@ -17,10 +17,7 @@ TagManager:
   - DestroyBarrier
   - Storage
   - Ground
-  - MiniGame
-  - Info
   - BackToMainCamera
-  - CookGame
   - LeftScreen
   - RightScreen
   - SpecialObject
@@ -28,6 +25,7 @@ TagManager:
   - RightSIdeInfo
   - WaterTrigger
   - Boat
+  - DialogueTrigger
   layers:
   - Default
   - TransparentFX

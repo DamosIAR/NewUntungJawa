@@ -1,0 +1,55 @@
+using System.Collections.Generic;
+using UnityEngine;
+ 
+[System.Serializable]
+public class DialogueCharacter
+{
+    public string name;
+    public Sprite icon;
+}
+ 
+[System.Serializable]
+public class DialogueLine
+{
+    public DialogueCharacter character;
+    [TextArea(3, 10)]
+    public string line;
+}
+ 
+[System.Serializable]
+public class Dialogue
+{
+    public List<DialogueLine> dialogueLines = new List<DialogueLine>();
+}
+ 
+public class IntroductionTrigger : MonoBehaviour
+{
+    public Dialogue dialogue;
+ 
+    public void TriggerDialogue()
+    {
+        IntroductionManager.Instance.StartDialogue(dialogue);
+    }
+
+    private void Start()
+    {
+        TriggerDialogue();
+    }
+
+    private void Update()
+    {
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            Debug.Log("Tes");
+        }
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if(collision.gameObject.tag == "DialogueTrigger")
+        {
+            TriggerDialogue();
+        }
+    }
+
+}

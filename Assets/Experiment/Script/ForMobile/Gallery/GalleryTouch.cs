@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using System;
 
 public class GalleryTouch : MonoBehaviour
 {
     public Camera mainCamera;
+    public static GalleryTouch instance { get; private set; }
+
     [SerializeField] private CinemachineVirtualCamera virtualCameraStart;
     [SerializeField] private CinemachineVirtualCamera virtualCameraMinigame;
     [SerializeField] private CinemachineVirtualCamera InfoVirtualCamera;
@@ -29,10 +32,12 @@ public class GalleryTouch : MonoBehaviour
     private float stoppingPoint = 1484;
     private float speed = 400;
 
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         minigameMenuCanvas.gameObject.SetActive(false);
         virtualCameraStart.Priority = 15;
         virtualCameraMinigame.Priority = 10;
@@ -57,6 +62,7 @@ public class GalleryTouch : MonoBehaviour
             startingPoint -= (speed * Time.deltaTime);
             float newPositionX = startingPoint;
             virtualCameraStart.transform.position = new Vector3(newPositionX, 877f, 142f);
+            
         }
 
         /*if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)

@@ -1746,6 +1746,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7d193ac00172759438cc4dd143682cc0,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7d193ac00172759438cc4dd143682cc0,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3419,6 +3424,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3525,6 +3535,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: doll rig hat
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a3576e162dd3eba4f889d0efd2c4f820,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4424,7 +4439,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 60f3d95af5ac8eb48ab1e04b666bff77,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 60f3d95af5ac8eb48ab1e04b666bff77,
         type: 3}
@@ -4861,6 +4876,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: chef doll (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987481619133444674, guid: 6619a6688bb2fab4187aed5544717bc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4331813903822055672, guid: 6619a6688bb2fab4187aed5544717bc3,
         type: 3}
@@ -5511,6 +5531,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: doll rig hat1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a5fd74cf934e08429744dc178ac2238,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6087,7 +6112,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 60f3d95af5ac8eb48ab1e04b666bff77,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 60f3d95af5ac8eb48ab1e04b666bff77,
         type: 3}
@@ -6352,6 +6377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tempat sampah (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c0898cfcda093bf4eb192c9c18253fc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c0898cfcda093bf4eb192c9c18253fc3,
         type: 3}
@@ -6892,6 +6922,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fish board adds
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b5a83cdbbc77efd499b92419a37437dd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b5a83cdbbc77efd499b92419a37437dd,
         type: 3}
@@ -7477,6 +7512,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 'crab mini game 1 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c5e0f39bed2b30a48ba9e6cdb66ea677,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5e0f39bed2b30a48ba9e6cdb66ea677,
         type: 3}
@@ -8438,6 +8478,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ban lampung
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a578fda6f4c8006478c4ec01db5a95b0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4083501151425157549, guid: a578fda6f4c8006478c4ec01db5a95b0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8545,6 +8590,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fishing doll 2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a20f40844a899446b28ca911a8af8e9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9205,6 +9255,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: toko ikan
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 338817d5c98327e4cb94c1128d400793,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 338817d5c98327e4cb94c1128d400793,
         type: 3}
@@ -10597,6 +10652,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tempat tidur pantai (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 54fe2ff7bbb698946bef896d5480b21a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -10795,6 +10855,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stairs
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 477bfa6a557ce7d49982878d8674b2f3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 477bfa6a557ce7d49982878d8674b2f3,
         type: 3}
@@ -11397,6 +11462,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11830,6 +11900,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wood box (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
         type: 3}
@@ -12366,6 +12441,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -12462,6 +12542,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wood box (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
         type: 3}
@@ -12571,6 +12656,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fishing doll 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a20f40844a899446b28ca911a8af8e9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13086,6 +13176,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 807a0b452e41dfb4c9988b724a10c032,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 807a0b452e41dfb4c9988b724a10c032,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -13345,6 +13440,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stairs (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 477bfa6a557ce7d49982878d8674b2f3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 477bfa6a557ce7d49982878d8674b2f3,
         type: 3}
@@ -14301,6 +14401,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 14d90b2af24c75f49b372bffea410189,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14d90b2af24c75f49b372bffea410189,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -14801,6 +14906,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e3836193ce833f149ba7871c11435d9b,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e3836193ce833f149ba7871c11435d9b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -15162,6 +15272,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 477bfa6a557ce7d49982878d8674b2f3,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 477bfa6a557ce7d49982878d8674b2f3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -15396,6 +15511,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mini game board 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806511370941702430, guid: 2cd99c47acf5cac458ef806be27e2b1b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6620027567221996452, guid: 2cd99c47acf5cac458ef806be27e2b1b,
         type: 3}
@@ -15686,6 +15806,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b5a83cdbbc77efd499b92419a37437dd,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b5a83cdbbc77efd499b92419a37437dd,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -15870,8 +15995,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1209671256}
   m_HandleRect: {fileID: 1209671255}
   m_Direction: 2
-  m_Value: 1.0000001
-  m_Size: 0.30886674
+  m_Value: 1
+  m_Size: 0.30886668
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -16617,6 +16742,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -16756,6 +16886,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: doll rig hat (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a3576e162dd3eba4f889d0efd2c4f820,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18054,6 +18189,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e3836193ce833f149ba7871c11435d9b,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e3836193ce833f149ba7871c11435d9b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -18910,6 +19050,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -19016,6 +19161,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: doll rig hat1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a5fd74cf934e08429744dc178ac2238,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19170,6 +19320,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wood box (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 164d6614f80605143a27da900b766ab4,
         type: 3}

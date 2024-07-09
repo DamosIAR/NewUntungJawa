@@ -3721,14 +3721,14 @@ RectTransform:
   m_GameObject: {fileID: 251003976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4923, y: 2.4923, z: 2.4923}
+  m_LocalScale: {x: 2.6921685, y: 2.0869524, z: 2.0869524}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 720317008}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 70, y: 0}
+  m_AnchoredPosition: {x: 52, y: -11}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &251003978
@@ -3751,7 +3751,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2110910044, guid: 0bdb1fa967d3ddd4ca17f785896c50b4, type: 3}
+  m_Sprite: {fileID: 1607096203, guid: a7ac17461febf0b43bb507286c375253, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10998,7 +10998,7 @@ GameObject:
   - component: {fileID: 456973709}
   - component: {fileID: 456973710}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: DialogueHolder
   m_TagString: DialogueTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11056,18 +11056,74 @@ MonoBehaviour:
     dialogueLines:
     - character:
         name: Luki
-        icon: {fileID: -1993398056, guid: 06afcbaac8fc3fb49a078ab9ed08f64a, type: 3}
+        icon: {fileID: 519685729, guid: c336bf80a4873224a9a0a4ddd59c2445, type: 3}
       line: Wah, pulau ini ternyata lebih indah dari yang saya bayangkan!
     - character:
         name: Luki
-        icon: {fileID: -1993398056, guid: 06afcbaac8fc3fb49a078ab9ed08f64a, type: 3}
+        icon: {fileID: 519685729, guid: c336bf80a4873224a9a0a4ddd59c2445, type: 3}
       line: Tempat ini seperti surga! Airnya sangat jernih, dan pantainya masih alami.
     - character:
         name: Pak RT
-        icon: {fileID: -2110910044, guid: 0bdb1fa967d3ddd4ca17f785896c50b4, type: 3}
+        icon: {fileID: -1697265838, guid: 45c2409166a24854cad8cf94e4180722, type: 3}
       line: Senang kamu menyukainya, Luki! Pulau Untung Jawa memang terkenal dengan
-        keindahan alamnyaSenang kamu menyukainya, Luki! Pulau Untung Jawa memang
-        terkenal dengan keindahan alamnya
+        keindahan alamnya.
+    - character:
+        name: Luki
+        icon: {fileID: 1607096203, guid: a7ac17461febf0b43bb507286c375253, type: 3}
+      line: Ini bahkan lebih bagus daripada gambar yang saya lihat dari online dan
+        udaranya terasa begitu segar dan sejuk.
+    - character:
+        name: Pak RT
+        icon: {fileID: -1059974814, guid: 1ffde83cef9c67c4fac3474d0f24c204, type: 3}
+      line: 'Itulah suasana pulau yang cocok untukmu! Orang-orang datang ke sini
+        untuk bersantai dan menikmati alam yang indah.
+
+'
+    - character:
+        name: Luki
+        icon: {fileID: 1607096203, guid: a7ac17461febf0b43bb507286c375253, type: 3}
+      line: 'Saya benar-benar mengerti alasan banyak orang datang kesini. '
+    - character:
+        name: Luki
+        icon: {fileID: 519685729, guid: c336bf80a4873224a9a0a4ddd59c2445, type: 3}
+      line: Di sini sangat damai Dan penduduk setempat tampak sangat ramah!
+    - character:
+        name: Pak RT
+        icon: {fileID: -1697265838, guid: 45c2409166a24854cad8cf94e4180722, type: 3}
+      line: 'Memang benar. Kami bangga dengan keramahtamahan kami.
+
+'
+    - character:
+        name: Luki
+        icon: {fileID: 1521044570, guid: 09688b59738e2d148a9eb01b40838163, type: 3}
+      line: Saya sudah merasa tidak sabar. Apakah Anda punya rekomendasi tempat yang
+        harus saya kunjungi?
+    - character:
+        name: Pak RT
+        icon: {fileID: 321394143, guid: a362a2de03c454c48b522a8c3e128bb5, type: 3}
+      line: Anda sebaiknya mengunjungi hutan bakau dan mungkin naik perahu keliling
+        pulau. Pemandangannya luar biasa.
+    - character:
+        name: Luki
+        icon: {fileID: 1633539526, guid: 4a72cac530faea34caa4cb2ef71fbeee, type: 3}
+      line: Kedengarannya luar biasa! Saya tidak sabar untuk menjelajah lebih jauh.
+    - character:
+        name: Luki
+        icon: {fileID: 1521044570, guid: 09688b59738e2d148a9eb01b40838163, type: 3}
+      line: Oh, dan di mana saya bisa mendapatkan makanan lokal? Saya kelaparan.
+    - character:
+        name: Pak RT
+        icon: {fileID: -1059974814, guid: 1ffde83cef9c67c4fac3474d0f24c204, type: 3}
+      line: Di dekat sini ada warung besar yang menyajikan masakan asli Indonesia.
+        Mereka memiliki makanan laut panggang terbaik.
+    - character:
+        name: Luki
+        icon: {fileID: 519685729, guid: c336bf80a4873224a9a0a4ddd59c2445, type: 3}
+      line: ' Sempurna! Saya tidak sabar untuk mencobanya.'
+    - character:
+        name: Pak RT
+        icon: {fileID: 321394143, guid: a362a2de03c454c48b522a8c3e128bb5, type: 3}
+      line: Kalau begitu saya bisa tunjukan jalannya!
 --- !u!114 &456973710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12949,8 +13005,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 160, y: -20}
-  m_SizeDelta: {x: 1100, y: 200}
+  m_AnchoredPosition: {x: -38, y: -30}
+  m_SizeDelta: {x: 1400, y: 162}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &639380036
 MonoBehaviour:
@@ -13000,8 +13056,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -13927,7 +13983,7 @@ RectTransform:
   m_GameObject: {fileID: 720317007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.37, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 251003977}
@@ -13938,8 +13994,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -300, y: 375}
-  m_SizeDelta: {x: -1000, y: -850}
+  m_AnchoredPosition: {x: 0.00012207031, y: 375}
+  m_SizeDelta: {x: -400.0003, y: -850}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &720317010
 MonoBehaviour:
@@ -13961,8 +14017,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1300125964, guid: 524adc1999b37514581f98fe82e93036, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -14013,7 +14069,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -20}
+  m_AnchoredPosition: {x: 0, y: -65.76}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &721315958
@@ -21426,7 +21482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1322853980
 RectTransform:
   m_ObjectHideFlags: 0

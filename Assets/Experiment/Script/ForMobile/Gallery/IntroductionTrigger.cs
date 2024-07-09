@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
- 
+using UnityEngine.UI;
+
 [System.Serializable]
 public class DialogueCharacter
 {
     public string name;
     public Sprite icon;
+    //public Image arrow;
 }
  
 [System.Serializable]
@@ -25,6 +27,7 @@ public class Dialogue
 public class IntroductionTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
+    public GameData gameData;
  
     public void TriggerDialogue()
     {
@@ -33,11 +36,17 @@ public class IntroductionTrigger : MonoBehaviour
 
     private void Start()
     {
-        TriggerDialogue();
+        gameData = SaveSystem.Load();
+        if(gameData.TutorialShown == false)
+        {
+            TriggerDialogue();
+        }
+        
     }
 
     private void Update()
     {
+        if (gameData.TutorialShown == true) return;
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             Debug.Log("Tes");

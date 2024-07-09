@@ -81,6 +81,10 @@ public class IntroductionManager : MonoBehaviour
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI dialogueArea;
     public GameObject DialogueCanvas;
+    public GameObject Click;
+    public GameObject CookGameImage;
+    public GameObject DarkPanel;
+    public GameData gameData;
 
     private Queue<DialogueLine> lines;
 
@@ -97,11 +101,14 @@ public class IntroductionManager : MonoBehaviour
 
         lines = new Queue<DialogueLine>();
         DialogueCanvas.SetActive(false);
+        DarkPanel.SetActive(false);
+        gameData = SaveSystem.Load();
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
         DialogueCanvas.SetActive(true);
+        DarkPanel.SetActive(true);
         isDialogueActive = true;
 
 
@@ -121,6 +128,17 @@ public class IntroductionManager : MonoBehaviour
         {
             EndDialogue();
             return;
+        }
+
+        if(lines.Count == 2)
+        {
+            Click.SetActive(true);
+            CookGameImage.SetActive(true);
+        }
+        else
+        {
+            Click.SetActive(false);
+            CookGameImage.SetActive(false);
         }
 
         DialogueLine currentLine = lines.Dequeue();
@@ -147,6 +165,10 @@ public class IntroductionManager : MonoBehaviour
     {
         isDialogueActive = false;
         DialogueCanvas.SetActive(false);
+        DarkPanel.SetActive(false);
+        Click.SetActive(false);
+        gameData.TutorialShown = true;
+        SaveSystem.Save(gameData);
         //animator.Play("hide");
     }
 }

@@ -7,10 +7,12 @@ public class GameData
 {
     public int Totalmoney;
     public int CyclePassed;
+    public bool TutorialShown;
 
     public GameData()
     {
         Totalmoney = 0;
         CyclePassed = 0;
+        TutorialShown = false;
     }
 }

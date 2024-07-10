@@ -33,14 +33,14 @@ public class Spear : MonoBehaviour
     {
         if (collision.gameObject.tag == "Object")
         {
-            scoreManager.updateScore();
+            scoreManager.updateNormalScore();
             Destroy(gameObject);
             Destroy(collision.gameObject);
         }
         else if(collision.gameObject.tag == "SpecialObject")
         {
-            scoreManager.updateScore();
-            scoreManager.updateScore();
+            scoreManager.updateSpecialScore();
+            //scoreManager.updateScore();
             Destroy(gameObject);
             Destroy(collision.gameObject);
         }

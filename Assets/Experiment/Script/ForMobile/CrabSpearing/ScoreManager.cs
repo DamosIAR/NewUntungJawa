@@ -20,9 +20,16 @@ public class ScoreManager : MonoBehaviour
 
     }
 
-    public void updateScore()
+    public void updateNormalScore()
     {
-        score += 1;
+        score += 2;
+        scoreText.text = "" + score;
+        //highScore();
+    }
+
+    public void updateSpecialScore()
+    {
+        score += 4;
         scoreText.text = "" + score;
         //highScore();
     }

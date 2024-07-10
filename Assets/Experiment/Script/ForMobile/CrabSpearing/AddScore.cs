@@ -11,7 +11,7 @@ public class AddScore : MonoBehaviour
         if(other.tag == "Spear")
         {
             Debug.Log("add score");
-            scoreManager.updateScore();
+            scoreManager.updateNormalScore();
         }
     }
 }

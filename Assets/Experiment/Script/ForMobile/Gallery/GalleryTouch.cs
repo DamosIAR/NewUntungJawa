@@ -19,7 +19,6 @@ public class GalleryTouch : MonoBehaviour
     [SerializeField] private GameObject BUBBLE;
     [SerializeField] private GameObject ImageInfo;
     [SerializeField] private GameObject InfoCanvas;
-    [SerializeField] private GameObject SettingsCanvas;
 
     [SerializeField] private Animator minigameAnimator;
     [SerializeField] private Animator cookgameAnimator;
@@ -52,7 +51,6 @@ public class GalleryTouch : MonoBehaviour
         BUBBLE.gameObject.SetActive(true);
         ImageInfo.gameObject.SetActive(false);
         InfoCanvas.gameObject.SetActive(false);
-        SettingsCanvas.gameObject.SetActive(false);
         //InfoManager.instance.DisableInfoCanvas();
     }
 
@@ -142,16 +140,6 @@ public class GalleryTouch : MonoBehaviour
         StartCoroutine(waitAfterTriggerInfo());
         BUTTON.gameObject.SetActive(false);
         BUBBLE.gameObject.SetActive(false);
-    }
-
-    public void OpenSettingsButton()
-    {
-        SettingsCanvas.SetActive(true);
-    }
-
-    public void CloseSettingsButton()
-    {
-        SettingsCanvas.SetActive(false);
     }
 
     IEnumerator waitAfterClose()

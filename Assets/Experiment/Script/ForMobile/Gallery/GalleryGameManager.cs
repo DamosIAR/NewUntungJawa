@@ -17,10 +17,15 @@ public class GalleryGameManager : MonoBehaviour
     [SerializeField] private Slider SFXSlider;
     [SerializeField] private Slider MasterSlider;
 
+    [SerializeField] private GameObject SettingsCanvas;
+
     private void Awake()
     {
-        LoadVolume();
-        gameData = SaveSystem.Load();
+        SettingsCanvas.gameObject.SetActive(false);
+        MusicSlider.value = 1f;
+        SFXSlider.value = 1f;
+        MasterSlider.value = 1f;
+        //LoadVolume();
         RefreshUI();
     }
 
@@ -29,6 +34,16 @@ public class GalleryGameManager : MonoBehaviour
         Money.text = gameData.Totalmoney.ToString();
         Cycle.text = "Hari Ke " + gameData.CyclePassed.ToString();
 
+    }
+
+    public void OpenSettingsButton()
+    {
+        SettingsCanvas.gameObject.SetActive(true);
+    }
+
+    public void CloseSettingsButton()
+    {
+        SettingsCanvas.gameObject.SetActive(false);
     }
 
     public void UpdateMusicVolume(float volume)

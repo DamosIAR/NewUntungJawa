@@ -565,7 +565,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.392
+    m_Value: 0.202
   clamp:
     m_OverrideState: 1
     m_Value: 0.2
@@ -780,7 +780,7 @@ MonoBehaviour:
     m_Value: 0.3
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.431
   rounded:
     m_OverrideState: 1
     m_Value: 0

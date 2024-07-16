@@ -55,6 +55,7 @@ public class GalleryTouch : MonoBehaviour
         BUBBLE.gameObject.SetActive(true);
         ImageInfo.gameObject.SetActive(false);
         InfoCanvas.gameObject.SetActive(false);
+        ShopCanvas.gameObject.SetActive(false);
         //InfoManager.instance.DisableInfoCanvas();
     }
 
@@ -117,7 +118,6 @@ public class GalleryTouch : MonoBehaviour
         BUBBLE.gameObject.SetActive(true);
         ImageInfo.gameObject.SetActive(false);
         InfoCanvas.gameObject.SetActive(false);
-        //ShopCanvas.gameObject.SetActive(false);
         InfoManager.instance.DisableInfoCanvas();
         StartCoroutine(waitAfterClose());
         BUTTON.gameObject.SetActive(true);
@@ -163,6 +163,7 @@ public class GalleryTouch : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         minigameMenuCanvas.gameObject.SetActive(false);
         cookGameCanvas.SetActive(false);
+        ShopCanvas.gameObject.SetActive(false);
     }
 
     IEnumerator waitAfterTriggerInfo()

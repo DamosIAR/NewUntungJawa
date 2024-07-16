@@ -1662,7 +1662,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 10
+  m_Priority: 8
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
@@ -2524,14 +2524,14 @@ RectTransform:
   m_GameObject: {fileID: 127601392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0547422, y: 1.0547422, z: 1.0547422}
+  m_LocalScale: {x: 0.8491767, y: 0.8491767, z: 0.8491767}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1908462320}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9, y: 302.70004}
+  m_AnchoredPosition: {x: -9.187653, y: 344.69998}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &127601394
@@ -2554,9 +2554,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cook
-
-    Game'
+  m_text: LUKY si KOKI
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,
@@ -2636,6 +2634,101 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127601392}
   m_CullTransparentMesh: 1
+--- !u!1 &161720394
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 161720395}
+  - component: {fileID: 161720398}
+  - component: {fileID: 161720397}
+  - component: {fileID: 161720396}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &161720395
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161720394}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 908819786}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &161720396
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161720394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BindingMode: 1
+  m_FollowOffset: {x: 0, y: 0, z: -10}
+  m_XDamping: 1
+  m_YDamping: 1
+  m_ZDamping: 1
+  m_AngularDampingMode: 0
+  m_PitchDamping: 0
+  m_YawDamping: 0
+  m_RollDamping: 0
+  m_AngularDamping: 0
+--- !u!114 &161720397
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161720394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_LookaheadTime: 0
+  m_LookaheadSmoothing: 0
+  m_LookaheadIgnoreY: 0
+  m_HorizontalDamping: 0.5
+  m_VerticalDamping: 0.5
+  m_ScreenX: 0.5
+  m_ScreenY: 0.5
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
+  m_SoftZoneWidth: 0.8
+  m_SoftZoneHeight: 0.8
+  m_BiasX: 0
+  m_BiasY: 0
+  m_CenterOnActivate: 1
+--- !u!114 &161720398
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161720394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &168131681
 GameObject:
   m_ObjectHideFlags: 0
@@ -3321,7 +3414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &195627320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5832,7 +5925,7 @@ PrefabInstance:
     - target: {fileID: 1327196509582793201, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1927181847497782544, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
@@ -12661,9 +12754,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 533216633}
-        m_TargetAssemblyTypeName: ShopButtonHandler, Assembly-CSharp
-        m_MethodName: OpenShopButton
+      - m_Target: {fileID: 1967694214}
+        m_TargetAssemblyTypeName: GalleryTouch, Assembly-CSharp
+        m_MethodName: ShopBoardButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14223,7 +14316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -30}
+  m_AnchoredPosition: {x: -55, y: -40}
   m_SizeDelta: {x: 1350, y: 162}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &639380036
@@ -14274,13 +14367,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -15426,7 +15519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -65.76}
+  m_AnchoredPosition: {x: -517, y: -65.76}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &721315958
@@ -15483,7 +15576,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -18212,6 +18305,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906929407}
   m_CullTransparentMesh: 1
+--- !u!1 &908819785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 908819786}
+  - component: {fileID: 908819787}
+  m_Layer: 0
+  m_Name: ShopVirtualCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &908819786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908819785}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.09612494, y: -0.35241428, z: 0.03641848, w: 0.9301817}
+  m_LocalPosition: {x: -247.7, y: 269.5, z: 755.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 161720395}
+  m_Father: {fileID: 1724947871}
+  m_LocalEulerAnglesHint: {x: 11.8, y: -41.5, z: 0}
+--- !u!114 &908819787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908819785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 8
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 0}
+  m_Lens:
+    FieldOfView: 60.000004
+    OrthographicSize: 5
+    NearClipPlane: 1.99
+    FarClipPlane: 6486.38
+    Dutch: 0
+    ModeOverride: 0
+    LensShift: {x: 0, y: 0}
+    GateFit: 2
+    FocusDistance: 10
+    m_SensorSize: {x: 1, y: 1}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 161720395}
 --- !u!1 &910053082
 GameObject:
   m_ObjectHideFlags: 0
@@ -21295,6 +21460,8 @@ GameObject:
   - component: {fileID: 1057438085}
   - component: {fileID: 1057438087}
   - component: {fileID: 1057438086}
+  - component: {fileID: 1057438089}
+  - component: {fileID: 1057438088}
   m_Layer: 5
   m_Name: Shop Panel
   m_TagString: Untagged
@@ -21311,7 +21478,7 @@ RectTransform:
   m_GameObject: {fileID: 1057438084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.000015258789}
-  m_LocalScale: {x: 1.3419489, y: 1.141095, z: 1.0565695}
+  m_LocalScale: {x: 1.3419489, y: 1.141095, z: 1.056569}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1921077768}
@@ -21324,7 +21491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000091552734, y: 6.999916}
+  m_AnchoredPosition: {x: -100, y: 6.999916}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1057438086
@@ -21365,6 +21532,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057438084}
   m_CullTransparentMesh: 1
+--- !u!225 &1057438088
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057438084}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!95 &1057438089
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057438084}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a3167b8c0ddbd7a42bf9284b9804d51f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1068899018
 GameObject:
   m_ObjectHideFlags: 0
@@ -21986,7 +22187,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Banana Boat
+  m_text: BANANA BOAT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,
@@ -22014,8 +22215,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 81.8
-  m_fontSizeBase: 81.8
+  m_fontSize: 89.7
+  m_fontSizeBase: 89.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -27291,14 +27492,14 @@ RectTransform:
   m_GameObject: {fileID: 1563750503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0547422, y: 1.0547422, z: 1.0547422}
+  m_LocalScale: {x: 0.8491767, y: 0.8491767, z: 0.8491767}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1908462320}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.8124695, y: 301}
+  m_AnchoredPosition: {x: -16, y: 343}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1563750505
@@ -27321,9 +27522,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cook
-
-    Game'
+  m_text: LUKY si KOKI
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,
@@ -27681,9 +27880,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 533216633}
-        m_TargetAssemblyTypeName: ShopButtonHandler, Assembly-CSharp
-        m_MethodName: CloseShopButton
+      - m_Target: {fileID: 1967694214}
+        m_TargetAssemblyTypeName: GalleryTouch, Assembly-CSharp
+        m_MethodName: backtomaincamera
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29101,6 +29300,7 @@ Transform:
   - {fileID: 110133925}
   - {fileID: 1552981472}
   - {fileID: 207437834}
+  - {fileID: 908819786}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1725919178
@@ -32542,14 +32742,17 @@ MonoBehaviour:
   virtualCameraMinigame: {fileID: 207437833}
   InfoVirtualCamera: {fileID: 1840823861}
   cookgameVirtualCamera: {fileID: 110133924}
+  shopVirtualCamera: {fileID: 908819787}
   minigameMenuCanvas: {fileID: 1318406472}
   cookGameCanvas: {fileID: 168131681}
   BUTTON: {fileID: 533216630}
   BUBBLE: {fileID: 1704365040}
   ImageInfo: {fileID: 2040188351}
   InfoCanvas: {fileID: 1452307501}
+  ShopCanvas: {fileID: 1057438084}
   minigameAnimator: {fileID: 1318406478}
   cookgameAnimator: {fileID: 168131687}
+  shopAnimator: {fileID: 1057438089}
 --- !u!4 &1967694215
 Transform:
   m_ObjectHideFlags: 0
@@ -34395,7 +34598,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CRAB SPEARING
+  m_text: TOMBAK KEPITING
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,

@@ -13,15 +13,18 @@ public class GalleryTouch : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera virtualCameraMinigame;
     [SerializeField] private CinemachineVirtualCamera InfoVirtualCamera;
     [SerializeField] private CinemachineVirtualCamera cookgameVirtualCamera;
+    [SerializeField] private CinemachineVirtualCamera shopVirtualCamera;
     [SerializeField] private GameObject minigameMenuCanvas;
     [SerializeField] private GameObject cookGameCanvas;
     [SerializeField] private GameObject BUTTON;
     [SerializeField] private GameObject BUBBLE;
     [SerializeField] private GameObject ImageInfo;
     [SerializeField] private GameObject InfoCanvas;
+    [SerializeField] private GameObject ShopCanvas;
 
     [SerializeField] private Animator minigameAnimator;
     [SerializeField] private Animator cookgameAnimator;
+    [SerializeField] private Animator shopAnimator;
 
     private const string MINIGAME = "MiniGame";
     private const string INFO = "Info";
@@ -43,6 +46,7 @@ public class GalleryTouch : MonoBehaviour
         virtualCameraMinigame.Priority = 10;
         InfoVirtualCamera.Priority = 10;
         cookgameVirtualCamera.Priority = 10;
+        shopVirtualCamera.Priority = 10;
         cookGameCanvas.SetActive(false);
 
         virtualCameraStart.transform.position = new Vector3(startingPoint, 877f, 142f);
@@ -106,11 +110,14 @@ public class GalleryTouch : MonoBehaviour
         virtualCameraMinigame.Priority = 10;
         cookgameVirtualCamera.Priority = 10;
         InfoVirtualCamera.Priority = 10;
+        shopVirtualCamera.Priority = 10;
         minigameAnimator.SetBool("IsOpen", false);
         cookgameAnimator.SetBool("IsOpen", false);
+        shopAnimator.SetBool("IsShopOpen", false);
         BUBBLE.gameObject.SetActive(true);
         ImageInfo.gameObject.SetActive(false);
         InfoCanvas.gameObject.SetActive(false);
+        //ShopCanvas.gameObject.SetActive(false);
         InfoManager.instance.DisableInfoCanvas();
         StartCoroutine(waitAfterClose());
         BUTTON.gameObject.SetActive(true);
@@ -142,6 +149,15 @@ public class GalleryTouch : MonoBehaviour
         BUBBLE.gameObject.SetActive(false);
     }
 
+    public void ShopBoardButton()
+    {
+        shopVirtualCamera.Priority = 20;
+        ShopCanvas.gameObject.SetActive(true);
+        shopAnimator.SetBool("IsShopOpen", true);
+        BUTTON.gameObject.SetActive(false);
+        BUBBLE.gameObject.SetActive(false);
+    }
+
     IEnumerator waitAfterClose()
     {
         yield return new WaitForSeconds(0.5f);
@@ -155,5 +171,11 @@ public class GalleryTouch : MonoBehaviour
         ImageInfo.gameObject.SetActive(true);
         InfoCanvas.gameObject.SetActive(true);
         InfoManager.instance.EnableInfoCanvas();
+    }
+
+    IEnumerator waitAfterTriggerShop()
+    {
+        yield return new WaitForSeconds(1f);
+        ShopCanvas.SetActive(true);
     }
 }

@@ -103,6 +103,9 @@ public class IntroductionManager : MonoBehaviour
         lines = new Queue<DialogueLine>();
         DialogueCanvas.SetActive(false);
         DarkPanel.SetActive(false);
+        MinigameImage.SetActive(false);
+        CookGameImage.SetActive(false);
+        InfoImage.SetActive(false);
         gameData = SaveSystem.Load();
     }
 

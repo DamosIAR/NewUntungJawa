@@ -5,6 +5,8 @@ using UnityEngine;
 public class ScrollView : MonoBehaviour
 {
     [SerializeField] private GameObject CreditsContent;
+    [SerializeField] private GameObject MasukButton;
+    [SerializeField] private GameObject KeluarButton;
     private bool isActive;
 
     private void Start()
@@ -18,11 +20,15 @@ public class ScrollView : MonoBehaviour
         if (!isActive)
         {
             CreditsContent.gameObject.SetActive(true);
+            MasukButton.gameObject.SetActive(false);
+            KeluarButton.gameObject.SetActive(false);
             isActive = true;
         }
         else
         {
             CreditsContent.gameObject.SetActive(false);
+            MasukButton.gameObject.SetActive(true);
+            KeluarButton.gameObject.SetActive(true);
             isActive = false;
         }
         

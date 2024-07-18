@@ -24,6 +24,7 @@ public class Grill : Base
 
     [SerializeField] private GrillRecipeSO[] grillRecipeSOArray;
     [SerializeField] private BurningRecipeSO[] burningRecipeSOArray;
+    [SerializeField] private GameObject PanasText;
 
     private State state;
     private float grillTimer;
@@ -34,6 +35,7 @@ public class Grill : Base
     private void Start()
     {
         state = State.Idle;
+        PanasText.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -142,22 +144,37 @@ public class Grill : Base
             }
             else
             {
-                GetObjekDapur().SetObjekDapurParent(touchExample);
-                state = State.Idle;
-
-                OnStateChanged?.Invoke(this, new OnStateChangedEventArgs
+                if(state == State.Burned)
                 {
-                    state = state,
-                });
+                    GetObjekDapur().SetObjekDapurParent(touchExample);
+                    state = State.Idle;
 
-                OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
+                    OnStateChanged?.Invoke(this, new OnStateChangedEventArgs
+                    {
+                        state = state,
+                    });
+
+                    OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
+                    {
+                        progressNormalized = 0
+                    });
+                }
+                else
                 {
-                    progressNormalized = 0
-                });
+                    Debug.Log("PANAS");
+                    PanasText.gameObject.SetActive(true);
+                    StartCoroutine(PanasPOPUP());
+                }
+
             }
         }
     }
 
+    IEnumerator PanasPOPUP()
+    {
+        yield return new WaitForSeconds(1f);
+        PanasText.gameObject.SetActive(false);
+    }
 
     private bool HasRecipeWithInput(ObjekDapurSO inputObjekDapurSO)
     {

@@ -34,10 +34,10 @@ public class GameOverUI : MonoBehaviour
         if (CookGameManager.Instance.isGameOver())
         {
             show();
-            RecipeDeliveredText.text = "Recipe Delivered : " + DeliveryManager.Instance.GetSuccessfulDeliveryAmount().ToString();
-            RecipeFailedText.text = "Wrong Recipe Delivered : " + DeliveryManager.Instance.GetFaildeDeliveryAmount().ToString();
-            /*CoinText.text = "This Session Coin : " + DeliveryManager.Instance.GetCoinAmount().ToString();
-            TotalCoin.text = "Your Total Coin : " + gameData.Totalmoney.ToString();*/
+            RecipeDeliveredText.text = "Masakan Benar : " + DeliveryManager.Instance.GetSuccessfulDeliveryAmount().ToString();
+            RecipeFailedText.text = "Masakan Salah : " + DeliveryManager.Instance.GetFaildeDeliveryAmount().ToString();
+            /*CoinText.text = "Koin Hari Ini : " + DeliveryManager.Instance.GetCoinAmount().ToString();
+            TotalCoin.text = "Total Koin : " + gameData.Totalmoney.ToString();*/
             gameData.Totalmoney += DeliveryManager.Instance.GetCoinAmount();
             SaveSystem.Save(gameData);
 

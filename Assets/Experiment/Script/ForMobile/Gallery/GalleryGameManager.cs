@@ -18,6 +18,7 @@ public class GalleryGameManager : MonoBehaviour
     [SerializeField] private Slider MasterSlider;
 
     [SerializeField] private GameObject SettingsCanvas;
+    [SerializeField] private GameObject BUTTONSCanvas;
 
     private void Awake()
     {
@@ -39,11 +40,13 @@ public class GalleryGameManager : MonoBehaviour
     public void OpenSettingsButton()
     {
         SettingsCanvas.gameObject.SetActive(true);
+        BUTTONSCanvas.gameObject.SetActive(false);
     }
 
     public void CloseSettingsButton()
     {
         SettingsCanvas.gameObject.SetActive(false);
+        BUTTONSCanvas.gameObject.SetActive(true) ;
     }
 
     public void UpdateMusicVolume(float volume)

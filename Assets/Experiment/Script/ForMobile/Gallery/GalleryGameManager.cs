@@ -20,33 +20,26 @@ public class GalleryGameManager : MonoBehaviour
     [SerializeField] private GameObject SettingsCanvas;
     [SerializeField] private GameObject BUTTONSCanvas;
 
-    private void Awake()
+    private void Start()
     {
+        gameData = SaveSystem.Load();
         SettingsCanvas.gameObject.SetActive(false);
         MusicSlider.value = 1f;
         SFXSlider.value = 1f;
         MasterSlider.value = 1f;
-        //LoadVolume();
         RefreshUI();
     }
 
-    void RefreshUI()
+    public void RefreshUI()
     {
-        Money.text = gameData.Totalmoney.ToString();
         Cycle.text = "Hari Ke " + gameData.CyclePassed.ToString();
-
+        Money.text = gameData.Totalmoney.ToString();
     }
 
     public void OpenSettingsButton()
     {
         SettingsCanvas.gameObject.SetActive(true);
         BUTTONSCanvas.gameObject.SetActive(false);
-    }
-
-    public void CloseSettingsButton()
-    {
-        SettingsCanvas.gameObject.SetActive(false);
-        BUTTONSCanvas.gameObject.SetActive(true) ;
     }
 
     public void UpdateMusicVolume(float volume)
@@ -74,12 +67,17 @@ public class GalleryGameManager : MonoBehaviour
 
         GalleryaudioMixer.GetFloat("Master", out float masterVolume);
         PlayerPrefs.SetFloat("Master", masterVolume);
+
+        SettingsCanvas.gameObject.SetActive(false);
+        BUTTONSCanvas.gameObject.SetActive(true);
     }
 
     public void LoadVolume()
     {
         MusicSlider.value =  PlayerPrefs.GetFloat("Music");
+        
         SFXSlider.value = PlayerPrefs.GetFloat("SFX");
+        
         MasterSlider.value = PlayerPrefs.GetFloat("Master");
     }
 }

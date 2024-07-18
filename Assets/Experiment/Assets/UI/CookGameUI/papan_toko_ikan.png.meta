@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e27ff7e73d98eb45b465eeed666cb2e
+guid: af31667dc4d9a4542a4f633c0e6073b4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,12 +97,12 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 50
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: papan_kepiting_cumi_udang_0
+      name: papan_toko_ikan_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 26
-        width: 635
-        height: 211
+        x: 0
+        y: 0
+        width: 1464
+        height: 661
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10c7fb4861de3694dae30fb5a68c8fd7
-      internalID: -1126890208
+      spriteID: 195a33e8ae911254aa22ea8eabf4afbd
+      internalID: -1701957545
       vertices: []
       indices: 
       edges: []
@@ -159,7 +159,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b96a03bfddaec774d869a6189da700ff
+    spriteID: 5cd38a8fd06f89d4e9d1abecfa090fee
     internalID: 0
     vertices: []
     indices: 
@@ -167,7 +167,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      papan_kepiting_cumi_udang_0: -1126890208
+      papan_toko_ikan_0: -1701957545
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

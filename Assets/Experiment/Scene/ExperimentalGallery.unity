@@ -6209,7 +6209,7 @@ PrefabInstance:
     - target: {fileID: 1327196509582793201, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1927181847497782544, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
@@ -6326,18 +6326,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1565831346}
-        m_TargetAssemblyTypeName: GalleryGameManager, Assembly-CSharp
-        m_MethodName: CloseSettingsButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1565831346}
         m_TargetAssemblyTypeName: GalleryGameManager, Assembly-CSharp
         m_MethodName: SaveVolume
@@ -28382,6 +28370,7 @@ MonoBehaviour:
   SFXSlider: {fileID: 1686069769}
   MasterSlider: {fileID: 169257832}
   SettingsCanvas: {fileID: 1554214395}
+  BUTTONSCanvas: {fileID: 533216630}
 --- !u!4 &1579917346 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f5c5d21f963965844be6bf947f2ef4d9,

@@ -5021,7 +5021,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1989691169}
+      objectReference: {fileID: 1604596507}
     - target: {fileID: 2906081902069864126, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -5030,7 +5030,7 @@ PrefabInstance:
     - target: {fileID: 2906081902069864126, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MainmenuYes
+      value: MainMenuLoadButton
       objectReference: {fileID: 0}
     - target: {fileID: 2906081902069864126, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}
@@ -5040,7 +5040,7 @@ PrefabInstance:
     - target: {fileID: 2906081902069864126, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayPause, Assembly-CSharp
+      value: NewSceneManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3237414261990051947, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}

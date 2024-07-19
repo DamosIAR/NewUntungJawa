@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &17287421
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3800,7 +3800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &204509143
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4720,8 +4720,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 270566032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 3.9999866}
   m_SizeDelta: {x: 129, y: 112.00003}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5754,9 +5754,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Pantai Sakura di Pulau Untung Jawa menawarkan hamparan pasir putih yang
-    luas dan air laut yang jernih, sehingga menjadi tempat favorit wisatawan lokal
-    maupun luar."'
+  m_text: '"Sakura Beach on Untung Jawa Island offers a wide expanse of white sand
+    and clear sea water, making it a favorite place for local and foreign tourists"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,
@@ -5854,7 +5853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &361826825
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6209,7 +6208,7 @@ PrefabInstance:
     - target: {fileID: 1327196509582793201, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1927181847497782544, guid: 5243f8c9771691741b60c1bd9ea167c5,
         type: 3}
@@ -11602,9 +11601,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Wisatawan dapat menikmati dinginnya air laut di bibir pantai dan berbagai
-    aktivitas air seperti snorkeling. Pantai Arsa memiliki pasir putih yang indah
-    dan air laut yang bersih dan jernih."'
+  m_text: '"Tourists can enjoy the cool sea water on the beach and various water
+    activities such as snorkeling. Arsa Beach has beautiful white sand and clean
+    sea water."'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,
@@ -12972,10 +12971,9 @@ RectTransform:
   m_GameObject: {fileID: 497569195}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5286858, y: 0.4592875, z: 0.4592875}
+  m_LocalScale: {x: 0.5286858, y: 0.55483997, z: 0.4592875}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1097241860}
+  m_Children: []
   m_Father: {fileID: 1757148752}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
@@ -13071,7 +13069,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 34116375, guid: c0316c0e88b83ba44b07480c257b680a, type: 3}
+  m_Sprite: {fileID: -1365160284, guid: 8422ee574d7f8fb47a036b8ce46f081d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13438,7 +13436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &515316785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13964,7 +13962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &594041138
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13974,7 +13972,7 @@ RectTransform:
   m_GameObject: {fileID: 594041137}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6527782, y: 0.5907593, z: 0.6140183}
+  m_LocalScale: {x: 0.66903234, y: 0.5855243, z: 0.6140183}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1997667129}
@@ -13983,7 +13981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -195, y: 6.999999}
+  m_AnchoredPosition: {x: -193.9, y: 6.999999}
   m_SizeDelta: {x: 409, y: 580}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &594041139
@@ -14108,7 +14106,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.5471698, g: 0.028216584, b: 0, a: 1}
+    m_PressedColor: {r: 1, g: 0.7411765, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -14298,8 +14296,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 848638929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 3.9999866}
   m_SizeDelta: {x: 129, y: 112.00003}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -18674,7 +18672,7 @@ RectTransform:
   m_Father: {fileID: 704550756}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -19198,7 +19196,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 754.99994, y: 216}
+  m_AnchoredPosition: {x: 736.9243, y: 216}
   m_SizeDelta: {x: 465, y: 466}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &933532024
@@ -19319,7 +19317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &936378936
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19329,7 +19327,7 @@ RectTransform:
   m_GameObject: {fileID: 936378935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6527782, y: 0.5907593, z: 0.6140183}
+  m_LocalScale: {x: 0.6771268, y: 0.58436614, z: 0.6140183}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1834066342}
@@ -19338,7 +19336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -195, y: 7}
+  m_AnchoredPosition: {x: -194.5, y: 7}
   m_SizeDelta: {x: 409, y: 580}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &936378937
@@ -19361,7 +19359,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1172116250, guid: 064648cffffd1144b9acd9a8f74e9931, type: 3}
+  m_Sprite: {fileID: -900835185, guid: 350c1ed839fb9274a9975cf54fa6a1d7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22022,7 +22020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1057438085
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22662,143 +22660,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1097241859
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1097241860}
-  - component: {fileID: 1097241862}
-  - component: {fileID: 1097241861}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1097241860
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097241859}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 497569196}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1097241861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097241859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: LIHAT
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
-  m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 180.2
-  m_fontSizeBase: 180.2
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 0
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1097241862
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097241859}
-  m_CullTransparentMesh: 1
 --- !u!1 &1104551606
 GameObject:
   m_ObjectHideFlags: 0
@@ -23642,8 +23503,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 606220483}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 3.9999866}
   m_SizeDelta: {x: 129, y: 112.00003}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -23718,7 +23579,7 @@ RectTransform:
   m_Father: {fileID: 632612223}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -24798,7 +24659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1359036130
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25147,7 +25008,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.06132114, g: 1, b: 0, a: 1}
+    m_PressedColor: {r: 1, g: 0.7411765, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -25720,7 +25581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1419660936
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27194,10 +27055,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Tugu Arung Samudra dibuat oleh TNI AL pada saat ulang tahun emas Indonesia
-    yang ke-50 tahun yang mulai dari benoa Bali dan berakhir di Pulau Untung Jawa
-    oleh pelaut-pelaut dari 22 manca negara yang mengikuti FLEET REVIEW ARUNG SAMUDERA
-    1995"'
+  m_text: '"The Arung Samudra Monument was built by the Indonesian Navy on Indonesia''s
+    50th golden anniversary starting from Benoa Bali and ending on Untung Jawa Island
+    by sailors from 22 foreign countries who took part in the FLEET REVIEW ARUNG
+    SAMUDERA 1995"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,
@@ -27620,7 +27481,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1517759305
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28004,7 +27865,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1554214396
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28434,9 +28295,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Wisata Banana Boat di Pulau Untung Jawa adalah pengalaman yang mengasyikkan
-    dan penuh adrenalin! Sensasi kecepatan dan gemuruh air akan membuat Anda terbahagia
-    dan ingin mencobanya lagi."'
+  m_text: '"The Banana Boat Tour on Untung Jawa Island is an exciting and adrenaline-filled
+    experience! The sensation of speed and the roar of the water will make you happy
+    and make you want to try it again."'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,
@@ -29318,7 +29179,7 @@ RectTransform:
   m_Father: {fileID: 2009600869}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -30615,7 +30476,7 @@ RectTransform:
   m_GameObject: {fileID: 1757148751}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8512112, y: 0.8512112, z: 0.8512112}
+  m_LocalScale: {x: 0.8512112, y: 0.873598, z: 0.8512112}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 497569196}
@@ -30627,7 +30488,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0, y: -10}
   m_SizeDelta: {x: 693, y: 1023}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1757148753
@@ -30730,7 +30591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1778850510
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30772,7 +30633,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -112845198, guid: 53897c6a1d6e3a34d82d474212ac5b31, type: 3}
+  m_Sprite: {fileID: 282681722, guid: afe47a34ee26f854aa169e55d0a0d43f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -31778,7 +31639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 541.0756, y: -16.977}
+  m_AnchoredPosition: {x: 528, y: -16.977}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1834066343
@@ -31801,8 +31662,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Hutan Manggrove di Pulau Untung Jawa menawarkan keindahan alam yang memukau
-    dengan pohon-pohon bakau menjulang dan suara burung-burung yang mengiringi perjalanan"'
+  m_text: '"The mangrove forest on Untung Jawa Island offers stunning natural beauty
+    with towering mangrove trees and the sound of birds accompanying the journey."'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,
@@ -32594,7 +32455,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.06666667, g: 1, b: 0, a: 1}
+    m_PressedColor: {r: 1, g: 0.7411765, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -34151,7 +34012,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 541.0756, y: -16.977}
+  m_AnchoredPosition: {x: 523, y: -16.977}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997667130
@@ -34174,9 +34035,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Jembatan Pengantin di Pulau Untung Jawa memiliki dua buah pohon yang
-    indah dan menarik, terletak di tengah jembatan yang berbentuk seperti Love (Hati).
-    Tempat yang sangat cocok untuk berfoto dan pasangan!"'
+  m_text: '"The Jembatan Pengantin on Untung Jawa Island has two beautiful and attractive
+    trees, located in the middle of the bridge which is shaped like a Love (Heart).
+    A very suitable place for taking photos of couples!"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,
@@ -34662,9 +34523,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Kampung Jepang di Pulau Untung Jawa memadukan pesona alam dan budaya
-    Jepang. Dengan dekorasi khas dan suasana ramah, pengunjung dapat merasakan keajaiban
-    Jepang tanpa harus meninggalkan Indonesia"'
+  m_text: "\u201CKampung Jepang on Untung Jawa Island combines natural charm and
+    Japanese culture. With distinctive decorations and a friendly atmosphere, visitors
+    can experience the magic of Japan without having to leave Indonesia.\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,
@@ -35700,9 +35561,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Taman Nemo di Pulau Untung Jawa merupakan sebuah destinasi wisata yang
-    menakjubkan! Disini, Anda dapat menyelami keelokan ikan Nemo dan menikmati pesona
-    bawah laut yang memukau"'
+  m_text: '"Taman Nemo on Untung Jawa Island is an amazing tourist destination! Here,
+    you can explore the beauty of the Nemo fish and enjoy the stunning underwater
+    charm"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,

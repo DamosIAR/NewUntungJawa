@@ -246,8 +246,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4796,7 +4796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2181, y: -800.99994}
+  m_AnchoredPosition: {x: 2125, y: -800.99994}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1914775680
@@ -4829,8 +4829,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4907,6 +4907,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1665653783}
     m_Modifications:
+    - target: {fileID: 116230860372387167, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_text
+      value: "\rAkhiri permainan Saat Ini?\r\nProgres Tidak Akan Tersimpan!!!"
+      objectReference: {fileID: 0}
     - target: {fileID: 244265295733228895, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}
       propertyPath: m_IsActive
@@ -4981,6 +4986,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 1826559169977522972, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_text
+      value: Tidak
+      objectReference: {fileID: 0}
+    - target: {fileID: 1958466641212792682, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_text
+      value: Iya
       objectReference: {fileID: 0}
     - target: {fileID: 2331878725670378300, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}
@@ -5077,6 +5092,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4090430353949705825, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1202133602, guid: 5870c530a4f7212439f22b31f0ab9b08,
+        type: 3}
     - target: {fileID: 5256923095330029193, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -5116,6 +5137,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PauseGroup
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662018768785028735, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6213691010546596213, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}

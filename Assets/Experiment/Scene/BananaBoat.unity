@@ -5299,6 +5299,16 @@ PrefabInstance:
       propertyPath: m_text
       value: Tidak
       objectReference: {fileID: 0}
+    - target: {fileID: 1826559169977522972, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 98.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1826559169977522972, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 98.39
+      objectReference: {fileID: 0}
     - target: {fileID: 1958466641212792682, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}
       propertyPath: m_text

@@ -1793,7 +1793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Game Over
+  m_text: 'Game Berakhir
 
 '
   m_isRightToLeft: 0
@@ -2579,7 +2579,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'High Score : '
+  m_text: 'Skor saat ini : 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 39840b011fae9794db192e61912dda66, type: 2}
@@ -2802,7 +2802,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Current Score : '
+  m_text: 'Skor tertinggi : 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 39840b011fae9794db192e61912dda66, type: 2}
@@ -3195,7 +3195,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Game Over
+  m_text: 'Game Berakhir
 
 '
   m_isRightToLeft: 0
@@ -5196,7 +5196,7 @@ PrefabInstance:
     - target: {fileID: 116230860372387167, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}
       propertyPath: m_text
-      value: "\rAkhiri permainan Saat Ini?\r\nProgres Tidak Akan Tersimpan!!!"
+      value: "\rAkhiri permainan saat ini?\r\nProgres tidak akan tersimpan!!!"
       objectReference: {fileID: 0}
     - target: {fileID: 244265295733228895, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}
@@ -5232,6 +5232,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -199
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070936209869654336, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1515153423, guid: 74479578b1799104f81bd90e9e4ef7e5,
+        type: 3}
+    - target: {fileID: 1070936209869654336, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070936209869654336, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070936209869654336, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1145752833162388536, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}
@@ -5378,11 +5399,32 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3979846358246680268, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1515153423, guid: 74479578b1799104f81bd90e9e4ef7e5,
+        type: 3}
+    - target: {fileID: 3979846358246680268, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3979846358246680268, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3979846358246680268, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4090430353949705825, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1202133602, guid: 5870c530a4f7212439f22b31f0ab9b08,
+      objectReference: {fileID: 957932091, guid: 74a1dbaf3eeb11c49b47178045bfedea,
         type: 3}
     - target: {fileID: 5256923095330029193, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}
@@ -5434,6 +5476,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5963549561619435164, guid: 113fc01f6f1561443aa6d0a795fcac36,
+        type: 3}
+      propertyPath: m_ChildAlignment
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6213691010546596213, guid: 113fc01f6f1561443aa6d0a795fcac36,
         type: 3}

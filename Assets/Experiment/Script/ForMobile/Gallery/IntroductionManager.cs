@@ -184,6 +184,7 @@ public class IntroductionManager : MonoBehaviour
         DarkPanel.SetActive(false);
         gameData.TutorialShown = true;
         SaveSystem.Save(gameData);
+        Debug.Log(gameData.TutorialShown);
         //animator.Play("hide");
     }
 }

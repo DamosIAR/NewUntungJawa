@@ -37,16 +37,16 @@ public class IntroductionTrigger : MonoBehaviour
     private void Start()
     {
         gameData = SaveSystem.Load();
-        /*if (gameData.TutorialShown == false)
+        if (gameData.TutorialShown == false)
         {
             TriggerDialogue();
-        }*/
-        TriggerDialogue();
+        }
+        //TriggerDialogue();
     }
 
     private void Update()
     {
-        //if (gameData.TutorialShown == true) return;
+        if (gameData.TutorialShown == true) return;
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             //Debug.Log("Tes");

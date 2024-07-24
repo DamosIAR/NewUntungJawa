@@ -1,9 +1,17 @@
 # ninja log v5
 71	868	7428268151017787	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	d562dd218fcef8f9
+22	900	7428268151357915	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	3d19e50fc0627725
 53	879	7428268151135674	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	cd9783a972b85dbb
 1	890	7428268151231194	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f91f7d19fd5d23a1
 32	899	7428268151352889	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	7737ebf48515ec79
-22	900	7428268151357915	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	3d19e50fc0627725
+1004	1202	7428268153799609	C:/Users/garyn/OneDrive/Documents/GitHub/NewUntungJawa2/NewUntungJawa/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/1p4e2f3g/obj/armeabi-v7a/libgame.so	7bd2613c6f0fc5b0
 42	962	7428268152012266	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	52021f7ce03fda6c
 13	1004	7428268152390982	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	7ceb372c699bac7e
-1004	1202	7428268153799609	C:/Users/garyn/OneDrive/Documents/GitHub/NewUntungJawa2/NewUntungJawa/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/1p4e2f3g/obj/armeabi-v7a/libgame.so	7bd2613c6f0fc5b0
+21	756	7435123723106867	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f91f7d19fd5d23a1
+28	759	7435123723152481	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	7737ebf48515ec79
+42	763	7435123723202928	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	cd9783a972b85dbb
+35	775	7435123723316012	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	d562dd218fcef8f9
+8	795	7435123723552843	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	3d19e50fc0627725
+15	843	7435123724045169	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	52021f7ce03fda6c
+1	918	7435123724733795	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	7ceb372c699bac7e
+918	1169	7435123726656960	C:/Users/garyn/OneDrive/Documents/GitHub/NewUntungJawa2/NewUntungJawa/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/1p4e2f3g/obj/armeabi-v7a/libgame.so	7bd2613c6f0fc5b0

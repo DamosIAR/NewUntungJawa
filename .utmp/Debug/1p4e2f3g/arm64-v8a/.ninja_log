@@ -1,9 +1,17 @@
 # ninja log v5
 70	1828	7428268100745087	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	362d58fce5495822
+2088	2425	7428268105748812	C:/Users/garyn/OneDrive/Documents/GitHub/NewUntungJawa2/NewUntungJawa/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/1p4e2f3g/obj/arm64-v8a/libgame.so	421164508bf9c6f3
 1	1863	7428268100895857	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	5391746950b3916c
+16	1953	7428268102035105	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	ea8c6e3ad40a29a
 91	1866	7428268101091641	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	880d9485d94526b
 115	1910	7428268101583812	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	1855d125c8de700c
-16	1953	7428268102035105	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	ea8c6e3ad40a29a
 51	2070	7428268103205480	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	cbdc3fb97b4fe2ed
 27	2088	7428268103338896	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	8f21082fc8cfba1f
-2088	2425	7428268105748812	C:/Users/garyn/OneDrive/Documents/GitHub/NewUntungJawa2/NewUntungJawa/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/1p4e2f3g/obj/arm64-v8a/libgame.so	421164508bf9c6f3
+120	2562	7435123695560928	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	880d9485d94526b
+108	2565	7435123695560928	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	362d58fce5495822
+16	2574	7435123695824187	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	5391746950b3916c
+91	2591	7435123695957135	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	1855d125c8de700c
+30	2608	7435123696178876	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	ea8c6e3ad40a29a
+1	2678	7435123696884168	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	8f21082fc8cfba1f
+67	2679	7435123696879141	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	cbdc3fb97b4fe2ed
+2679	3445	7435123703732196	C:/Users/garyn/OneDrive/Documents/GitHub/NewUntungJawa2/NewUntungJawa/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/1p4e2f3g/obj/arm64-v8a/libgame.so	421164508bf9c6f3

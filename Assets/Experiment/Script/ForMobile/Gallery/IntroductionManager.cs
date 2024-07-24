@@ -88,6 +88,7 @@ public class IntroductionManager : MonoBehaviour
     public GameData gameData;
 
     private Queue<DialogueLine> lines;
+    private bool GeneratingText = false;
 
     public bool isDialogueActive = false;
 
@@ -153,6 +154,7 @@ public class IntroductionManager : MonoBehaviour
             InfoImage.SetActive(false);
         }
 
+        if (GeneratingText == true) return;
         DialogueLine currentLine = lines.Dequeue();
 
         characterIcon.sprite = currentLine.character.icon;
@@ -165,12 +167,14 @@ public class IntroductionManager : MonoBehaviour
 
     IEnumerator TypeSentence(DialogueLine dialogueLine)
     {
+        GeneratingText = true;
         dialogueArea.text = "";
         foreach (char letter in dialogueLine.line.ToCharArray())
         {
             dialogueArea.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        GeneratingText = false;
     }
 
     void EndDialogue()

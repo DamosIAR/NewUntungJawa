@@ -47,8 +47,8 @@ public class BBScoreManager : MonoBehaviour
 
     private void UpdateHighScore()
     {
-        HighScore.text = "High Score : " + PlayerPrefs.GetInt("HighScore", 0);
-        CurrentScore.text = "Current Score : " + GetCurrentScore();
+        HighScore.text = "Skor Tertinggi : " + PlayerPrefs.GetInt("HighScore", 0);
+        CurrentScore.text = "Skor Saat Ini : " + GetCurrentScore();
     }
 
     public float GetCurrentScore()

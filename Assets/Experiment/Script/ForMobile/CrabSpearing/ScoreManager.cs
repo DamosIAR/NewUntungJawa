@@ -34,7 +34,7 @@ public class ScoreManager : MonoBehaviour
         //highScore();
     }
 
-    public float getScore()
+    public int getScore()
     {
         return score;
     }
@@ -50,6 +50,6 @@ public class ScoreManager : MonoBehaviour
 
     public void updateHighScore()
     {
-        highScoreText.text = "High Score : " + PlayerPrefs.GetInt("CrabHighScore", 0);
+        highScoreText.text = "Skor Tertinggi : " + PlayerPrefs.GetInt("CrabHighScore", 0);
     }
 }

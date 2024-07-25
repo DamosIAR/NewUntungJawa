@@ -33,7 +33,7 @@ public class CoinManager : MonoBehaviour
 
     public void savedCoin()
     {
-        CoinText.text = "Koin Hari Ini : " + DeliveryManager.Instance.GetCoinAmount().ToString();
-        TotalCoin.text = "Koin Keseluruhan : " + gameData.Totalmoney.ToString();
+        CoinText.text = "Koin Yang Didapatkan : " + DeliveryManager.Instance.GetCoinAmount().ToString();
+        TotalCoin.text = "Total Koin : " + gameData.Totalmoney.ToString();
     }
 }

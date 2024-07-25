@@ -8,8 +8,12 @@ public class BanaBoatUI : MonoBehaviour
     [SerializeField] private GameObject GameOver;
     [SerializeField] private GameObject TXT;
 
+    public GameData gameData;
+    private int scoreToConvert = (int)BBScoreManager.Instance.GetCurrentScore();
+
     private void Start()
     {
+        gameData = SaveSystem.Load();
         BananaBoatGameManager.Instance.OnStateChanged += BananaBoatGameManager_OnStateChanged;
         HideGameOverUI();
     }
@@ -27,6 +31,8 @@ public class BanaBoatUI : MonoBehaviour
 
         if (BananaBoatGameManager.Instance.isGameOver())
         {
+            gameData.Totalmoney += (scoreToConvert * 2);
+            SaveSystem.Save(gameData);
             ShowGameOverUI();
             hideTXT();
         }

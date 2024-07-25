@@ -90,4 +90,9 @@ public class BananaBoatGameManager : MonoBehaviour
     {
         return countdownToStartTimer;
     }
+
+    public float GetTime()
+    {
+        return timeElapsed;
+    }
 }

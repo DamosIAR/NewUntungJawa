@@ -961,7 +961,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20, y: 141}
+  m_AnchoredPosition: {x: -20, y: 114.00001}
   m_SizeDelta: {x: 257, y: 214}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73740306
@@ -16447,7 +16447,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 293, y: 141}
+  m_AnchoredPosition: {x: 293, y: 114.00001}
   m_SizeDelta: {x: 267, y: 214}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &758789701
@@ -23272,7 +23272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -344, y: 134}
+  m_AnchoredPosition: {x: -344, y: 114}
   m_SizeDelta: {x: 263, y: 198}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1189367752
@@ -25720,7 +25720,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: COMING SOON...
+  m_text: DALAM PENGERJAAN...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a466f1e7602bd64eac58e9e76ea67ed, type: 2}
   m_sharedMaterial: {fileID: 502857691574493131, guid: 5a466f1e7602bd64eac58e9e76ea67ed,

@@ -35,7 +35,6 @@ public class BBPlayerStateManager : MonoBehaviour
                     state = State.Falling;
                     IsFalling?.Invoke(this, new EventArgs());
                 }
-
                 break;
             case State.Falling:
                 break;

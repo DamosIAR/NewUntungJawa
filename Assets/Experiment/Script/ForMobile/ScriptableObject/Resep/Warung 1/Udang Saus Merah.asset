@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6005796a369b1e244a47a165b14c14a8, type: 3}
-  m_Name: Prawn Saus Merah
+  m_Name: Udang Saus Merah
   m_EditorClassIdentifier: 
   objekDapurSOlist:
   - {fileID: 11400000, guid: 58f5ad73625a5ac4a81486f65e8839a7, type: 2}
   - {fileID: 11400000, guid: 69e558af6a02ad049a2674c198c86f22, type: 2}
-  namaResep: Prawn Saus Merah
+  namaResep: Udang Saus Merah

@@ -11,11 +11,13 @@ public class TimerUI : MonoBehaviour
     [SerializeField] private Canvas gameOver;
     [SerializeField] private TextMeshProUGUI Score;
 
+    public GameData gameData;
     private float timerTime;
     private float maxTime;
 
     private void Start()
     {
+        gameData = SaveSystem.Load();
         SpearGameManager.Instance.StateChanged += SpearGameManager_onStateChanged;
         SpearGameManager.Instance.TimerChanged += SpearGameManager_TimerChanged;
         Hide();
@@ -30,6 +32,8 @@ public class TimerUI : MonoBehaviour
     {
         if (SpearGameManager.Instance.isGameOver())
         {
+            gameData.Totalmoney += ScoreManager.instance.getScore();
+            SaveSystem.Save(gameData);
             Show();
         }
         else
@@ -47,7 +51,7 @@ public class TimerUI : MonoBehaviour
 
     private void Show()
     {
-        Score.text = ("Final Score : ") + ScoreManager.instance.getScore().ToString();
+        Score.text = ("Skor Saat Ini : ") + ScoreManager.instance.getScore().ToString();
         gameOver.gameObject.SetActive(true);
         ScoreManager.instance.getScore();
         ScoreManager.instance.highScore();

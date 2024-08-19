@@ -12151,7 +12151,7 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - character:
-        name: Luki
+        name: Luky
         icon: {fileID: 519685729, guid: c336bf80a4873224a9a0a4ddd59c2445, type: 3}
       line: Wah, pulau ini ternyata lebih indah dari yang saya bayangkan!
     - character:
@@ -12161,7 +12161,7 @@ MonoBehaviour:
     - character:
         name: Pak Untung
         icon: {fileID: -1697265838, guid: 45c2409166a24854cad8cf94e4180722, type: 3}
-      line: Senang kamu menyukainya, Luki! Pulau Untung Jawa memang terkenal dengan
+      line: Senang kamu menyukainya, Luky! Pulau Untung Jawa memang terkenal dengan
         keindahan alamnya.
     - character:
         name: Luky
@@ -12231,7 +12231,7 @@ MonoBehaviour:
     - character:
         name: Pak Untung
         icon: {fileID: -1059974814, guid: 1ffde83cef9c67c4fac3474d0f24c204, type: 3}
-      line: Jika Luki belum tahu destinasi wisata apa yang mau dikunjungin, disini
+      line: Jika Luky belum tahu destinasi wisata apa yang mau dikunjungin, disini
         juga ada wisata banana boat dan menombak kepiting.
     - character:
         name: Luky

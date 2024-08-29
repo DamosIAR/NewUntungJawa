@@ -21,6 +21,7 @@ public class GalleryTouch : MonoBehaviour
     [SerializeField] private GameObject ImageInfo;
     [SerializeField] private GameObject InfoCanvas;
     [SerializeField] private GameObject ShopCanvas;
+    [SerializeField] private GameObject DropDownMenu;
 
     [SerializeField] private Animator minigameAnimator;
     [SerializeField] private Animator cookgameAnimator;
@@ -121,6 +122,7 @@ public class GalleryTouch : MonoBehaviour
         InfoManager.instance.DisableInfoCanvas();
         StartCoroutine(waitAfterClose());
         BUTTON.gameObject.SetActive(true);
+        DropDownMenu.gameObject.SetActive(true);
     }
 
     public void CookGameButton()
@@ -130,6 +132,7 @@ public class GalleryTouch : MonoBehaviour
         cookgameAnimator.SetBool("IsOpen", true);
         BUTTON.gameObject.SetActive(false);
         BUBBLE.gameObject.SetActive(false);
+        DropDownMenu.gameObject.SetActive(false);
     }
 
     public void MinigameButton()
@@ -139,6 +142,7 @@ public class GalleryTouch : MonoBehaviour
         minigameAnimator.SetBool("IsOpen", true);
         BUTTON.gameObject.SetActive(false);
         BUBBLE.gameObject.SetActive(false);
+        DropDownMenu.gameObject.SetActive(false);
     }
 
     public void InfoBoardButton()
@@ -147,6 +151,7 @@ public class GalleryTouch : MonoBehaviour
         StartCoroutine(waitAfterTriggerInfo());
         BUTTON.gameObject.SetActive(false);
         BUBBLE.gameObject.SetActive(false);
+        DropDownMenu.gameObject.SetActive(false);
     }
 
     public void ShopBoardButton()
@@ -156,6 +161,7 @@ public class GalleryTouch : MonoBehaviour
         shopAnimator.SetBool("IsShopOpen", true);
         BUTTON.gameObject.SetActive(false);
         BUBBLE.gameObject.SetActive(false);
+        DropDownMenu.gameObject.SetActive(false);
     }
 
     IEnumerator waitAfterClose()

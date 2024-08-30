@@ -17,7 +17,7 @@ public class GalleryTouch : MonoBehaviour
     [SerializeField] private GameObject minigameMenuCanvas;
     [SerializeField] private GameObject cookGameCanvas;
     [SerializeField] private GameObject BUTTON;
-    [SerializeField] private GameObject BUBBLE;
+    //[SerializeField] private GameObject BUBBLE;
     [SerializeField] private GameObject ImageInfo;
     [SerializeField] private GameObject InfoCanvas;
     [SerializeField] private GameObject ShopCanvas;
@@ -53,7 +53,7 @@ public class GalleryTouch : MonoBehaviour
         virtualCameraStart.transform.position = new Vector3(startingPoint, 877f, 142f);
 
         BUTTON.gameObject.SetActive(true);
-        BUBBLE.gameObject.SetActive(true);
+        //BUBBLE.gameObject.SetActive(true);
         ImageInfo.gameObject.SetActive(false);
         InfoCanvas.gameObject.SetActive(false);
         ShopCanvas.gameObject.SetActive(false);
@@ -116,7 +116,7 @@ public class GalleryTouch : MonoBehaviour
         minigameAnimator.SetBool("IsOpen", false);
         cookgameAnimator.SetBool("IsOpen", false);
         shopAnimator.SetBool("IsShopOpen", false);
-        BUBBLE.gameObject.SetActive(true);
+        //BUBBLE.gameObject.SetActive(true);
         ImageInfo.gameObject.SetActive(false);
         InfoCanvas.gameObject.SetActive(false);
         InfoManager.instance.DisableInfoCanvas();
@@ -131,7 +131,7 @@ public class GalleryTouch : MonoBehaviour
         cookGameCanvas.SetActive(true);
         cookgameAnimator.SetBool("IsOpen", true);
         BUTTON.gameObject.SetActive(false);
-        BUBBLE.gameObject.SetActive(false);
+        //BUBBLE.gameObject.SetActive(false);
         DropDownMenu.gameObject.SetActive(false);
     }
 
@@ -141,7 +141,7 @@ public class GalleryTouch : MonoBehaviour
         minigameMenuCanvas.gameObject.SetActive(true);
         minigameAnimator.SetBool("IsOpen", true);
         BUTTON.gameObject.SetActive(false);
-        BUBBLE.gameObject.SetActive(false);
+        //BUBBLE.gameObject.SetActive(false);
         DropDownMenu.gameObject.SetActive(false);
     }
 
@@ -150,7 +150,7 @@ public class GalleryTouch : MonoBehaviour
         InfoVirtualCamera.Priority = 20;
         StartCoroutine(waitAfterTriggerInfo());
         BUTTON.gameObject.SetActive(false);
-        BUBBLE.gameObject.SetActive(false);
+        //BUBBLE.gameObject.SetActive(false);
         DropDownMenu.gameObject.SetActive(false);
     }
 
@@ -160,13 +160,14 @@ public class GalleryTouch : MonoBehaviour
         ShopCanvas.gameObject.SetActive(true);
         shopAnimator.SetBool("IsShopOpen", true);
         BUTTON.gameObject.SetActive(false);
-        BUBBLE.gameObject.SetActive(false);
+        //BUBBLE.gameObject.SetActive(false);
         DropDownMenu.gameObject.SetActive(false);
     }
 
     IEnumerator waitAfterClose()
     {
         yield return new WaitForSeconds(0.5f);
+        MenuBtnGallery.instance.ForceCloseMenu();
         minigameMenuCanvas.gameObject.SetActive(false);
         cookGameCanvas.SetActive(false);
         ShopCanvas.gameObject.SetActive(false);

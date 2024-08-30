@@ -51,7 +51,7 @@ public class BBScoreManager : MonoBehaviour
         CurrentScore.text = "Skor Saat Ini : " + GetCurrentScore();
     }
 
-    public float GetCurrentScore()
+    public int GetCurrentScore()
     {
         return score;
     }

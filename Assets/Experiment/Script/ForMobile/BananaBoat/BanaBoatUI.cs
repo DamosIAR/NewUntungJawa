@@ -9,10 +9,11 @@ public class BanaBoatUI : MonoBehaviour
     [SerializeField] private GameObject TXT;
 
     public GameData gameData;
-    private int scoreToConvert = (int)BBScoreManager.Instance.GetCurrentScore();
+    private int scoreToConvert;
 
     private void Start()
     {
+        scoreToConvert = BBScoreManager.Instance.GetCurrentScore();
         gameData = SaveSystem.Load();
         BananaBoatGameManager.Instance.OnStateChanged += BananaBoatGameManager_OnStateChanged;
         HideGameOverUI();

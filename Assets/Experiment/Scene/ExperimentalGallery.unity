@@ -4756,18 +4756,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311530083}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.029093271, y: 0.009134559, z: 0.99952954, w: -0.003298824}
+  m_LocalPosition: {x: 0, y: 0, z: 215.44319}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1468722826}
-  m_Father: {fileID: 1959344055}
+  m_Father: {fileID: 1943711912}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -4300.3486, y: 1886.5028}
+  m_SizeDelta: {x: 2460, y: 1083.2397}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &311530085
 MonoBehaviour:
@@ -32348,6 +32348,7 @@ RectTransform:
   m_Children:
   - {fileID: 376732933}
   - {fileID: 1068899019}
+  - {fileID: 311530084}
   m_Father: {fileID: 1959344055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -32751,7 +32752,6 @@ RectTransform:
   m_Children:
   - {fileID: 1974064717}
   - {fileID: 1943711912}
-  - {fileID: 311530084}
   - {fileID: 1318406476}
   - {fileID: 168131682}
   - {fileID: 762251191}
@@ -32971,7 +32971,6 @@ MonoBehaviour:
   minigameMenuCanvas: {fileID: 1318406472}
   cookGameCanvas: {fileID: 168131681}
   BUTTON: {fileID: 533216630}
-  BUBBLE: {fileID: 0}
   ImageInfo: {fileID: 2040188351}
   InfoCanvas: {fileID: 1452307501}
   ShopCanvas: {fileID: 762251190}

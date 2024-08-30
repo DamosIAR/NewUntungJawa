@@ -9,9 +9,11 @@ public class MenuBtnGallery : MonoBehaviour
     [SerializeField] private GameObject flyUpButton;
 
     public Animator animator;
+    public static MenuBtnGallery instance {  get; private set; }
 
     private void Start()
     {
+        instance = this;
         menuBtnCanvas.gameObject.SetActive(false);
         dropDownButton.gameObject.SetActive(true);
         flyUpButton.gameObject.SetActive(false);
@@ -34,6 +36,13 @@ public class MenuBtnGallery : MonoBehaviour
     {
         animator.SetBool("Drop", false);
         yield return new WaitForSeconds(0.5f);
+        menuBtnCanvas.gameObject.SetActive(false);
+        dropDownButton.gameObject.SetActive(true);
+        flyUpButton.gameObject.SetActive(false);
+    }
+
+    public void ForceCloseMenu()
+    {
         menuBtnCanvas.gameObject.SetActive(false);
         dropDownButton.gameObject.SetActive(true);
         flyUpButton.gameObject.SetActive(false);
